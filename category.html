@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Explore Top UI Kits Design Assets" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>UI Kits Design Assets</title>
   </head>
   <body>
@@ -20,8 +21,8 @@
           </li>
           <!-- Dropdown menu of products -->
           <li>
-            <a href="#" class="dropdown active">Products</a>
-            <ul class="dropdown-content">
+            <a href="#" class="dropdown">Products</a>
+            <ul class="dropdown-content" hidden>
               <li><a href="./category.html">Website</a></li>
               <li><a href="./category.html">Mobile App</a></li>
               <li><a href="./category.html">Social Media Feeds</a></li>
@@ -32,7 +33,7 @@
           </li>
           <li>
             <a href="./creator.html">Creators</a>
-            <p class="label">NEW</p>
+            <span class="label">NEW</span>
           </li>
           <li><a href="./blog.html">Blog</a></li>
           <li><a href="./contact.html">Contact</a></li>
@@ -41,19 +42,28 @@
 
       <!-- Search bar -->
       <div class="search-bar">
-        <input type="text" placeholder="Search for Digital Assets" />
-        <button>
-          <img src="/" alt="Search icon" />
-          Search
-        </button>
+        <form action="" method="get" role="search">
+          <label for="site-search" class="visually-hidden">
+            Search the site:
+          </label>
+          <input
+            type="search"
+            name="search"
+            id="site-search"
+            pattern="[^'\x22]+"
+            title="Invalid input"
+            aria-label="Search through site content"
+            placeholder="Search for Digital Assets"
+          />
+          <button type="submit" class="btn-search">
+            <img src="/" alt="Search icon" />
+            Search
+          </button>
+        </form>
       </div>
 
       <!-- Login and cart buttons -->
       <div class="buttons">
-        <!-- <button class="btn-account">
-          <img src="" alt="" />
-          Profile login
-        </button> -->
         <a href="./cart.html" class="btn-cart">
           <img src="/" alt="Shop button" />
           Cart
@@ -64,350 +74,512 @@
     <!-- Main -->
     <main>
       <!-- Title section -->
-      <section class="category-title">
-        <h1>Explore Top <span>UI Kits</span> Design Assets</h1>
-      </section>
+      <h1 class="category-title">
+        Explore Top <span>UI Kits</span> Design Assets
+      </h1>
 
-      <aside>
+      <form action="" method="get">
         <!-- Categories -->
-        <article class="filter-card">
-          <h2>Categories</h2>
+        <fieldset class="filter-card">
+          <legend>Categories</legend>
           <ul>
             <li class="category-item">
-              <input type="checkbox" checked />
-              All Categories
+              <input
+                type="checkbox"
+                name="categories"
+                value="all"
+                id="categories-all"
+                checked
+              />
+              <label for="categories-all">All Categories</label>
             </li>
 
             <li>
-              <input type="checkbox" />
-              Technology
+              <input
+                type="checkbox"
+                name="categories"
+                value="technology"
+                id="categories-technology"
+              />
+              <label for="categories-technology">Technology</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Travel & Tourism
+              <input
+                type="checkbox"
+                name="categories"
+                value="travel"
+                id="categories-travel"
+              />
+              <label for="categories-travel">Travel & Tourism</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Health & Fitness
+              <input
+                type="checkbox"
+                name="categories"
+                value="health"
+                id="categories-health"
+              />
+              <label for="categories-health">Health & Fitness</label>
             </li>
             <li>
-              <input type="checkbox" />
-              E-Commerce
+              <input
+                type="checkbox"
+                name="categories"
+                value="e-commerce"
+                id="categories-e-commerce"
+              />
+              <label for="categories-e-commerce">E-Commerce</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Education
+              <input
+                type="checkbox"
+                name="categories"
+                value="education"
+                id="categories-education"
+              />
+              <label for="categories-education">Education</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Entertainment
+              <input
+                type="checkbox"
+                name="categories"
+                value="entertainment"
+                id="categories-entertainment"
+              />
+              <label for="categories-entertainment">Entertainment</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Others
+              <input
+                type="checkbox"
+                name="categories"
+                value="others"
+                id="categories-others"
+              />
+              <label for="categories-others">Others</label>
             </li>
           </ul>
-        </article>
+        </fieldset>
 
         <!-- Format Type -->
-        <article class="filter-card">
-          <h2>Format Type</h2>
-
+        <fieldset class="filter-card">
+          <legend>Format Type</legend>
           <ul>
             <li class="category-item">
-              <input type="checkbox" checked />
-              All Formats
+              <input
+                type="checkbox"
+                name="format"
+                value="all formats"
+                id="format-all"
+                checked
+              />
+              <label for="format-all">All Formats</label>
             </li>
 
             <li>
-              <input type="checkbox" />
-              Figma
+              <input
+                type="checkbox"
+                name="format"
+                value="figma"
+                id="format-figma"
+              />
+              <label for="format-figma">Figma</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Sketch
+              <input
+                type="checkbox"
+                name="format"
+                value="sketch"
+                id="format-sketch"
+              />
+              <label for="format-sketch">Sketch</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Adobe XD
+              <input
+                type="checkbox"
+                name="format"
+                value="adobe xd"
+                id="format-adobexd"
+              />
+              <label for="format-adobexd">Adobe XD</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Adobe Photoshop
+              <input
+                type="checkbox"
+                name="format"
+                value="adobe photoshop"
+                id="format-adobe-photoshop"
+              />
+              <label for="format-adobe-photoshop"> Adobe Photoshop </label>
             </li>
             <li>
-              <input type="checkbox" />
-              Adobe Illustration
+              <input
+                type="checkbox"
+                nname="format"
+                value="adobe illustration"
+                id="format-adobe-illustration"
+              />
+              <label for="format-adobe-illustration">
+                Adobe Illustration
+              </label>
             </li>
             <li>
-              <input type="checkbox" />
-              Others
+              <input
+                type="checkbox"
+                name="format"
+                value="others"
+                id="format-others"
+              />
+              <label for="format-others">Others</label>
             </li>
           </ul>
-        </article>
+        </fieldset>
 
         <!-- Style -->
-        <article class="filter-card">
-          <h2>Style</h2>
+        <fieldset class="filter-card">
+          <legend>Style</legend>
           <ul>
             <li class="category-item">
-              <input type="checkbox" checked />
-              All Styles
+              <input
+                type="checkbox"
+                name="style"
+                value="all styles"
+                id="style-all"
+                checked
+              />
+              <label for="style-all">All Styles</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Minimalist
+              <input
+                type="checkbox"
+                name="style"
+                value="minimalist"
+                id="style-minimalist"
+              />
+              <label for="style-minimalist">Minimalist</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Modern
+              <input
+                type="checkbox"
+                name="style"
+                value="modern"
+                id="style-modern"
+              />
+              <label for="style-modern">Modern</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Playful
+              <input
+                type="checkbox"
+                name="style"
+                value="playful"
+                id="style-playful"
+              />
+              <label for="style-playful">Playful</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Dark Mode
+              <input
+                type="checkbox"
+                name="style"
+                value="dark mode"
+                id="style-darkmode"
+              />
+              <label for="style-darkmode">Dark Mode</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Photocentric
+              <input
+                type="checkbox"
+                name="style"
+                value="photocentric"
+                id="style-photocentric"
+              />
+              <label for="style-photocentric">Photocentric</label>
             </li>
             <li>
-              <input type="checkbox" />
-              Others
+              <input
+                type="checkbox"
+                name="style"
+                value="others"
+                id="style-others"
+              />
+              <label for="style-others">Others</label>
             </li>
           </ul>
-        </article>
+        </fieldset>
 
-        <div class="price-container">
-          <h2>Price</h2>
-          <div class="range-input">
-            <input
-              type="range"
-              min="5"
-              max="50"
-              value="22"
-              step="1"
-              class="min-range"
-            />
-            <input
-              type="range"
-              min="5"
-              max="50"
-              value="38"
-              step="1"
-              class="max-range"
-            />
+        <fieldset class="price-container">
+          <legend>Price</legend>
+          <div class="range">
+            <button class="range-button" is-min type="button"></button>
+            <button class="range-button" is-max type="button"></button>
+            <div class="range-line"></div>
+            <div class="range-line" is-selected”></div>
+            <div class="range-container">
+              <div class="range-min">
+                $
+                <input type="number" class="price-nmb" />
+              </div>
+              <div class="range-max">
+                $
+                <input type="number" class="price-nmb" />
+              </div>
+            </div>
           </div>
-          <div class="price-field">
-            <p class="min-value">$5</p>
-            <p class="max-value">$50</p>
-          </div>
+        </fieldset>
+
+        <button type="reset" class="btn-clearall">Clear all filters</button>
+
+        <!-- <div class="range-input">
+          <input
+          type="range"
+          min="5"
+          max="50"
+          value="22"
+          step="1"
+          class="min-range"
+          />
+          <input
+          type="range"
+          min="5"
+          max="50"
+          value="38"
+          step="1"
+          class="max-range"
+          />
         </div>
-
-        <button class="clearall-btn">Clear all filters</button>
-      </aside>
-
-      <!-- Filters Block -->
-      <section class="filters-block">
-        <h2 style="display: none">Filters</h2>
-        <div class="asset-label">
-          <p>UI Kit</p>
-          <button class="close-btn">&times;</button>
-        </div>
-
-        <form action="submit">
-          <label for="product">Sort by</label>
-          <select name="product" id="product">
-            <option value="best-seller">Best Seller</option>
-            <option value="price-min">Price Ascending</option>
-            <option value="price-max">Price Descending</option>
-            <option value="show-all">Show All</option>
-          </select>
-        </form>
-
-        <p class="result">Showing 12 out of 120 results.</p>
-        <button class="view-mode-btn">
-          <img src="/" alt="View Mode button" />
-        </button>
-        <button class="sandwish-bar-btn">
-          <img src="/" alt="Menu button" />
-        </button>
-      </section>
+        <div class="price-field">
+          <p class="price-value">$5</p>
+          <p class="price-value">$50</p>
+        </div> -->
+      </form>
 
       <!-- Catalog -->
       <section class="catalog">
-        <h2 style="display: none">catalog</h2>
+        <!-- Filters Block -->
+        <div class="filters-block">
+          <ul>
+            <li class="asset-label">
+              UI Kit
+              <button type="button" class="close-btn">&times;</button>
+            </li>
+          </ul>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">SkyHomes</h3>
-            <p class="product-description">Real Estate Landing Page</p>
-          </a>
-          <p class="item-price">$11.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
-          </button>
-        </article>
+          <form action="" method="get">
+            <label for="product">Sort by</label>
+            <select name="product" id="product">
+              <option value="best-seller">Best Seller</option>
+              <option value="price-min">Price Ascending</option>
+              <option value="price-max">Price Descending</option>
+              <option value="show-all">Show All</option>
+            </select>
+          </form>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">Vaxin</h3>
-            <p class="product-description">Vaccination Platform Hero Section</p>
-          </a>
-          <p class="item-price">$6.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
+          <p class="result">Showing 12 out of 120 results.</p>
+          <button type="button" class="btn-menu active">
+            <img src="/" alt="View Mode button" />
           </button>
-        </article>
+          <button type="button" class="btn-menu">
+            <img src="/" alt="Menu button" />
+          </button>
+        </div>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">Gaya</h3>
-            <p class="product-description">Fashion Store Mobile App</p>
-          </a>
-          <p class="item-price">$20.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
-          </button>
-        </article>
+        <ul>
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">SkyHomes</h2>
+                <p class="product-description">Real Estate Landing Page</p>
+              </a>
+              <p class="item-price">$11.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">Chrev</h3>
-            <p class="product-description">Crypto Wallet Mobile App</p>
-          </a>
-          <p class="item-price">$20.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
-          </button>
-        </article>
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">Vaxin</h2>
+                <p class="product-description">
+                  Vaccination Platform Hero Section
+                </p>
+              </a>
+              <p class="item-price">$6.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">ProTech</h3>
-            <p class="product-description">IT Company Website Design</p>
-          </a>
-          <p class="item-price">$12.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
-          </button>
-        </article>
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">Gaya</h2>
+                <p class="product-description">Fashion Store Mobile App</p>
+              </a>
+              <p class="item-price">$20.00</p>
+              <button type="button" class="btn-item-cart active">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">MyEstate</h3>
-            <p class="product-description">Real Estate Hero Section</p>
-          </a>
-          <p class="item-price">$5.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
-          </button>
-        </article>
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">Chrev</h2>
+                <p class="product-description">Crypto Wallet Mobile App</p>
+              </a>
+              <p class="item-price">$20.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">TrendHub</h3>
-            <p class="product-description">Digital Marketing Hero Section</p>
-          </a>
-          <p class="item-price">$6.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
-          </button>
-        </article>
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">ProTech</h2>
+                <p class="product-description">IT Company Website Design</p>
+              </a>
+              <p class="item-price">$12.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">Thinky</h3>
-            <p class="product-description">Blog News Mobile App</p>
-          </a>
-          <p class="item-price">$18.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
-          </button>
-        </article>
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">MyEstate</h2>
+                <p class="product-description">Real Estate Hero Section</p>
+              </a>
+              <p class="item-price">$5.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">ArtVerse</h3>
-            <p class="product-description">AI Tools Website Design</p>
-          </a>
-          <p class="item-price">$12.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
-          </button>
-        </article>
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">TrendHub</h2>
+                <p class="product-description">
+                  Digital Marketing Hero Section
+                </p>
+              </a>
+              <p class="item-price">$6.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">Artique</h3>
-            <p class="product-description">Creative Agency Website Design</p>
-          </a>
-          <p class="item-price">$12.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
-          </button>
-        </article>
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">Thinky</h2>
+                <p class="product-description">Blog News Mobile App</p>
+              </a>
+              <p class="item-price">$18.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">MindTrix</h3>
-            <p class="product-description">AI Tools Website Design</p>
-          </a>
-          <p class="item-price">$5.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
-          </button>
-        </article>
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">ArtVerse</h2>
+                <p class="product-description">AI Tools Website Design</p>
+              </a>
+              <p class="item-price">$12.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
 
-        <!-- Product Item -->
-        <article class="product-item">
-          <a href="./product-details.html">
-            <img src="/" alt="Product Asset" />
-            <h3 class="product-title">Koki</h3>
-            <p class="product-description">Restaurant Admin Dashboard</p>
-          </a>
-          <p class="item-price">$20.00</p>
-          <button class="cart-btn">
-            <img src="/" alt="Shop icon" />
-          </button>
-        </article>
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">Artique</h2>
+                <p class="product-description">
+                  Creative Agency Website Design
+                </p>
+              </a>
+              <p class="item-price">$12.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">MindTrix</h2>
+                <p class="product-description">AI Tools Website Design</p>
+              </a>
+              <p class="item-price">$5.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <!-- Product Item -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">Koki</h2>
+                <p class="product-description">Restaurant Admin Dashboard</p>
+              </a>
+              <p class="item-price">$20.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+        </ul>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <a href="#" class="btn-arrow">&lt;</a>
+          <a href="#" class="active">01</a>
+          <a href="#">02</a>
+          <a href="#">03</a>
+          <a href="#">...</a>
+          <a href="#">10</a>
+          <a href="#" class="btn-arrow active">&gt;</a>
+        </div>
       </section>
-
-      <!-- Pagination -->
-      <div class="pagination">
-        <a href="#">&lt;</a>
-        <a href="#" class="active">01</a>
-        <a href="#">02</a>
-        <a href="#">03</a>
-        <a href="#">...</a>
-        <a href="#">10</a>
-        <a href="#">&gt;</a>
-      </div>
 
       <!-- CTA call to action section -->
       <section class="cta">
@@ -415,13 +587,13 @@
         <h3 class="section-title">
           Elevate Your Project with Premium Digital Assets
         </h3>
-        <a href="./category.html" class="shop-btn">Shop Now</a>
+        <a href="./category.html" class="btn-shop">Shop Now</a>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <section class="footer-sitemap">
+      <section class="footer-section">
         <div class="footer-logobox">
           <a href="./index.html" class="logo"> Pixmart. </a>
           <p class="footer-description">
@@ -429,11 +601,11 @@
             comprehensive range of products and services.
           </p>
         </div>
-        <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Company</h2>
 
-          <ul class="sitemap-list">
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Company</h2>
+          <ul class="footer-nav-list">
             <li><a href="./index.html">Homepage v1 </a></li>
             <li><a href="./index.html">Homepage v2 </a></li>
             <li><a href="./index.html">Homepage v3 </a></li>
@@ -441,13 +613,12 @@
             <li><a href="./creator.html">Creators </a></li>
             <li><a href="./blog.html">Blog Articles</a></li>
           </ul>
-        </div>
+        </section>
 
         <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Products</h2>
-
-          <ul class="sitemap-list">
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Products</h2>
+          <ul class="footer-nav-list">
             <li><a href="./category.html">Website</a></li>
             <li><a href="./category.html">Mobile App</a></li>
             <li><a href="./category.html">Social Media Feeds</a></li>
@@ -455,13 +626,12 @@
             <li><a href="./category.html">Product Mockups</a></li>
             <li><a href="./category.html">Illustrations</a></li>
           </ul>
-        </div>
+        </section>
 
         <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Account</h2>
-
-          <ul class="sitemap-list">
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Account</h2>
+          <ul class="footer-nav-list">
             <li><a href="./cart.html">Your Cart</a></li>
             <li><a href="./checkout.html">Check Out</a></li>
             <li><a href="#">Refund Policy</a></li>
@@ -469,7 +639,7 @@
             <li><a href="#">Send A Message</a></li>
             <li><a href="#">Customer Support</a></li>
           </ul>
-        </div>
+        </section>
 
         <!-- Social media icons -->
         <ul class="footer-socialbtns">
@@ -478,15 +648,24 @@
           <li><a href="#">FB</a></li>
         </ul>
 
-        <h3>Subscribe to Design Newsletter</h3>
-        <form action="submit" class="newsletter">
-          <input type="email" placeholder="Enter email address ..." />
-          <button>Subscribe</button>
+        <!-- <h3>Subscribe to Design Newsletter</h3> -->
+        <form action="" method="post" class="newsletter">
+          <label for="email">Subscribe to Design Newsletter</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email address ..."
+            autocomplete="email"
+            required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+          <input type="submit" value="Subscribe" />
         </form>
       </section>
 
       <!-- Copyright and terms -->
-      <div class="footer-copyright">
+      <div class="footer-copyright-section">
         <ul>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms and Condition</a></li>
