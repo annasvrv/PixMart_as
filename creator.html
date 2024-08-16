@@ -3,7 +3,350 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Discover and showcase your digital creations on PixMart's Creator Page. Connect with fans, sell your art, and grow your brand on the ultimate platform for creative talent."
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>PixMart - Creator Page</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Logo -->
+      <a href="./index.html" class="logo"> Pixmart.</a>
+
+      <!-- Navigation menu -->
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <!-- Dropdown menu of products -->
+          <li>
+            <a href="#" class="dropdown">Products</a>
+            <ul class="dropdown-content">
+              <li><a href="./category.html">Website</a></li>
+              <li><a href="./category.html">Mobile App</a></li>
+              <li><a href="./category.html">Social Media Feeds</a></li>
+              <li><a href="./category.html">Presentation</a></li>
+              <li><a href="./category.html">Product Mockups</a></li>
+              <li><a href="./category.html">Illustrations</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./creator.html">Creators</a>
+            <span class="label">NEW</span>
+          </li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search bar -->
+      <div class="search-bar">
+        <form action="" method="get" role="search">
+          <label for="site-search" class="visually-hidden">
+            Search the site:
+          </label>
+          <input
+            type="search"
+            name="search"
+            id="site-search"
+            pattern="[^'\x22]+"
+            title="Invalid input"
+            aria-label="Search through site content"
+            placeholder="Search for Digital Assets"
+          />
+          <button type="submit" class="btn-search">
+            <img src="/" alt="Search icon" />
+            Search
+          </button>
+        </form>
+      </div>
+
+      <!-- Login and cart buttons -->
+
+      <a href="./cart.html" class="btn-cart">
+        <img src="/" alt="Shop button" />
+        Cart
+      </a>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <img src="/" alt="Creator profile photo" />
+      <h1>Visual Vibe Arts</h1>
+      <a href="https://visualvibe.co">https://visualvibe.co</a>
+      <ul>
+        <li><a href="#">TW</a></li>
+        <li><a href="#">FB</a></li>
+        <li><a href="#">IG</a></li>
+      </ul>
+      <dl>
+        <dt>128</dt>
+        <dd>Works</dd>
+
+        <dt>2345</dt>
+        <dd>Followers</dd>
+      </dl>
+      <button type="button">Follow Creator</button>
+      <button type="button">Send Message</button>
+
+      <section>
+        <h2>Products by Creator</h2>
+        <form action="" method="">
+          <div>
+            <label for="site-search" class="visually-hidden">
+              Search assets ...
+            </label>
+            <input
+              type="search"
+              name="search"
+              id="site-search"
+              placeholder="Search assets ..."
+              pattern="[^'\x22]+"
+              title="Invalid input"
+            />
+            <button type="submit"><img src="/" alt="" /></button>
+          </div>
+
+          <div>
+            <label for="category">Category</label>
+            <select name="category" id="category">
+              <option value="ui">UI Template</option>
+              <option value="figma">Figma Template</option>
+              <option value="presentation">Presentation</option>
+            </select>
+          </div>
+        </form>
+
+        <ul>
+          <li>
+            <!-- Product Item 1 -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">EzMart</h2>
+                <p class="product-description">Figma Template</p>
+              </a>
+              <p class="item-price">$11.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <!-- Product Item 2 -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">SchoolHub</h2>
+                <p class="product-description">Figma Template</p>
+              </a>
+              <p class="item-price">$6.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <!-- Product Item 3 -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">Kidztar</h2>
+                <p class="product-description">Figma Template</p>
+              </a>
+              <p class="item-price">$20.00</p>
+              <button type="button" class="btn-item-cart active">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <!-- Product Item 4 -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">PlayCut</h2>
+                <p class="product-description">Figma Template</p>
+              </a>
+              <p class="item-price">$20.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <!-- Product Item 6 -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">Journeey</h2>
+                <p class="product-description">Figma Template</p>
+              </a>
+              <p class="item-price">$5.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <!-- Product Item 7 -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">Foodish</h2>
+                <p class="product-description">Figma Template</p>
+              </a>
+              <p class="item-price">$6.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <!-- Product Item 8 -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">MediCare</h2>
+                <p class="product-description">Figma Template</p>
+              </a>
+              <p class="item-price">$18.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <!-- Product Item 9 -->
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h2 class="product-title">UpNews</h2>
+                <p class="product-description">Figma Template</p>
+              </a>
+              <p class="item-price">$12.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+        </ul>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <a href="#" class="btn-arrow">&lt;</a>
+          <a href="#" class="active">01</a>
+          <a href="#">02</a>
+          <a href="#">03</a>
+          <a href="#">...</a>
+          <a href="#">10</a>
+          <a href="#" class="btn-arrow active">&gt;</a>
+        </div>
+      </section>
+
+      <!-- CTA call to action section -->
+      <section class="cta">
+        <h2 class="section-name">PRODUCT</h2>
+        <h3 class="section-title">
+          Elevate Your Project with Premium Digital Assets
+        </h3>
+        <a href="./category.html" class="btn-shop">Shop Now</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <section class="footer-section">
+        <div class="footer-logobox">
+          <a href="./index.html" class="logo"> Pixmart. </a>
+          <p class="footer-description">
+            Your premium digital assets solution with high quality and
+            comprehensive range of products and services.
+          </p>
+        </div>
+
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Company</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./index.html">Homepage v1 </a></li>
+            <li><a href="./index.html">Homepage v2 </a></li>
+            <li><a href="./index.html">Homepage v3 </a></li>
+            <li><a href="./about.html">About Us </a></li>
+            <li><a href="./creator.html">Creators </a></li>
+            <li><a href="./blog.html">Blog Articles</a></li>
+          </ul>
+        </section>
+
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Products</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./category.html">Website</a></li>
+            <li><a href="./category.html">Mobile App</a></li>
+            <li><a href="./category.html">Social Media Feeds</a></li>
+            <li><a href="./category.html">Presentation</a></li>
+            <li><a href="./category.html">Product Mockups</a></li>
+            <li><a href="./category.html">Illustrations</a></li>
+          </ul>
+        </section>
+
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Account</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./cart.html">Your Cart</a></li>
+            <li><a href="./checkout.html">Check Out</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Company Policy</a></li>
+            <li><a href="#">Send A Message</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </ul>
+        </section>
+
+        <!-- Social media icons -->
+        <ul class="footer-socialbtns">
+          <li><a href="#">TW</a></li>
+          <li><a href="#">IG</a></li>
+          <li><a href="#">FB</a></li>
+        </ul>
+
+        <!-- <h3>Subscribe to Design Newsletter</h3> -->
+        <form action="" method="post" class="newsletter">
+          <label for="email">Subscribe to Design Newsletter</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email address ..."
+            autocomplete="email"
+            required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <!-- Copyright and terms -->
+      <div class="footer-copyright-section">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Condition</a></li>
+          <li><a href="#">Site Map</a></li>
+        </ul>
+        <p>Copyright © 2024 Pixmart. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>

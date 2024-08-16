@@ -7,6 +7,7 @@
       name="description"
       content="BLOG - Dive into World of Designs and Creativity"
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>PixMart - Blog</title>
   </head>
   <body>
@@ -35,33 +36,41 @@
           </li>
           <li>
             <a href="./creator.html">Creators</a>
-            <p class="label">NEW</p>
+            <span class="label">NEW</span>
           </li>
-          <li><a href="./blog.html" class="active">Blog</a></li>
+          <li><a href="./blog.html">Blog</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
 
       <!-- Search bar -->
       <div class="search-bar">
-        <input type="text" placeholder="Search for Digital Assets" />
-        <button>
-          <img src="/" alt="Search icon" />
-          Search
-        </button>
+        <form action="" method="get" role="search">
+          <label for="site-search" class="visually-hidden">
+            Search the site:
+          </label>
+          <input
+            type="search"
+            name="search"
+            id="site-search"
+            pattern="[^'\x22]+"
+            title="Invalid input"
+            aria-label="Search through site content"
+            placeholder="Search for Digital Assets"
+          />
+          <button type="submit" class="btn-search">
+            <img src="/" alt="Search icon" />
+            Search
+          </button>
+        </form>
       </div>
 
       <!-- Login and cart buttons -->
-      <div class="buttons">
-        <!-- <button class="btn-account">
-          <img src="" alt="" />
-          Profile login
-        </button> -->
-        <a href="./cart.html" class="btn-cart">
-          <img src="/" alt="Shop button" />
-          Cart
-        </a>
-      </div>
+
+      <a href="./cart.html" class="btn-cart">
+        <img src="/" alt="Shop button" />
+        Cart
+      </a>
     </header>
 
     <!-- Main -->
@@ -69,40 +78,42 @@
       <h1>BLOG</h1>
       <h2>Dive into World of Designs and Creativity</h2>
 
-      <div class="blog-section">
+      <section class="blog-section">
         <!-- Blog article -->
         <article>
-          <p class="label">TYPOGRAPHY</p>
+          <span class="label">TYPOGRAPHY</span>
           <img src="/" alt="blog picture" />
-          <h3>
-            Mastering the Art of Typography: Tips for More Eye -Catching Designs
-            in Style for 2024
-          </h3>
-          <time>5 APRIL 2024</time>
+          <a href="./blog-details.html">
+            <h3>
+              Interior Design Website Hero, A Striking Way to Attract More
+              Visitors
+            </h3>
+            <time>5 APRIL 2024</time>
+          </a>
         </article>
 
         <!-- Blog article -->
         <article>
-          <p class="label">UI/UX DESIGN</p>
+          <span class="label">UI/UX DESIGN</span>
           <img src="/" alt="blog picture" />
-          <h3>
-            The Ultimate Guide to UI/UX: Enhancing App User Experience with
-            Design
-          </h3>
-          <time>16 MARCH 2024</time>
+          <a href="./blog-details.html">
+            <h3>
+              Get Hired with These Impressive Personal Portfolio Templates
+            </h3>
+            <time>16 MARCH 2024</time>
+          </a>
         </article>
 
         <!-- Blog article -->
         <article>
-          <p class="label">DESIGN TRENDS</p>
+          <span class="label">DESIGN TRENDS</span>
           <img src="/" alt="blog picture" />
-          <h3>
-            2024’s Top Graphic Design Trends: What Would Be Shaping the Future
-            of Design?
-          </h3>
-          <time>27 FEBRUARY 2024</time>
+          <a href="./blog-details.html">
+            <h3>Recommended! 8 Best Admin Dashboard Template for You</h3>
+            <time>27 FEBRUARY 2024</time>
+          </a>
         </article>
-      </div>
+      </section>
 
       <!-- Featured Articles -->
       <section>
@@ -110,41 +121,55 @@
         <button>&lt;</button>
         <button>&gt;</button>
 
-        <!-- Featured article -->
-        <article>
-          <img src="/" alt="blog picture" />
-          <p class="label">BRANDING</p>
-          <h3>
-            Building a Brand Identity: Essential Starting Steps for Designers
-          </h3>
-          <time>6 MAY 2024</time>
-        </article>
+        <ul>
+          <li>
+            <!-- Featured article -->
+            <article>
+              <img src="/" alt="blog picture" />
+              <span class="label">BRANDING</span>
+              <a href="./blog-details.html">
+                <h3>
+                  Building a Brand Identity: Essential Starting Steps for
+                  Designers
+                </h3>
+                <time>6 MAY 2024</time>
+              </a>
+            </article>
+          </li>
 
-        <!-- Featured article -->
-        <article>
-          <img src="/" alt="blog picture" />
-          <p class="label">GRAPHIC DESIGN</p>
-          <h3>
-            Unlocking New Creativity: Essential Upcoming Design Apps for 2024
-          </h3>
-          <time>28 JULY 2024</time>
-        </article>
+          <li>
+            <!-- Featured article -->
+            <article>
+              <img src="/" alt="blog picture" />
+              <span class="label">GRAPHIC DESIGN</span>
+              <a href="./blog-details.html">
+                <h3>
+                  Tips to Create Your Brand Guide to Strengthen Your Brand
+                  Identity
+                </h3>
+                <time>28 JULY 2024</time>
+              </a>
+            </article>
+          </li>
 
-        <!-- Featured article -->
-        <article>
-          <img src="/" alt="blog picture" />
-          <p class="label">DIGITAL MARKETING</p>
-          <h3>
-            Leveraging Digital Tools for Effective Brand Digital Promotion
-          </h3>
-          <time>17 JUNE 2024</time>
-        </article>
+          <li>
+            <!-- Featured article -->
+            <article>
+              <img src="/" alt="blog picture" />
+              <span class="label">DIGITAL MARKETING</span>
+              <a href="./blog-details.html">
+                <h3>Top Pick Presentation Templates for School</h3>
+                <time>17 JUNE 2024</time>
+              </a>
+            </article>
+          </li>
+        </ul>
       </section>
 
       <!-- Latest Blog Articles -->
       <section>
         <h2>Read Latest Design Insights</h2>
-        <form action="submit">
+        <form action="" method="">
           <label for="product">Category</label>
           <select name="product" id="product">
             <option value="all-categories">All Categories</option>
@@ -158,128 +183,91 @@
           </select>
         </form>
 
-        <!-- Latest article -->
-        <article>
-          <p class="label">GRAPHIC DESIGN</p>
-          <img src="/" alt="blog picture" />
-          <h3>
-            The Evolution of Logo Design: 2024 New and Upcoming Trends to Watch
-          </h3>
-          <time>18 JANUARY 2024</time>
-        </article>
+        <ul>
+          <li>
+            <!-- Latest article -->
+            <article>
+              <span class="label">GRAPHIC DESIGN</span>
+              <img src="/" alt="blog picture" />
+              <h3>
+                Best Practice for Dark Mode UI Design: 5 Reasons for Its
+                Increased Popularity
+              </h3>
+              <time>18 JANUARY 2024</time>
+            </article>
+          </li>
 
-        <!-- Latest article -->
-        <article>
-          <p class="label">UI/UX DESIGN</p>
-          <img src="/" alt="blog picture" />
-          <h3>The Future of Web Design: Predictions for the Next Decade</h3>
-          <time>29 AUGUST 2024</time>
-        </article>
+          <li>
+            <!-- Latest article -->
+            <article>
+              <span class="label">UI/UX DESIGN</span>
+              <img src="/" alt="blog picture" />
+              <h3>Looking for Color Inspirations for Your Food Business?</h3>
+              <time>29 AUGUST 2024</time>
+            </article>
+          </li>
 
-        <!-- Latest article -->
-        <article>
-          <p class="label">DESIGN TRENDS</p>
-          <img src="/" alt="blog picture" />
-          <h3>
-            Mastering Minimalist Design: Tips and Inspirations for Beginner
-          </h3>
-          <time>6 SEPTEMBER 2024</time>
-        </article>
+          <li>
+            <!-- Latest article -->
+            <article>
+              <span class="label">DESIGN TRENDS</span>
+              <img src="/" alt="blog picture" />
+              <h3>6 Most Recommended Dental Presentation Templates</h3>
+              <time>6 SEPTEMBER 2024</time>
+            </article>
+          </li>
 
-        <!-- Latest article -->
-        <article>
-          <p class="label">DIGITAL MARKETING</p>
-          <img src="/" alt="blog picture" />
-          <h3>
-            Social Media Strategies for Brands: Building Your Brand through
-            Content
-          </h3>
-          <time>20 OCTOBER 2024</time>
-        </article>
+          <li>
+            <!-- Latest article -->
+            <article>
+              <span class="label">GRAPHIC DESIGN</span>
+              <img src="/" alt="blog picture" />
+              <h3>
+                6 Sticker Element Recommendations for More Engaging Designs
+              </h3>
+              <time>20 OCTOBER 2024</time>
+            </article>
+          </li>
 
-        <!-- Latest article -->
-        <article>
-          <p class="label">ILLUSTRATION</p>
-          <img src="/" alt="blog picture" />
-          <h3>
-            Tips on Creating Digital Illustrations: An Interview with Greta
-            Williams
-          </h3>
-          <time>15 NOVEMBER 2024</time>
-        </article>
+          <li>
+            <!-- Latest article -->
+            <article>
+              <span class="label">UI/UX DESIGN</span>
+              <img src="/" alt="blog picture" />
+              <h3>
+                Pattern Design: The Charm to Make Your Design Works Outstanding
+              </h3>
+              <time>15 NOVEMBER 2024</time>
+            </article>
+          </li>
 
-        <!-- Latest article -->
-        <article>
-          <p class="label">UI/UX DESIGN</p>
-          <img src="/" alt="blog picture" />
-          <h3>Enhancing User Experience with Interactive Elements</h3>
-          <time>31 DECEMBER 2024</time>
-        </article>
+          <li>
+            <!-- Latest article -->
+            <article>
+              <span class="label">DESIGN TRENDSN</span>
+              <img src="/" alt="blog picture" />
+              <h3>8 Best Graphic Design Products to Sell Online</h3>
+              <time>31 DECEMBER 2024</time>
+            </article>
+          </li>
+        </ul>
 
         <!-- Pagination -->
         <div class="pagination">
-          <a href="#">&lt;</a>
-          <a href="#" class="active">&bull;</a>
-          <a href="#">&bull;</a>
-          <a href="#">&bull;</a>
-          <a href="#">&gt;</a>
+          <a href="#" class="btn-arrow">&lt;</a>
+          <a href="#" class="active">01</a>
+          <a href="#">02</a>
+          <a href="#">03</a>
+          <a href="#">...</a>
+          <a href="#">10</a>
+          <a href="#" class="btn-arrow active">&gt;</a>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <section class="footer-sitemap">
-        <!-- Subscribtion block -->
-        <h2>Stay ahead of the curve with us.</h2>
-        <form action="submit" class="newsletter">
-          <input type="email" placeholder="Enter email address ..." />
-          <button>Subscribe</button>
-        </form>
-
-        <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Company</h2>
-
-          <ul class="sitemap-list">
-            <li><a href="./index.html">Homepage v1 </a></li>
-            <li><a href="./index.html">Homepage v2 </a></li>
-            <li><a href="./index.html">Homepage v3 </a></li>
-            <li><a href="./about.html">About Us </a></li>
-            <li><a href="./creator.html">Creators </a></li>
-            <li><a href="./blog.html">Blog Articles</a></li>
-          </ul>
-        </div>
-
-        <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Products</h2>
-
-          <ul class="sitemap-list">
-            <li><a href="./category.html">Website</a></li>
-            <li><a href="./category.html">Mobile App</a></li>
-            <li><a href="./category.html">Social Media Feeds</a></li>
-            <li><a href="./category.html">Presentation</a></li>
-            <li><a href="./category.html">Product Mockups</a></li>
-            <li><a href="./category.html">Illustrations</a></li>
-          </ul>
-        </div>
-
-        <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Account</h2>
-
-          <ul class="sitemap-list">
-            <li><a href="./cart.html">Your Cart</a></li>
-            <li><a href="./checkout.html">Check Out</a></li>
-            <li><a href="#">Refund Policy</a></li>
-            <li><a href="#">Company Policy</a></li>
-            <li><a href="#">Send A Message</a></li>
-            <li><a href="#">Customer Support</a></li>
-          </ul>
-        </div>
-
-        <!-- Logo footer -->
+      <section class="footer-section">
         <div class="footer-logobox">
           <a href="./index.html" class="logo"> Pixmart. </a>
           <p class="footer-description">
@@ -288,16 +276,70 @@
           </p>
         </div>
 
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Company</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./index.html">Homepage v1 </a></li>
+            <li><a href="./index.html">Homepage v2 </a></li>
+            <li><a href="./index.html">Homepage v3 </a></li>
+            <li><a href="./about.html">About Us </a></li>
+            <li><a href="./creator.html">Creators </a></li>
+            <li><a href="./blog.html">Blog Articles</a></li>
+          </ul>
+        </section>
+
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Products</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./category.html">Website</a></li>
+            <li><a href="./category.html">Mobile App</a></li>
+            <li><a href="./category.html">Social Media Feeds</a></li>
+            <li><a href="./category.html">Presentation</a></li>
+            <li><a href="./category.html">Product Mockups</a></li>
+            <li><a href="./category.html">Illustrations</a></li>
+          </ul>
+        </section>
+
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Account</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./cart.html">Your Cart</a></li>
+            <li><a href="./checkout.html">Check Out</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Company Policy</a></li>
+            <li><a href="#">Send A Message</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </ul>
+        </section>
+
         <!-- Social media icons -->
         <ul class="footer-socialbtns">
           <li><a href="#">TW</a></li>
           <li><a href="#">IG</a></li>
           <li><a href="#">FB</a></li>
         </ul>
+
+        <!-- <h3>Subscribe to Design Newsletter</h3> -->
+        <form action="" method="post" class="newsletter">
+          <label for="email">Subscribe to Design Newsletter</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email address ..."
+            autocomplete="email"
+            required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+          <button type="submit">Subscribe</button>
+        </form>
       </section>
 
       <!-- Copyright and terms -->
-      <div class="footer-copyright">
+      <div class="footer-copyright-section">
         <ul>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms and Condition</a></li>

@@ -7,6 +7,7 @@
       name="description"
       content="From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources."
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>PixMart - Digital Products E-Commerce Website</title>
   </head>
   <!-- Homepage v2 -->
@@ -36,7 +37,7 @@
           </li>
           <li>
             <a href="./creator.html">Creators</a>
-            <p class="label">NEW</p>
+            <span class="label">NEW</span>
           </li>
           <li><a href="./blog.html">Blog</a></li>
           <li><a href="./contact.html">Contact</a></li>
@@ -45,24 +46,32 @@
 
       <!-- Search bar -->
       <div class="search-bar">
-        <input type="text" placeholder="Search for Digital Assets" />
-        <button>
-          <img src="/" alt="Search icon" />
-          Search
-        </button>
+        <form action="" method="get" role="search">
+          <label for="site-search" class="visually-hidden">
+            Search the site:
+          </label>
+          <input
+            type="search"
+            name="search"
+            id="site-search"
+            pattern="[^'\x22]+"
+            title="Invalid input"
+            aria-label="Search through site content"
+            placeholder="Search for Digital Assets"
+          />
+          <button type="submit" class="btn-search">
+            <img src="/" alt="Search icon" />
+            Search
+          </button>
+        </form>
       </div>
 
       <!-- Login and cart buttons -->
-      <div class="buttons">
-        <!-- <button class="btn-account">
-          <img src="" alt="" />
-          Profile login
-        </button> -->
-        <a href="./cart.html" class="btn-cart">
-          <img src="/" alt="Shop button" />
-          Cart
-        </a>
-      </div>
+
+      <a href="./cart.html" class="btn-cart">
+        <img src="/" alt="Shop button" />
+        Cart
+      </a>
     </header>
 
     <!-- Main -->
@@ -76,12 +85,12 @@
             projects with our premium digital design resources.
           </p>
 
-          <a href="./category.html" class="shop-btn">Shop Now</a>
+          <a href="./category.html" class="btn-shop">Shop Now</a>
           <div>
             <a href="#" class="btn-explore">
               <img src="/" alt="play button" />
+              Watch About Us
             </a>
-            Watch About Us
           </div>
         </div>
 
@@ -94,38 +103,50 @@
 
       <!-- Categories section -->
       <section class="categories">
-        <h2 style="display: none">CATEGORIES</h2>
-
         <!-- Category cards -->
-        <article class="category-card">
-          <img src="/" alt="UI Kits icon" />
-          <h3>UI Kits</h3>
-          <p>
-            Sleek and modern interfaces to vibrant and interactive UI designs.
-          </p>
-        </article>
+        <ul>
+          <li>
+            <article class="category-card">
+              <img src="/" alt="UI Kits icon" />
+              <h2>UI Kits</h2>
+              <p>
+                Sleek and modern interfaces to vibrant and interactive UI
+                designs.
+              </p>
+            </article>
+          </li>
 
-        <article class="category-card">
-          <img src="/" alt="Presentation icon" />
-          <h3>Presentation</h3>
-          <p>
-            Sleek, professional, and creative slides for any event or occasion.
-          </p>
-        </article>
+          <li>
+            <article class="category-card">
+              <img src="/" alt="Presentation icon" />
+              <h2>Presentation</h2>
+              <p>
+                Sleek, professional, and creative slides for any event or
+                occasion.
+              </p>
+            </article>
+          </li>
 
-        <article class="category-card">
-          <img src="/" alt="Social Media icon" />
-          <h3>Social Media</h3>
-          <p>Eye-catching design & interactive posts to suit any campaigns.</p>
-        </article>
+          <li>
+            <article class="category-card accent">
+              <img src="/" alt="Social Media icon" />
+              <h2>Social Media</h2>
+              <p>
+                Eye-catching design & interactive posts to suit any campaigns.
+              </p>
+            </article>
+          </li>
 
-        <article class="category-card">
-          <img src="/" alt="Illustrations icon" />
-          <h3>Illustrations</h3>
-          <p>
-            Quality illustrations with a diverse range of styles and themes.
-          </p>
-        </article>
+          <li>
+            <article class="category-card">
+              <img src="/" alt="Illustrations icon" />
+              <h2>Illustrations</h2>
+              <p>
+                Quality illustrations with a diverse range of styles and themes.
+              </p>
+            </article>
+          </li>
+        </ul>
 
         <!-- Category description block -->
 
@@ -137,7 +158,7 @@
           projects.
         </p>
 
-        <a href="./category.html" class="shop-btn">Shop Now</a>
+        <a href="./category.html" class="btn-shop">Shop Now</a>
       </section>
 
       <!-- Company's values section -->
@@ -151,29 +172,41 @@
           unbeatable prices, maximizing your creative process.
         </p>
 
-        <article class="values-card">
-          <img src="/" alt="Quality sign" />
-          <h4>Quality First</h4>
-          <p>Only publishing the highest quality digital products for you.</p>
-        </article>
+        <ul>
+          <li>
+            <article class="values-card">
+              <img src="/" alt="Quality sign" />
+              <h4>Quality First</h4>
+              <p>
+                Only publishing the highest quality digital products for you.
+              </p>
+            </article>
+          </li>
 
-        <article class="values-card">
-          <img src="/" alt="Headphones icon" />
-          <h4>Customer Support</h4>
-          <p>We have customer live 24/7 assistance for your needs.</p>
-        </article>
+          <li>
+            <article class="values-card">
+              <img src="/" alt="Headphones icon" />
+              <h4>Customer Support</h4>
+              <p>We have customer live 24/7 assistance for your needs.</p>
+            </article>
+          </li>
 
-        <article class="values-card">
-          <img src="/" alt="Rocket icon" />
-          <h4>Innovation Hub</h4>
-          <p>A platform for cutting-edge creative digital products.</p>
-        </article>
+          <li>
+            <article class="values-card">
+              <img src="/" alt="Rocket icon" />
+              <h4>Innovation Hub</h4>
+              <p>A platform for cutting-edge creative digital products.</p>
+            </article>
+          </li>
 
-        <article class="values-card">
-          <img src="/" alt="Secure sign" />
-          <h4>Secure Shopping</h4>
-          <p>We guarantee safety and privacy for every purchase process.</p>
-        </article>
+          <li>
+            <article class="values-card">
+              <img src="/" alt="Secure sign" />
+              <h4>Secure Shopping</h4>
+              <p>We guarantee safety and privacy for every purchase process.</p>
+            </article>
+          </li>
+        </ul>
       </section>
 
       <!-- Products -->
@@ -189,36 +222,34 @@
 
       <!-- Awards section -->
       <section class="awards">
-        <h2 style="display: none">AWARDS</h2>
-        <!-- <img src="/" alt="Background Award image" /> -->
-
-        <article class="awards-card">
-          <img src="/" alt="Award sign" />
-          <time>2023</time>
-          <h3>E-Commerce Innovation Award</h3>
-        </article>
-        <article class="awards-card">
-          <img src="/" alt="Award sign" />
-          <time>2022</time>
-          <h3>Best Customer Service Award</h3>
-        </article>
-        <article class="awards-card">
-          <img src="/" alt="Award sign" />
-          <time>2021</time>
-          <h3>Digital Marketplace of the Year</h3>
-        </article>
-
         <h2 class="section-name">AWARDS</h2>
         <h3 class="section-title">Celebrating Our Excellence</h3>
         <p class="section-description">
           Discover the recognition and accolades earned by our top-quality
           design assets, validating our design excellence and reliability.
         </p>
+
+        <ul>
+          <li class="awards-card">
+            <!-- <img src="/" alt="Award sign" /> :marker -->
+            <time>2023</time>
+            <h3>E-Commerce Innovation Award</h3>
+          </li>
+          <li class="awards-card">
+            <!-- <img src="/" alt="Award sign" /> :marker -->
+            <time>2022</time>
+            <h3>Best Customer Service Award</h3>
+          </li>
+          <li class="awards-card">
+            <!-- <img src="/" alt="Award sign" /> :marker -->
+            <time>2021</time>
+            <h3>Digital Marketplace of the Year</h3>
+          </li>
+        </ul>
       </section>
 
       <!-- Testimonials section -->
       <section class="testimonials">
-        <!-- <img src="/" alt="Background image"> -->
         <h2 class="section-name">TESTIMONIALS</h2>
         <h3 class="section-title">Hear from Our Customers</h3>
 
@@ -230,12 +261,65 @@
             every time. Highly recommended for any creatives looking to elevate
             their work.
           </p>
-          <img src="/" alt="Profile photo" />
+          <img src="/" alt="Samuel Treavor's profile photo" />
           <h4>Samuel Treavor</h4>
-          <div>&starf; &starf; &starf; &starf; &starf;</div>
+          <div><img src="/" alt="" /></div>
+          <!-- <form action="" method="post">
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="feedback-star"
+                  value="star"
+                  id="star-one"
+                  checked
+                />
+                <label for="star-one">star</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="feedback-star"
+                  value="star"
+                  id="star-two"
+                  checked
+                />
+                <label for="star-two">star</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="feedback-star"
+                  value="star"
+                  id="star-three"
+                  checked
+                />
+                <label for="star-three">star</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="feedback-star"
+                  value="star"
+                  id="star-four"
+                  checked
+                />
+                <label for="star-four">star</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="feedback-star"
+                  value="star"
+                  id="star-five"
+                />
+                <label for="star-five">star</label>
+              </li>
+            </ul>
+          </form> -->
 
-          <button>&lt;</button>
-          <button>&gt;</button>
+          <button type="button">&lt;</button>
+          <button type="button">&gt;</button>
         </article>
       </section>
 
@@ -246,48 +330,57 @@
           Choose The Perfect Plan for Creative Potential
         </h3>
 
-        <!-- Price Plan -->
-        <article class="membership-plan">
-          <h4>Standard Membership</h4>
-          <p><span>$14.99</span> / Month</p>
-          <ul>
-            <li>Enhanced Resource Access</li>
-            <li>Monthly Credits</li>
-            <li>Priority Customer Support</li>
-            <li>Community Features Access</li>
-          </ul>
-          <button>Get This Plan</button>
-        </article>
-        <!-- Price Plan -->
-        <article class="membership-plan">
-          <p class="label">BEST SELLER</p>
-          <h4>Plus Membership</h4>
-          <p><span>$29.99</span> / Month</p>
-          <ul>
-            <li>All Standard Benefits</li>
-            <li>Increased Monthly Credits</li>
-            <li>Early Access to New Releases</li>
-            <li>Member-Only Offers</li>
-          </ul>
-          <button>Get This Plan</button>
-        </article>
-        <!-- Price Plan -->
-        <article class="membership-plan">
-          <h4>Pro Membership</h4>
-          <p><span>$49.99</span> / Month</p>
-          <ul>
-            <li>All Plus Benefits</li>
-            <li>Unlimited Downloads</li>
-            <li>Custom Licensing</li>
-            <li>Direct Creator Collaboration</li>
-          </ul>
-          <button>Get This Plan</button>
-        </article>
+        <ul>
+          <li>
+            <!-- Price Plan -->
+            <article class="membership-plan">
+              <h4>Standard Membership</h4>
+              <p><span>$14.99</span> / Month</p>
+              <ul>
+                <li>Enhanced Resource Access</li>
+                <li>Monthly Credits</li>
+                <li>Priority Customer Support</li>
+                <li>Community Features Access</li>
+              </ul>
+              <button type="submit">Get This Plan</button>
+            </article>
+          </li>
+
+          <li>
+            <!-- Price Plan -->
+            <article class="membership-plan accent">
+              <span class="label">BEST SELLER</span>
+              <h4>Plus Membership</h4>
+              <p><span>$29.99</span> / Month</p>
+              <ul>
+                <li>All Standard Benefits</li>
+                <li>Increased Monthly Credits</li>
+                <li>Early Access to New Releases</li>
+                <li>Member-Only Offers</li>
+              </ul>
+              <button type="submit">Get This Plan</button>
+            </article>
+          </li>
+
+          <li>
+            <!-- Price Plan -->
+            <article class="membership-plan">
+              <h4>Pro Membership</h4>
+              <p><span>$49.99</span> / Month</p>
+              <ul>
+                <li>All Plus Benefits</li>
+                <li>Unlimited Downloads</li>
+                <li>Custom Licensing</li>
+                <li>Direct Creator Collaboration</li>
+              </ul>
+              <button type="submit">Get This Plan</button>
+            </article>
+          </li>
+        </ul>
       </section>
 
       <!-- Brands section -->
-      <section class="brands">
-        <h2 style="display: none">BRANDS</h2>
+      <div class="brands">
         <ul>
           <li>
             <img src="/" alt="Brand logo" />
@@ -308,13 +401,13 @@
             <img src="/" alt="Brand logo" />
           </li>
         </ul>
-      </section>
+      </div>
 
       <!-- FAQs section -->
       <section class="faqs">
         <h2 class="section-name">F.A.Q</h2>
         <h3 class="section-title">Answers to Your Questions</h3>
-        <button>Ask Us A Question</button>
+        <button type="submit">Ask Us A Question</button>
 
         <details>
           <summary class="faqs-name">Can I request a refund?</summary>
@@ -322,7 +415,7 @@
           <p></p>
         </details>
 
-        <details>
+        <details open>
           <summary>How do I access my purchased products?</summary>
           <p>
             Accessing your purchased products is seamless and hassle-free on our
@@ -353,39 +446,38 @@
 
       <!-- Blog secion -->
       <section class="blog">
-        <h2 style="display: none">BLOG</h2>
-        <h3>Latest Expert Design Insights</h3>
+        <h2 class="section-title">Latest Expert Design Insights</h2>
         <a href="./blog.html">Explore All Articles &gt;</a>
 
         <!-- Blog articles -->
 
         <article class="blog-card">
-          <p class="label">TYPOGRAPHY</p>
+          <span class="label">TYPOGRAPHY</span>
           <img src="/" alt="Blog image" />
-          <h4>
+          <h3>
             Mastering the Art of Typography: Tips for More Eye -Catching Designs
             in Style for 2024
-          </h4>
+          </h3>
           <time datetime="2024-04-05">5 APRIL 2024</time>
         </article>
 
         <article class="blog-card">
-          <p class="label">UI/UX DESIGN</p>
+          <span class="label">UI/UX DESIGN</span>
           <img src="/" alt="Blog image" />
-          <h4>
+          <h3>
             The Ultimate Guide to UI/UX: Enhancing App User Experience with
             Design
-          </h4>
+          </h3>
           <time datetime="2024-03-16">16 MARCH 2024</time>
         </article>
 
         <article class="blog-card">
-          <p class="label">DESIGN TRENDS</p>
+          <span class="label">DESIGN TRENDS</span>
           <img src="/" alt="Blog image" />
-          <h4>
+          <h3>
             2024’s Top Graphic Design Trends: What Would Be Shaping the Future
             of Design?
-          </h4>
+          </h3>
           <time datetime="2024-02-27">27 FEBRUARY 2024</time>
         </article>
       </section>
@@ -396,13 +488,13 @@
         <h3 class="section-title">
           Elevate Your Project with Premium Digital Assets
         </h3>
-        <a href="./category.html" class="shop-btn">Shop Now</a>
+        <a href="./category.html" class="btn-shop">Shop Now</a>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <section class="footer-sitemap">
+      <section class="footer-section">
         <div class="footer-logobox">
           <a href="./index.html" class="logo"> Pixmart. </a>
           <p class="footer-description">
@@ -410,11 +502,11 @@
             comprehensive range of products and services.
           </p>
         </div>
-        <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Company</h2>
 
-          <ul class="sitemap-list">
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Company</h2>
+          <ul class="footer-nav-list">
             <li><a href="./index.html">Homepage v1 </a></li>
             <li><a href="./index.html">Homepage v2 </a></li>
             <li><a href="./index.html">Homepage v3 </a></li>
@@ -422,13 +514,12 @@
             <li><a href="./creator.html">Creators </a></li>
             <li><a href="./blog.html">Blog Articles</a></li>
           </ul>
-        </div>
+        </section>
 
         <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Products</h2>
-
-          <ul class="sitemap-list">
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Products</h2>
+          <ul class="footer-nav-list">
             <li><a href="./category.html">Website</a></li>
             <li><a href="./category.html">Mobile App</a></li>
             <li><a href="./category.html">Social Media Feeds</a></li>
@@ -436,13 +527,12 @@
             <li><a href="./category.html">Product Mockups</a></li>
             <li><a href="./category.html">Illustrations</a></li>
           </ul>
-        </div>
+        </section>
 
         <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Account</h2>
-
-          <ul class="sitemap-list">
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Account</h2>
+          <ul class="footer-nav-list">
             <li><a href="./cart.html">Your Cart</a></li>
             <li><a href="./checkout.html">Check Out</a></li>
             <li><a href="#">Refund Policy</a></li>
@@ -450,7 +540,7 @@
             <li><a href="#">Send A Message</a></li>
             <li><a href="#">Customer Support</a></li>
           </ul>
-        </div>
+        </section>
 
         <!-- Social media icons -->
         <ul class="footer-socialbtns">
@@ -459,15 +549,24 @@
           <li><a href="#">FB</a></li>
         </ul>
 
-        <h3>Subscribe to Design Newsletter</h3>
-        <form action="submit" class="newsletter">
-          <input type="email" placeholder="Enter email address ..." />
-          <button>Subscribe</button>
+        <!-- <h3>Subscribe to Design Newsletter</h3> -->
+        <form action="" method="post" class="newsletter">
+          <label for="email">Subscribe to Design Newsletter</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email address ..."
+            autocomplete="email"
+            required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+          <button type="submit">Subscribe</button>
         </form>
       </section>
 
       <!-- Copyright and terms -->
-      <div class="footer-copyright">
+      <div class="footer-copyright-section">
         <ul>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms and Condition</a></li>

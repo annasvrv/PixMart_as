@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="View your cart" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Cart - PixMart</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
           </li>
           <!-- Dropdown menu of products -->
           <li>
-            <a href="#" class="dropdown active">Products</a>
+            <a href="#" class="dropdown">Products</a>
             <ul class="dropdown-content">
               <li><a href="./category.html">Website</a></li>
               <li><a href="./category.html">Mobile App</a></li>
@@ -32,7 +33,7 @@
           </li>
           <li>
             <a href="./creator.html">Creators</a>
-            <p class="label">NEW</p>
+            <span class="label">NEW</span>
           </li>
           <li><a href="./blog.html">Blog</a></li>
           <li><a href="./contact.html">Contact</a></li>
@@ -41,24 +42,32 @@
 
       <!-- Search bar -->
       <div class="search-bar">
-        <input type="text" placeholder="Search for Digital Assets" />
-        <button>
-          <img src="/" alt="Search icon" />
-          Search
-        </button>
+        <form action="" method="get" role="search">
+          <label for="site-search" class="visually-hidden">
+            Search the site:
+          </label>
+          <input
+            type="search"
+            name="search"
+            id="site-search"
+            pattern="[^'\x22]+"
+            title="Invalid input"
+            aria-label="Search through site content"
+            placeholder="Search for Digital Assets"
+          />
+          <button type="submit" class="btn-search">
+            <img src="/" alt="Search icon" />
+            Search
+          </button>
+        </form>
       </div>
 
       <!-- Login and cart buttons -->
-      <div class="buttons">
-        <!-- <button class="btn-account">
-          <img src="" alt="" />
-          Profile login
-        </button> -->
-        <a href="./cart.html" class="btn-cart">
-          <img src="/" alt="Shop button" />
-          Cart
-        </a>
-      </div>
+
+      <a href="./cart.html" class="btn-cart">
+        <img src="/" alt="Shop button" />
+        Cart
+      </a>
     </header>
 
     <!-- Main -->
@@ -67,68 +76,197 @@
       <a href="./category.html">Back to Shopping</a>
 
       <!-- Cart items -->
-      <article>
-        <img src="/" alt="Product item" />
-        <h2></h2>
-        <button>Remove</button>
-        <p></p>
-        
-      </article>
+      <ul>
+        <li>
+          <article>
+            <img src="/" alt="Product item" />
+            <h2>Vonix – Blue Yellow Modern</h2>
+            <button>Remove</button>
+            <p>Presentation</p>
+            <form action="" method="">
+              <fieldset>
+                <legend>License Type</legend>
+                <select name="license" id="license">
+                  <option value="standard">Standard License</option>
+                  <option value="extended">Extended Licenses</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Qty</legend>
+                <div class="qty-input">
+                  <button
+                    type="button"
+                    class="qty-count qty-count-minus"
+                    data-action="minus"
+                  >
+                    -
+                  </button>
+                  <input
+                    class="product-qty"
+                    type="number"
+                    name="product-qty"
+                    min="1"
+                    max="2"
+                    value="1"
+                  />
+                  <button
+                    type="button"
+                    class="qty-count qty-count-add"
+                    data-action="add"
+                  >
+                    +
+                  </button>
+                </div>
+              </fieldset>
+              <p class="sum-price">$11.00</p>
+            </form>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <img src="/" alt="Product item" />
+            <h2>SkyHomes</h2>
+            <button>Remove</button>
+            <p>Landing Page</p>
+            <form action="" method="">
+              <fieldset>
+                <legend>License Type</legend>
+                <select name="license" id="license">
+                  <option value="standard">Standard License</option>
+                  <option value="extended">Extended Licenses</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Qty</legend>
+                <div class="qty-input">
+                  <button
+                    type="button"
+                    class="qty-count qty-count-minus"
+                    data-action="minus"
+                  >
+                    -
+                  </button>
+                  <input
+                    class="product-qty"
+                    type="number"
+                    name="product-qty"
+                    min="0"
+                    max="2"
+                    value="1"
+                  />
+                  <button
+                    type="button"
+                    class="qty-count qty-count-add"
+                    data-action="add"
+                  >
+                    +
+                  </button>
+                </div>
+              </fieldset>
+              <p class="sum-price">$49.00</p>
+            </form>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <img src="/" alt="Product item" />
+            <h2>MyEstate – Real Estate Hero Section</h2>
+            <button>Remove</button>
+            <p>Figma Template</p>
+            <form action="" method="">
+              <fieldset>
+                <legend>License Type</legend>
+                <select name="license" id="license">
+                  <option value="standard">Standard License</option>
+                  <option value="extended">Extended Licenses</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Qty</legend>
+                <div class="qty-input">
+                  <button
+                    type="button"
+                    class="qty-count qty-count-minus"
+                    data-action="minus"
+                  >
+                    -
+                  </button>
+                  <input
+                    class="product-qty"
+                    type="number"
+                    name="product-qty"
+                    min="0"
+                    max="2"
+                    value="1"
+                  />
+                  <button
+                    type="button"
+                    class="qty-count qty-count-add"
+                    data-action="add"
+                  >
+                    +
+                  </button>
+                </div>
+              </fieldset>
+              <p class="sum-price">$5.00</p>
+            </form>
+          </article>
+        </li>
+      </ul>
+      <section>
+        <h2>Membership Promotion</h2>
+        <p>
+          Choose our membership for 10% discount in every purchase, or continue
+          without our membership for regular pricing in payment.
+        </p>
+
+        <form action="" method="">
+          <div>
+            <input
+              type="checkbox"
+              name="price"
+              value="regular"
+              id="regular-price"
+            />
+            <label for="regular-price">
+              Regular Price <span>$65.00</span>
+            </label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="price"
+              value="membership"
+              id="membership"
+              checked
+            />
+            <label for="membership">
+              Membership (10% Off) <span>$58.50</span>
+            </label>
+          </div>
+          <p>Sub Total <span>$65.00</span></p>
+          <div>
+            <label for="coupon">Got any coupon code?</label>
+            <input
+              type="text"
+              name="coupon"
+              id="coupon"
+              placeholder="Enter coupon code ..."
+            />
+            <button type="submit">APPLY</button>
+          </div>
+        </form>
+        <p>Total <span>$58.50</span></p>
+        <a href="./checkout.html">Proceed to Checkout</a>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <section class="footer-sitemap">
-        <!-- Subscribtion block -->
-        <h2>Stay ahead of the curve with us.</h2>
-        <form action="submit" class="newsletter">
-          <input type="email" placeholder="Enter email address ..." />
-          <button>Subscribe</button>
-        </form>
-
-        <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Company</h2>
-
-          <ul class="sitemap-list">
-            <li><a href="./index.html">Homepage v1 </a></li>
-            <li><a href="./index.html">Homepage v2 </a></li>
-            <li><a href="./index.html">Homepage v3 </a></li>
-            <li><a href="./about.html">About Us </a></li>
-            <li><a href="./creator.html">Creators </a></li>
-            <li><a href="./blog.html">Blog Articles</a></li>
-          </ul>
-        </div>
-
-        <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Products</h2>
-
-          <ul class="sitemap-list">
-            <li><a href="./category.html">Website</a></li>
-            <li><a href="./category.html">Mobile App</a></li>
-            <li><a href="./category.html">Social Media Feeds</a></li>
-            <li><a href="./category.html">Presentation</a></li>
-            <li><a href="./category.html">Product Mockups</a></li>
-            <li><a href="./category.html">Illustrations</a></li>
-          </ul>
-        </div>
-
-        <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Account</h2>
-
-          <ul class="sitemap-list">
-            <li><a href="./cart.html">Your Cart</a></li>
-            <li><a href="./checkout.html">Check Out</a></li>
-            <li><a href="#">Refund Policy</a></li>
-            <li><a href="#">Company Policy</a></li>
-            <li><a href="#">Send A Message</a></li>
-            <li><a href="#">Customer Support</a></li>
-          </ul>
-        </div>
-
-        <!-- Logo footer -->
+      <section class="footer-section">
         <div class="footer-logobox">
           <a href="./index.html" class="logo"> Pixmart. </a>
           <p class="footer-description">
@@ -137,16 +275,70 @@
           </p>
         </div>
 
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Company</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./index.html">Homepage v1 </a></li>
+            <li><a href="./index.html">Homepage v2 </a></li>
+            <li><a href="./index.html">Homepage v3 </a></li>
+            <li><a href="./about.html">About Us </a></li>
+            <li><a href="./creator.html">Creators </a></li>
+            <li><a href="./blog.html">Blog Articles</a></li>
+          </ul>
+        </section>
+
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Products</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./category.html">Website</a></li>
+            <li><a href="./category.html">Mobile App</a></li>
+            <li><a href="./category.html">Social Media Feeds</a></li>
+            <li><a href="./category.html">Presentation</a></li>
+            <li><a href="./category.html">Product Mockups</a></li>
+            <li><a href="./category.html">Illustrations</a></li>
+          </ul>
+        </section>
+
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Account</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./cart.html">Your Cart</a></li>
+            <li><a href="./checkout.html">Check Out</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Company Policy</a></li>
+            <li><a href="#">Send A Message</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </ul>
+        </section>
+
         <!-- Social media icons -->
         <ul class="footer-socialbtns">
           <li><a href="#">TW</a></li>
           <li><a href="#">IG</a></li>
           <li><a href="#">FB</a></li>
         </ul>
+
+        <!-- <h3>Subscribe to Design Newsletter</h3> -->
+        <form action="" method="post" class="newsletter">
+          <label for="email">Subscribe to Design Newsletter</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email address ..."
+            autocomplete="email"
+            required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+          <button type="submit">Subscribe</button>
+        </form>
       </section>
 
       <!-- Copyright and terms -->
-      <div class="footer-copyright">
+      <div class="footer-copyright-section">
         <ul>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms and Condition</a></li>

@@ -7,7 +7,8 @@
       name="description"
       content="Mastering the Art of Typography: Tips for Eye-Catching Designs for 2024"
     />
-    <title>PixMart Blog Article</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>PixMart - Blog Article</title>
   </head>
   <body>
     <!-- Header -->
@@ -35,52 +36,60 @@
           </li>
           <li>
             <a href="./creator.html">Creators</a>
-            <p class="label">NEW</p>
+            <span class="label">NEW</span>
           </li>
-          <li><a href="./blog.html" class="active">Blog</a></li>
+          <li><a href="./blog.html">Blog</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
 
       <!-- Search bar -->
       <div class="search-bar">
-        <input type="text" placeholder="Search for Digital Assets" />
-        <button>
-          <img src="/" alt="Search icon" />
-          Search
-        </button>
+        <form action="" method="get" role="search">
+          <label for="site-search" class="visually-hidden">
+            Search the site:
+          </label>
+          <input
+            type="search"
+            name="search"
+            id="site-search"
+            pattern="[^'\x22]+"
+            title="Invalid input"
+            aria-label="Search through site content"
+            placeholder="Search for Digital Assets"
+          />
+          <button type="submit" class="btn-search">
+            <img src="/" alt="Search icon" />
+            Search
+          </button>
+        </form>
       </div>
 
       <!-- Login and cart buttons -->
-      <div class="buttons">
-        <!-- <button class="btn-account">
-          <img src="" alt="" />
-          Profile login
-        </button> -->
-        <a href="./cart.html" class="btn-cart">
-          <img src="/" alt="Shop button" />
-          Cart
-        </a>
-      </div>
+
+      <a href="./cart.html" class="btn-cart">
+        <img src="/" alt="Shop button" />
+        Cart
+      </a>
     </header>
 
     <!-- Main -->
     <main>
-      <p class="label">TYPOGRAPHY</p>
+      <span class="label">TYPOGRAPHY</span>
       <h1>
         Mastering the Art of Typography: Tips for Eye-Catching Designs for 2024
       </h1>
+      <img src="/" alt="blog photo" />
 
       <!-- Blog Content -->
       <section class="blog-content">
-        <img src="/" alt="blog photo" />
         <aside>
           <img src="/" alt="Profile photo" />
           <h2 class="author-name">Emma Clarke</h2>
           <time>April 10, 2024</time>
 
           <!-- Categories -->
-          <div class="categories-card">
+          <section class="categories-card">
             <h2>Categories</h2>
             <ul>
               <li>
@@ -94,29 +103,29 @@
               <li>Illustration</li>
               <li>Digital Marketing</li>
             </ul>
-          </div>
+          </section>
 
-          <div class="latest-card">
+          <section class="latest-card">
             <h2>Latest Articles</h2>
 
             <ul class="latest-list">
               <li>
-                <h3>
+                <a href="./blog-details.html">
                   2024’s Top Graphic Design Trends: What’s Shaping the Future of
                   Design?
-                </h3>
+                </a>
                 <time>March 15, 2024</time>
               </li>
 
               <li>
-                <h3>
+                <a href="./blog-details.html">
                   The Ultimate Guide to UI/UX: Enhancing User Experience with
                   Design in Web and App Design
-                </h3>
+                </a>
                 <time>February 20, 2024</time>
               </li>
             </ul>
-          </div>
+          </section>
         </aside>
 
         <p>
@@ -131,7 +140,7 @@
 
         <ol class="article-list">
           <li>
-            <h3>Understand Typeface Selection</h3>
+            <h2>Understand Typeface Selection</h2>
 
             <p>
               The choice of typeface is foundational in setting the tone of your
@@ -145,7 +154,7 @@
           </li>
 
           <li>
-            <h3>Create a Typographic Hierarchy</h3>
+            <h2>Create a Typographic Hierarchy</h2>
             <p>
               A well-defined typographic hierarchy organizes information, making
               it easier for readers to navigate through the content. Use
@@ -163,7 +172,7 @@
           </li>
 
           <li>
-            <h3>Experiment with Alignment</h3>
+            <h2>Experiment with Alignment</h2>
             <p>
               While center and right alignments have their place, left-aligned
               text is generally the most legible and comfortable for readers,
@@ -173,7 +182,7 @@
             </p>
           </li>
           <li>
-            <h3>Embrace White Space</h3>
+            <h2>Embrace White Space</h2>
             <p>
               White space, or negative space, is a powerful tool in typography.
               It helps in decluttering designs and allows each typographic
@@ -202,41 +211,43 @@
         <h2>Related Articles</h2>
         <a href="./blog.html">Explore All Articles &gt;</a>
 
-        <!-- Related Article -->
-        <article class="related-article">
-          <img src="/" alt="Blog article picture" />
-          <p class="label">BRANDING</p>
-          <h3>
-            Building a Brand Identity: Essential Starting Steps for Designers
-          </h3>
-          <time>6 MAY 2024</time>
-        </article>
+        <ul>
+          <li>
+            <!-- Related Article -->
+            <article class="related-article">
+              <img src="/" alt="Blog article picture" />
+              <span class="label">BRANDING</span>
+              <h3>Best Practice for Dark Mode UI Design</h3>
+              <time>6 MAY 2024</time>
+            </article>
+          </li>
 
-        <!-- Related Article -->
-        <article class="related-article">
-          <img src="/" alt="Blog article picture" />
-          <p class="label">GRAPHIC DESIGN</p>
-          <h3>
-            Unlocking New Creativity: Essential Upcoming Design Apps for 2024
-          </h3>
-          <time>28 JULY 2024</time>
-        </article>
+          <li>
+            <!-- Related Article -->
+            <article class="related-article">
+              <img src="/" alt="Blog article picture" />
+              <span class="label">GRAPHIC DESIGN</span>
+              <h3>Looking for Color Inspirations for Your Food Business?</h3>
+              <time>28 JULY 2024</time>
+            </article>
+          </li>
 
-        <!-- Related Article -->
-        <article class="related-article">
-          <img src="/" alt="Blog article picture" />
-          <p class="label">DIGITAL MARKETING</p>
-          <h3>
-            Leveraging Digital Tools for Effective Brand Digital Promotion
-          </h3>
-          <time>17 JUNE 2024</time>
-        </article>
+          <li>
+            <!-- Related Article -->
+            <article class="related-article">
+              <img src="/" alt="Blog article picture" />
+              <span class="label">DIGITAL MARKETING</span>
+              <h3>6 Most Recommended Dental Presentation Templates</h3>
+              <time>17 JUNE 2024</time>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <section class="footer-sitemap">
+      <section class="footer-section">
         <div class="footer-logobox">
           <a href="./index.html" class="logo"> Pixmart. </a>
           <p class="footer-description">
@@ -244,11 +255,11 @@
             comprehensive range of products and services.
           </p>
         </div>
-        <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Company</h2>
 
-          <ul class="sitemap-list">
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Company</h2>
+          <ul class="footer-nav-list">
             <li><a href="./index.html">Homepage v1 </a></li>
             <li><a href="./index.html">Homepage v2 </a></li>
             <li><a href="./index.html">Homepage v3 </a></li>
@@ -256,13 +267,12 @@
             <li><a href="./creator.html">Creators </a></li>
             <li><a href="./blog.html">Blog Articles</a></li>
           </ul>
-        </div>
+        </section>
 
         <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Products</h2>
-
-          <ul class="sitemap-list">
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Products</h2>
+          <ul class="footer-nav-list">
             <li><a href="./category.html">Website</a></li>
             <li><a href="./category.html">Mobile App</a></li>
             <li><a href="./category.html">Social Media Feeds</a></li>
@@ -270,13 +280,12 @@
             <li><a href="./category.html">Product Mockups</a></li>
             <li><a href="./category.html">Illustrations</a></li>
           </ul>
-        </div>
+        </section>
 
         <!-- Sitemap section -->
-        <div class="sitemap">
-          <h2 class="sitemap-title">Account</h2>
-
-          <ul class="sitemap-list">
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Account</h2>
+          <ul class="footer-nav-list">
             <li><a href="./cart.html">Your Cart</a></li>
             <li><a href="./checkout.html">Check Out</a></li>
             <li><a href="#">Refund Policy</a></li>
@@ -284,7 +293,7 @@
             <li><a href="#">Send A Message</a></li>
             <li><a href="#">Customer Support</a></li>
           </ul>
-        </div>
+        </section>
 
         <!-- Social media icons -->
         <ul class="footer-socialbtns">
@@ -293,15 +302,24 @@
           <li><a href="#">FB</a></li>
         </ul>
 
-        <h3>Subscribe to Design Newsletter</h3>
-        <form action="submit" class="newsletter">
-          <input type="email" placeholder="Enter email address ..." />
-          <button>Subscribe</button>
+        <!-- <h3>Subscribe to Design Newsletter</h3> -->
+        <form action="" method="post" class="newsletter">
+          <label for="email">Subscribe to Design Newsletter</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email address ..."
+            autocomplete="email"
+            required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+          <button type="submit">Subscribe</button>
         </form>
       </section>
 
       <!-- Copyright and terms -->
-      <div class="footer-copyright">
+      <div class="footer-copyright-section">
         <ul>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms and Condition</a></li>

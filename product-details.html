@@ -7,7 +7,8 @@
       name="description"
       content="Explore our new exclusive digital design assets and graphic collections today!"
     />
-    <title>Broduct Details</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Product Details</title>
   </head>
   <body>
     <!-- Header -->
@@ -19,7 +20,7 @@
       <nav>
         <ul class="nav-menu">
           <li>
-            <a href="./about.html" class="active">About</a>
+            <a href="./about.html">About</a>
           </li>
           <!-- Dropdown menu of products -->
           <li>
@@ -35,7 +36,7 @@
           </li>
           <li>
             <a href="./creator.html">Creators</a>
-            <p class="label">NEW</p>
+            <span class="label">NEW</span>
           </li>
           <li><a href="./blog.html">Blog</a></li>
           <li><a href="./contact.html">Contact</a></li>
@@ -44,23 +45,32 @@
 
       <!-- Search bar -->
       <div class="search-bar">
-        <input type="text" placeholder="Search for Digital Assets" />
-        <button>
-          <img src="/" alt="Search icon" />
-          Search
-        </button>
+        <form action="" method="get" role="search">
+          <label for="site-search" class="visually-hidden">
+            Search the site:
+          </label>
+          <input
+            type="search"
+            name="search"
+            id="site-search"
+            pattern="[^'\x22]+"
+            title="Invalid input"
+            aria-label="Search through site content"
+            placeholder="Search for Digital Assets"
+          />
+          <button type="submit" class="btn-search">
+            <img src="/" alt="Search icon" />
+            Search
+          </button>
+        </form>
       </div>
 
       <!-- Login and cart buttons -->
-      <div class="buttons">
-        <!-- <button class="btn-account">
-          <img src="/" alt="Login button" />
-        </button> -->
-        <a href="./cart.html" class="btn-cart">
-          <img src="/" alt="Shop button" />
-          Cart
-        </a>
-      </div>
+
+      <a href="./cart.html" class="btn-cart">
+        <img src="/" alt="Shop button" />
+        Cart
+      </a>
     </header>
 
     <!-- Main -->
@@ -83,16 +93,69 @@
             />
 
             <!-- Image Galery -->
-            <button>&lt;</button>
+            <button type="button">&lt;</button>
             <img src="/" alt="Product Assets" />
             <img src="/" alt="Product Assets" />
             <img src="/" alt="Product Assets" />
             <img src="/" alt="Product Assets" />
-            <button>&gt;</button>
+            <button type="button">&gt;</button>
           </figure>
         </div>
 
         <div class="product-info-box">
+          <!-- <form action="" method="post">
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="feedback-star"
+                  value="star"
+                  id="star-one"
+                  checked
+                />
+                <label for="star-one">star</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="feedback-star"
+                  value="star"
+                  id="star-two"
+                  checked
+                />
+                <label for="star-two">star</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="feedback-star"
+                  value="star"
+                  id="star-three"
+                  checked
+                />
+                <label for="star-three">star</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="feedback-star"
+                  value="star"
+                  id="star-four"
+                  checked
+                />
+                <label for="star-four">star</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="feedback-star"
+                  value="star"
+                  id="star-five"
+                />
+                <label for="star-five">star</label>
+              </li>
+            </ul>
+          </form> -->
           <p class="rating">&starf; &starf; &starf; &starf; &starf; (50)</p>
           <h1>Griya – Real Estate Dashboard UI</h1>
           <img src="/" alt="Profile photo" />
@@ -103,51 +166,63 @@
             impact online.
           </p>
 
+          <!-- border line -->
           <hr />
 
-          <dl>
-            <dt>
-              <input type="checkbox" checked />
-              <p>Standard License</p>
-            </dt>
-            <dd>$16.00</dd>
+          <form action="" method="post">
+            <fieldset>
+              <input
+                type="checkbox"
+                name="license"
+                value="standard license"
+                id="standard-license"
+              />
+              <label for="standard-license">
+                Standard License <span>$16.00</span>
+              </label>
+              <input
+                type="checkbox"
+                name="license"
+                value="extended licenses"
+                id="extended-licenses"
+              />
+              <label for="extended-licenses">
+                Extended Licenses<span>$49.00</span>
+              </label>
+            </fieldset>
 
-            <dt>
-              <input type="checkbox" />
-              <p>Extended Licenses</p>
-            </dt>
-            <dd>$49.00</dd>
-          </dl>
-
-          <div class="qty-input">
-            <button
-              class="qty-count qty-count--minus"
-              data-action="minus"
-              type="button"
-            >
-              -
-            </button>
-            <input
-              class="product-qty"
-              type="number"
-              name="product-qty"
-              min="0"
-              max="2"
-              value="1"
-            />
-            <button
-              class="qty-count qty-count--add"
-              data-action="add"
-              type="button"
-            >
-              +
-            </button>
-          </div>
-
-          <p class="sum-price">$16.00</p>
-
-          <a href="./cart.html">Preview</a>
-          <a href="./cart.html">Purchase Now</a>
+            <fieldset>
+              <div class="qty-input">
+                <button
+                  type="button"
+                  class="qty-count qty-count-minus"
+                  data-action="minus"
+                >
+                  -
+                </button>
+                <input
+                  class="product-qty"
+                  type="number"
+                  name="product-qty"
+                  min="0"
+                  max="2"
+                  value="1"
+                />
+                <button
+                  type="button"
+                  class="qty-count qty-count-add"
+                  data-action="add"
+                >
+                  +
+                </button>
+              </div>
+              <p class="sum-price">$16.00</p>
+            </fieldset>
+            <div>
+              <a href="./cart.html">Preview</a>
+              <a href="./cart.html">Purchase Now</a>
+            </div>
+          </form>
         </div>
       </section>
 
@@ -192,7 +267,7 @@
               <img src="/" alt="Calendar icon" />
               Created
             </dt>
-            <dd>September 1, 2024</dd>
+            <dd><time datetime="2024-09-01">September 1, 2024</time></dd>
 
             <dt>
               <img src="/" alt="Folder icon" />
@@ -234,61 +309,61 @@
         <a href="./category.html"> Explore All Works &gt; </a>
 
         <ul>
-          <!-- Product Item -->
-          <li>
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h3 class="product-title">SkyHomes</h3>
-                <p class="product-description">Real Estate Landing Page</p>
-              </a>
-              <p class="item-price">$11.00</p>
-              <button class="cart-btn">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <!-- Product Item -->
-          <li>
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h3 class="product-title">Gaya</h3>
-                <p class="product-description">Fashion Store Mobile App</p>
-              </a>
-              <p class="item-price">$20.00</p>
-              <button class="cart-btn">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <!-- Product Item -->
+          <!-- Product Item 1 -->
           <li>
             <article class="product-item">
               <a href="./product-details.html">
                 <img src="/" alt="Product Asset" />
                 <h3 class="product-title">MyEstate</h3>
-                <p class="product-description">Real Estate Hero Section</p>
+                <p class="product-description">Figma Template</p>
               </a>
-              <p class="item-price">$5.00</p>
-              <button class="cart-btn">
+              <p class="item-price">$6.00</p>
+              <button type="button" class="btn-item-cart">
                 <img src="/" alt="Shop icon" />
               </button>
             </article>
           </li>
 
-          <!-- Product Item -->
+          <!-- Product Item 2 -->
           <li>
             <article class="product-item">
               <a href="./product-details.html">
                 <img src="/" alt="Product Asset" />
-                <h3 class="product-title">Thinky</h3>
-                <p class="product-description">Blog News Mobile App</p>
+                <h3 class="product-title">Avery</h3>
+                <p class="product-description">Presentation</p>
               </a>
-              <p class="item-price">$18.00</p>
-              <button class="cart-btn">
+              <p class="item-price">$10.00</p>
+              <button type="button" class="btn-item-cart active">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+
+          <!-- Product Item 3 -->
+          <li>
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h3 class="product-title">Jaxon</h3>
+                <p class="product-description">Presentation</p>
+              </a>
+              <p class="item-price">$20.00</p>
+              <button type="button" class="btn-item-cart">
+                <img src="/" alt="Shop icon" />
+              </button>
+            </article>
+          </li>
+
+          <!-- Product Item 4 -->
+          <li>
+            <article class="product-item">
+              <a href="./product-details.html">
+                <img src="/" alt="Product Asset" />
+                <h3 class="product-title">Onyx</h3>
+                <p class="product-description">Presentation</p>
+              </a>
+              <p class="item-price">$8.00</p>
+              <button type="button" class="btn-item-cart">
                 <img src="/" alt="Shop icon" />
               </button>
             </article>
@@ -303,14 +378,14 @@
           Explore our new exclusive digital design assets and graphic
           collections today!
         </h3>
-        <a href="./category.html" class="shop-btn">Shop Now</a>
+        <a href="./category.html" class="btn-shop">Shop Now</a>
         <img src="/" alt="Product Assets" />
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer  added same footer for consistent design -->
     <footer>
-      <section class="footer-sitemap">
+      <section class="footer-section">
         <div class="footer-logobox">
           <a href="./index.html" class="logo"> Pixmart. </a>
           <p class="footer-description">
@@ -320,7 +395,91 @@
         </div>
 
         <!-- Sitemap section -->
-        <div class="sitemap">
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Company</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./index.html">Homepage v1 </a></li>
+            <li><a href="./index.html">Homepage v2 </a></li>
+            <li><a href="./index.html">Homepage v3 </a></li>
+            <li><a href="./about.html">About Us </a></li>
+            <li><a href="./creator.html">Creators </a></li>
+            <li><a href="./blog.html">Blog Articles</a></li>
+          </ul>
+        </section>
+
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Products</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./category.html">Website</a></li>
+            <li><a href="./category.html">Mobile App</a></li>
+            <li><a href="./category.html">Social Media Feeds</a></li>
+            <li><a href="./category.html">Presentation</a></li>
+            <li><a href="./category.html">Product Mockups</a></li>
+            <li><a href="./category.html">Illustrations</a></li>
+          </ul>
+        </section>
+
+        <!-- Sitemap section -->
+        <section class="footer-navigation">
+          <h2 class="footer-nav-title">Account</h2>
+          <ul class="footer-nav-list">
+            <li><a href="./cart.html">Your Cart</a></li>
+            <li><a href="./checkout.html">Check Out</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Company Policy</a></li>
+            <li><a href="#">Send A Message</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </ul>
+        </section>
+
+        <!-- Social media icons -->
+        <ul class="footer-socialbtns">
+          <li><a href="#">TW</a></li>
+          <li><a href="#">IG</a></li>
+          <li><a href="#">FB</a></li>
+        </ul>
+
+        <!-- <h3>Subscribe to Design Newsletter</h3> -->
+        <form action="" method="post" class="newsletter">
+          <label for="email">Subscribe to Design Newsletter</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email address ..."
+            autocomplete="email"
+            required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <!-- Copyright and terms -->
+      <div class="footer-copyright-section">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Condition</a></li>
+          <li><a href="#">Site Map</a></li>
+        </ul>
+        <p>Copyright © 2024 Pixmart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Old footer -->
+    <!-- <footer> -->
+    <!-- <section class="footer-sitemap">
+        <div class="footer-logobox">
+          <a href="./index.html" class="logo"> Pixmart. </a>
+          <p class="footer-description">
+            Your premium digital assets solution with high quality and
+            comprehensive range of products and services.
+          </p>
+        </div> -->
+
+    <!-- Sitemap section -->
+    <!-- <div class="sitemap">
           <h2 class="sitemap-title">Company</h2>
 
           <ul class="sitemap-list">
@@ -331,10 +490,10 @@
             <li><a href="./creator.html">Creators </a></li>
             <li><a href="./blog.html">Blog Articles</a></li>
           </ul>
-        </div>
+        </div> -->
 
-        <!-- Sitemap section -->
-        <div class="sitemap">
+    <!-- Sitemap section -->
+    <!-- <div class="sitemap">
           <h2 class="sitemap-title">Products</h2>
 
           <ul class="sitemap-list">
@@ -345,10 +504,10 @@
             <li><a href="./category.html">Product Mockups</a></li>
             <li><a href="./category.html">Illustrations</a></li>
           </ul>
-        </div>
+        </div> -->
 
-        <!-- Sitemap section -->
-        <div class="sitemap">
+    <!-- Sitemap section -->
+    <!-- <div class="sitemap">
           <h2 class="sitemap-title">Account</h2>
 
           <ul class="sitemap-list">
@@ -359,37 +518,37 @@
             <li><a href="#">Send A Message</a></li>
             <li><a href="#">Customer Support</a></li>
           </ul>
-        </div>
+        </div> -->
 
-        <!-- Subcribtion Block -->
-        <div class="subcribtion-block">
+    <!-- Subcribtion Block -->
+    <!-- <div class="subcribtion-block">
           <h3>Subscribe to Newsletter</h3>
           <form action="submit" class="newsletter">
             <input type="email" placeholder="Enter email address ..." />
-            <button>Subscribe</button>
+            <button type="submit">Subscribe</button>
           </form>
-        </div>
+        </div> -->
 
-        <!-- Social media icons -->
-        <div class="follow-block">
+    <!-- Social media icons -->
+    <!-- <div class="follow-block">
           <h3>Follow Us</h3>
           <ul class="footer-socialbtns">
             <li><a href="#">TW</a></li>
             <li><a href="#">IG</a></li>
             <li><a href="#">FB</a></li>
           </ul>
-        </div>
-      </section>
+        </div> -->
+    <!-- </section> -->
 
-      <!-- Copyright and terms -->
-      <div class="footer-copyright">
+    <!-- Copyright and terms -->
+    <!-- <div class="footer-copyright">
         <ul>
           <li><a href="#">Privacy Policy</a></li>
           <li><a href="#">Terms and Condition</a></li>
           <li><a href="#">Site Map</a></li>
         </ul>
         <p>Copyright © 2024 Pixmart. All rights reserved.</p>
-      </div>
-    </footer>
+      </div> -->
+    <!-- </footer> -->
   </body>
 </html>
