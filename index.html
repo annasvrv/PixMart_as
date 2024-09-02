@@ -8,6 +8,11 @@
       content="From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources."
     />
     <link
+      rel="icon"
+      href="./favicon_io/android-chrome-192x192.png"
+      type="image/png"
+    />
+    <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="./favicon_io/apple-touch-icon.png"
@@ -33,6 +38,11 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://necolas.github.io/normalize.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>PixMart - Digital Products E-Commerce Website</title>
   </head>
@@ -72,7 +82,7 @@
 
       <!-- Search bar -->
       <div class="search-bar">
-        <form action="" method="get" role="search">
+        <form action="/search" method="get" role="search">
           <label for="site-search" class="visually-hidden">
             Search the site:
           </label>
@@ -80,6 +90,7 @@
             type="search"
             name="search"
             id="site-search"
+            required
             pattern="[^'\x22]+"
             title="Invalid input"
             aria-label="Search through site content"
@@ -127,12 +138,24 @@
 
       <!-- Categories section -->
       <section class="categories">
+        <!-- Category description block -->
+        <div>
+          <h2 class="section-name">CATEGORIES</h2>
+          <h3 class="section-title">Discover Assets for Every Projects</h3>
+          <p class="section-description">
+            From fonts and icons to mockups and templates, our comprehensive
+            categories ensure that you find exactly what you need to your
+            projects.
+          </p>
+          <a href="./category.html" class="btn-shop">Shop Now</a>
+        </div>
+
         <!-- Category cards -->
         <ul>
           <li>
             <article class="category-card">
               <img src="/" alt="UI Kits icon" />
-              <h2>UI Kits</h2>
+              <h4>UI Kits</h4>
               <p>
                 Sleek and modern interfaces to vibrant and interactive UI
                 designs.
@@ -143,7 +166,7 @@
           <li>
             <article class="category-card">
               <img src="/" alt="Presentation icon" />
-              <h2>Presentation</h2>
+              <h4>Presentation</h4>
               <p>
                 Sleek, professional, and creative slides for any event or
                 occasion.
@@ -154,7 +177,7 @@
           <li>
             <article class="category-card accent">
               <img src="/" alt="Social Media icon" />
-              <h2>Social Media</h2>
+              <h4>Social Media</h4>
               <p>
                 Eye-catching design & interactive posts to suit any campaigns.
               </p>
@@ -164,29 +187,17 @@
           <li>
             <article class="category-card">
               <img src="/" alt="Illustrations icon" />
-              <h2>Illustrations</h2>
+              <h4>Illustrations</h4>
               <p>
                 Quality illustrations with a diverse range of styles and themes.
               </p>
             </article>
           </li>
         </ul>
-
-        <!-- Category description block -->
-
-        <h2 class="section-name">CATEGORIES</h2>
-        <h3 class="section-title">Discover Assets for Every Projects</h3>
-        <p class="section-description">
-          From fonts and icons to mockups and templates, our comprehensive
-          categories ensure that you find exactly what you need to your
-          projects.
-        </p>
-
-        <a href="./category.html" class="btn-shop">Shop Now</a>
       </section>
 
       <!-- Company's values section -->
-      <section class="corp-values">
+      <section class="values">
         <h2 class="section-name">VALUES</h2>
         <h3 class="section-title">
           Guiding Your Experience to Digital Excellence
@@ -257,17 +268,17 @@
           <li class="awards-card">
             <!-- <img src="/" alt="Award sign" /> :marker -->
             <time>2023</time>
-            <h3>E-Commerce Innovation Award</h3>
+            <h4>E-Commerce Innovation Award</h4>
           </li>
           <li class="awards-card">
             <!-- <img src="/" alt="Award sign" /> :marker -->
             <time>2022</time>
-            <h3>Best Customer Service Award</h3>
+            <h4>Best Customer Service Award</h4>
           </li>
           <li class="awards-card">
             <!-- <img src="/" alt="Award sign" /> :marker -->
             <time>2021</time>
-            <h3>Digital Marketplace of the Year</h3>
+            <h4>Digital Marketplace of the Year</h4>
           </li>
         </ul>
       </section>
@@ -473,7 +484,7 @@
 
     <!-- Footer -->
     <footer>
-      <section class="footer-section">
+      <div class="footer-section">
         <div class="footer-logobox">
           <a href="./index.html" class="logo"> Pixmart. </a>
           <p class="footer-description">
@@ -544,7 +555,7 @@
           />
           <button type="submit">Subscribe</button>
         </form>
-      </section>
+      </div>
 
       <!-- Copyright and terms -->
       <div class="footer-copyright-section">
