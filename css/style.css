@@ -441,7 +441,6 @@ a {
   /* grid-template-rows: repeat(2, 1fr) 0.4fr; */
   overflow: hidden;
   overflow-y: -130px;
-  
 }
 
 .category-card-column {
@@ -589,7 +588,6 @@ a {
   border-radius: var(--border-radius-s);
   cursor: pointer;
   transition: transform var(--trasition-effect);
-  
 }
 
 /* .products-images-item:nth-child(odd) {
@@ -631,7 +629,6 @@ a {
   background-color: var(--bg-color);
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 .awards-content {
