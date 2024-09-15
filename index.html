@@ -52,22 +52,14 @@
     <header class="header">
       <div class="container header-block">
         <!-- Logo -->
-        <a class="logo-header">
-          Pixmart.
-          <!-- <img
-            src="./img/logo/logo-large.png"
-            alt="Pixmart's logo"
-            width="79"
-            height="17"
-          /> -->
-        </a>
+        <a class="logo-header"> Pixmart. </a>
         <div class="navigation-block">
           <!-- Navigation menu -->
           <nav class="navigation-header">
             <ul class="nav-menu">
               <li>
                 <a href="./about.html" class="nav-menu-link">
-                  <span class="nav-menu-name">About</span>
+                  <span class="nav-menu-name">about</span>
                 </a>
               </li>
               <!-- Dropdown menu of products -->
@@ -78,13 +70,37 @@
                     <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </a>
-                <ul class="dropdown-content" style="display: none">
-                  <li><a href="./category.html">Website</a></li>
-                  <li><a href="./category.html">Mobile App</a></li>
-                  <li><a href="./category.html">Social Media Feeds</a></li>
-                  <li><a href="./category.html">Presentation</a></li>
-                  <li><a href="./category.html">Product Mockups</a></li>
-                  <li><a href="./category.html">Illustrations</a></li>
+                <ul class="dropdown-content">
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link">
+                      Website
+                    </a>
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Mobile App</a
+                    >
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link">
+                      Social media feeds
+                    </a>
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Presentation</a
+                    >
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Product Mockups</a
+                    >
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Illustrations</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li>
@@ -161,11 +177,17 @@
               <span class="accent-header"> Digital</span> Assets
             </h1>
             <p class="hero-text">
-              From our inspiring illustrations to dynamic UI/UX kits, elevate
+              from our inspiring illustrations to dynamic UI/UX kits, elevate
               your projects with our premium digital design resources.
             </p>
             <div class="btns-header">
-              <a href="./category.html" class="btn-shop">Shop Now</a>
+              <a
+                href="./category.html"
+                class="btn-shop"
+                title="View Our Products"
+              >
+                Shop Now
+              </a>
               <a href="#" class="btn-explore">
                 <div class="icon-play">
                   <svg class="icon icon-play-img" width="16" height="16">
@@ -180,21 +202,21 @@
           <figure class="hero-images">
             <img
               src="./img/img-hero/hero-photo1.webp"
-              alt="UI/UX kits"
+              alt="UI/UX kits - Smiling woman"
               width="290"
               height="164"
               class="hero-img-woman"
             />
             <img
               src="./img/img-hero/hero-photo3.webp"
-              alt="UI/UX kits"
+              alt="UI/UX kits - Website Template"
               width="514"
               height="300"
               class="hero-img-website"
             />
             <img
-              src="./img/img-hero/hero-photo2.png"
-              alt="UI/UX kits"
+              src="./img/img-hero/hero-photo2.webp"
+              alt="UI/UX kits - Event Speaker on Laptop Screen"
               width="280"
               height="522"
               class="hero-img-laptop"
@@ -214,13 +236,15 @@
             categories ensure that you find exactly what you need to your
             projects.
           </p>
-          <a href="./category.html" class="btn-shop">Shop Now</a>
+          <a href="./category.html" class="btn-shop" title="View Our Products">
+            Shop Now
+          </a>
         </div>
 
         <!-- Category cards -->
         <div class="category-card-list">
-          <div class="category-card-column">
-            <article class="category-card">
+          <div class="category-card-column category-column-left">
+            <article class="category-card card-uikits">
               <svg class="icon icon-cat-uikits" width="48" height="48">
                 <use xlink:href="../img/sprite.svg#icon-cat-uikits"></use>
               </svg>
@@ -231,7 +255,7 @@
               </p>
             </article>
 
-            <article class="category-card">
+            <article class="category-card card-presentation">
               <svg class="icon icon-cat-presentation" width="48" height="48">
                 <use xlink:href="../img/sprite.svg#icon-cat-presentation"></use>
               </svg>
@@ -253,7 +277,7 @@
             </article>
           </div>
 
-          <div class="category-card-column category-card-column2">
+          <div class="category-card-column category-column-right">
             <article class="category-card category-item-top">
               <svg class="icon icon-cat-presentation" width="48" height="48">
                 <use xlink:href="../img/sprite.svg#icon-cat-presentation"></use>
@@ -265,7 +289,7 @@
               </p>
             </article>
 
-            <article class="category-card accent">
+            <article class="category-card card-media">
               <svg class="icon icon-cat-media" width="48" height="48">
                 <use xlink:href="../img/sprite.svg#icon-cat-media"></use>
               </svg>
@@ -275,7 +299,7 @@
               </p>
             </article>
 
-            <article class="category-card">
+            <article class="category-card card-illustration">
               <svg class="icon icon-cat-illustration" width="48" height="48">
                 <use xlink:href="../img/sprite.svg#icon-cat-illustration"></use>
               </svg>
@@ -373,63 +397,63 @@
         </h3>
         <figure class="products-images">
           <img
-            src="./img/img-products/img-products-hp/products-photo1.png"
+            src="./img/img-products/img-products-hp/products-photo1.webp"
             alt="Product Assets"
             width="536"
             height="530"
             class="products-images-item img-odd"
           />
           <img
-            src="./img/img-products/img-products-hp/products-photo2.png"
+            src="./img/img-products/img-products-hp/products-photo2.webp"
             alt="Product Assets"
             width="536"
             height="530"
             class="products-images-item img-even"
           />
           <img
-            src="./img/img-products/img-products-hp/products-photo3.png"
+            src="./img/img-products/img-products-hp/products-photo3.webp"
             alt="Product Assets"
             width="536"
             height="530"
             class="products-images-item img-odd"
           />
           <img
-            src="./img/img-products/img-products-hp/products-photo1.png"
+            src="./img/img-products/img-products-hp/products-photo1.webp"
             alt="Product Assets"
             width="536"
             height="530"
             class="products-images-item img-odd"
           />
           <img
-            src="./img/img-products/img-products-hp/products-photo2.png"
+            src="./img/img-products/img-products-hp/products-photo2.webp"
             alt="Product Assets"
             width="536"
             height="530"
             class="products-images-item img-even"
           />
           <img
-            src="./img/img-products/img-products-hp/products-photo3.png"
+            src="./img/img-products/img-products-hp/products-photo3.webp"
             alt="Product Assets"
             width="536"
             height="530"
             class="products-images-item img-odd"
           />
           <img
-            src="./img/img-products/img-products-hp/products-photo1.png"
+            src="./img/img-products/img-products-hp/products-photo1.webp"
             alt="Product Assets"
             width="536"
             height="530"
             class="products-images-item img-odd"
           />
           <img
-            src="./img/img-products/img-products-hp/products-photo2.png"
+            src="./img/img-products/img-products-hp/products-photo2.webp"
             alt="Product Assets"
             width="536"
             height="530"
             class="products-images-item img-even"
           />
           <img
-            src="./img/img-products/img-products-hp/products-photo3.png"
+            src="./img/img-products/img-products-hp/products-photo3.webp"
             alt="Product Assets"
             width="536"
             height="530"
@@ -493,7 +517,7 @@
             <div class="testimonials-card-details">
               <div class="testimonials-card-name">
                 <img
-                  src="./img/img-blog-homepage/user-photo.png"
+                  src="./img/img-blog-homepage/user-photo.webp"
                   alt="Samuel Treavor's profile photo"
                   width="64"
                   height="64"
@@ -792,7 +816,9 @@
             <span class="header-line">Elevate Your Project</span> with Premium
             Digital Assets
           </h3>
-          <a href="./category.html" class="btn-shop">Shop Now</a>
+          <a href="./category.html" class="btn-shop" title="View Our Products">
+            Shop Now
+          </a>
         </div>
       </section>
     </main>
@@ -898,32 +924,38 @@
         <!-- Social media icons -->
         <ul class="footer-mediabtns">
           <li>
-            <a href="#" target="_blank" class="footer-media">
+            <a
+              href="#"
+              target="_blank"
+              class="footer-media"
+              title="Follow Us on Twitter"
+            >
               TW
-              <!-- <svg class="icon" width="90" height="90">
-                <use xlink:href="../img/sprite.svg#icon-twitter"></use>
-              </svg> -->
             </a>
           </li>
           <li>
-            <a href="#" target="_blank" class="footer-media">
+            <a
+              href="#"
+              target="_blank"
+              class="footer-media"
+              title="Follow Us on Instagram"
+            >
               IG
-              <!-- <svg class="icon" width="90" height="90">
-                <use xlink:href="../img/sprite.svg#icon-instagram"></use>
-              </svg> -->
             </a>
           </li>
           <li>
-            <a href="#" target="_blank" class="footer-media">
+            <a
+              href="#"
+              target="_blank"
+              class="footer-media"
+              title="Follow Us on Facebook"
+            >
               FB
-              <!-- <svg class="icon" width="90" height="90">
-                <use xlink:href="../img/sprite.svg#icon-facebook"></use>
-              </svg> -->
             </a>
           </li>
         </ul>
 
-        <!-- <h3>Subscribe to Design Newsletter</h3> -->
+        <!-- Subscribe to Design Newsletter -->
         <form action="/" method="post" class="newsletter-form">
           <label for="email" class="newsletter-label">
             Subscribe to Design Newsletter
@@ -936,9 +968,15 @@
             autocomplete="email"
             required
             pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-            class="newsletter-input"
+            class="newsletter-input field-validation"
           />
-          <button type="submit" class="btn-newsletter">Subscribe</button>
+          <button
+            type="submit"
+            class="btn-newsletter"
+            title="Subscribe to Design Newsletter"
+          >
+            Subscribe
+          </button>
         </form>
       </div>
 
@@ -962,7 +1000,9 @@
               <a href="#" target="_blank" class="copyright-link"> Site Map </a>
             </li>
           </ul>
-          <p class="copyright-text">Copyright © 2024 Pixmart. All rights reserved.</p>
+          <p class="copyright-text">
+            Copyright © 2024 Pixmart. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
