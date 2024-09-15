@@ -1661,7 +1661,6 @@ a {
 
 .range-box {
   margin-top: 32px;
-  /* display: flex; */
 }
 
 .price-slider {
@@ -1673,7 +1672,6 @@ a {
 }
 
 .range-button {
-  /* display: block; */
   width: 16px;
   height: 16px;
   padding: 5px;
@@ -1728,11 +1726,6 @@ a {
 .price-nmb::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-/* Firefox */
-.price-nmb[type="number"] {
-  -moz-appearance: textfield;
 }
 
 .range-label,
@@ -1817,14 +1810,11 @@ a {
   border: none;
   margin: 0;
   width: 180px;
-  /* outline: none; */
   font-family: var(--font-paragraph);
   font-weight: var(--font-bold);
   font-size: var(--primary-font-size);
   line-height: var(--primary-line-height);
   cursor: pointer;
-  /* border: 1px solid #000; */
-  /* background-color: var(--bg-color); */
 }
 
 .catalog-select-wrapper {
