@@ -117,6 +117,12 @@
     <path d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476617 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3166 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C21.9966 8.08367 20.8365 5.28778 18.7744 3.22563C16.7122 1.16347 13.9163 0.00344047 11 0ZM14.707 14.707C14.5195 14.8945 14.2652 14.9998 14 14.9998C13.7348 14.9998 13.4805 14.8945 13.293 14.707L10.293 11.707C10.1055 11.5195 10.0001 11.2652 10 11V5C10 4.73478 10.1054 4.48043 10.2929 4.29289C10.4804 4.10536 10.7348 4 11 4C11.2652 4 11.5196 4.10536 11.7071 4.29289C11.8946 4.48043 12 4.73478 12 5V10.586L14.707 13.293C14.8945 13.4805 14.9998 13.7348 14.9998 14C14.9998 14.2652 14.8945 14.5195 14.707 14.707Z" fill="#0F73F6"></path>
   </symbol>
 
+  
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="icon-close">
+    <path d="M0.181745 17.3175C0.239791 17.3756 0.308721 17.4217 0.384595 17.4532C0.460469 17.4846 0.541798 17.5008 0.623933 17.5008C0.706068 17.5008 0.787397 17.4846 0.863271 17.4532C0.939144 17.4217 1.00807 17.3756 1.06612 17.3175L8.74737 9.63629L16.4317 17.3175C16.549 17.4348 16.7081 17.5007 16.8739 17.5007C17.0398 17.5007 17.1988 17.4348 17.3161 17.3175C17.4334 17.2003 17.4993 17.0412 17.4993 16.8753C17.4993 16.7095 17.4334 16.5504 17.3161 16.4332L9.63175 8.75191L17.313 1.06753C17.4303 0.95026 17.4962 0.7912 17.4962 0.625347C17.4962 0.459495 17.4303 0.300435 17.313 0.18316C17.1957 0.0658846 17.0367 0 16.8708 0C16.705 0 16.5459 0.0658846 16.4286 0.18316L8.74737 7.86754L1.063 0.186285C0.943432 0.0838936 0.789634 0.0303898 0.632337 0.0364655C0.475039 0.0425412 0.325827 0.107749 0.214518 0.219058C0.103209 0.330367 0.0380016 0.479579 0.0319259 0.636877C0.0258502 0.794174 0.0793539 0.947972 0.181745 1.06753L7.86299 8.75191L0.181745 16.4363C0.0653386 16.5534 0 16.7118 0 16.8769C0 17.042 0.0653386 17.2004 0.181745 17.3175Z" fill="#0F73F6"></path>
+  </symbol>
+
+
 
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-cup">
     <g clip-path="url(#clip0_4_6275)">
@@ -191,8 +197,8 @@
   </symbol>
 
 
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-grid-layout">
-    <path d="M0.25 0.25V19.75H19.75V0.25H0.25ZM18.25 9.25H10.75V1.75H18.25V9.25ZM9.25 1.75V9.25H1.75V1.75H9.25ZM1.75 10.75H9.25V18.25H1.75V10.75ZM10.75 18.25V10.75H18.25V18.25H10.75Z" fill="white"></path>
+  <symbol fill="inherit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-grid-layout">
+    <path d="M0.25 0.25V19.75H19.75V0.25H0.25ZM18.25 9.25H10.75V1.75H18.25V9.25ZM9.25 1.75V9.25H1.75V1.75H9.25ZM1.75 10.75H9.25V18.25H1.75V10.75ZM10.75 18.25V10.75H18.25V18.25H10.75Z" fill="inherit"></path>
   </symbol>
 
 
@@ -317,8 +323,8 @@
   </symbol>
 
 
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-plus">
-    <path d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z" fill="#0F73F6"></path>
+  <symbol fill="inherit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-plus">
+    <path d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z" fill="inherit"></path>
   </symbol>
 
 
@@ -334,10 +340,10 @@
   </symbol>
 
 
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" id="icon-sandwich">
-    <path d="M0.5 0.5H21.5V2H0.5V0.5Z" fill="#0F73F6"></path>
-    <path d="M0.5 7.25H21.5V8.75H0.5V7.25Z" fill="#0F73F6"></path>
-    <path d="M0.5 14H21.5V15.5H0.5V14Z" fill="#0F73F6"></path>
+  <symbol fill="inherit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16" id="icon-sandwich">
+    <path d="M0.5 0.5H21.5V2H0.5V0.5Z" fill="inherit"></path>
+    <path d="M0.5 7.25H21.5V8.75H0.5V7.25Z" fill="inherit"></path>
+    <path d="M0.5 14H21.5V15.5H0.5V14Z" fill="inherit"></path>
   </symbol>
 
   <symbol fill="inherit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon-search">
@@ -452,13 +458,25 @@
 
 <svg class="icon">
   <use xlink:href="#icon-clock"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
+  <use xlink:href="#icon-close"></use>
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-cup"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-dot"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-expand-arrows"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-expand"></use>
 </svg>
 
@@ -468,11 +486,17 @@
 
 <svg class="icon">
   <use xlink:href="#icon-folder"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-fonts"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-globe-union"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-grid-layout"></use>
 </svg>
 
@@ -486,9 +510,13 @@
 
 <svg class="icon">
   <use xlink:href="#icon-layers"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-location"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-mail"></use>
 </svg>
 
@@ -498,9 +526,13 @@
 
 <svg class="icon">
   <use xlink:href="#icon-minus"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-palettes"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-phone"></use>
 </svg>
 
@@ -510,7 +542,9 @@
 
 <svg class="icon">
   <use xlink:href="#icon-plus"></use>
-</svg><svg class="icon">
+</svg>
+
+<svg class="icon">
   <use xlink:href="#icon-reward"></use>
 </svg>
 

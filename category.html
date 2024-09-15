@@ -44,564 +44,948 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <!-- Logo -->
-      <a href="./index.html" class="logo"> Pixmart.</a>
-
-      <!-- Navigation menu -->
-      <nav>
-        <ul class="nav-menu">
-          <li>
-            <a href="./about.html">About</a>
-          </li>
-          <!-- Dropdown menu of products -->
-          <li>
-            <a href="#" class="dropdown">Products</a>
-            <ul class="dropdown-content">
-              <li><a href="./category.html">Website</a></li>
-              <li><a href="./category.html">Mobile App</a></li>
-              <li><a href="./category.html">Social Media Feeds</a></li>
-              <li><a href="./category.html">Presentation</a></li>
-              <li><a href="./category.html">Product Mockups</a></li>
-              <li><a href="./category.html">Illustrations</a></li>
+    <header class="header">
+      <div class="container header-block">
+        <!-- Logo -->
+        <a href="./index.html" class="logo-header" title="Go to Homepage">
+          Pixmart.
+        </a>
+        <div class="navigation-block">
+          <!-- Navigation menu -->
+          <nav class="navigation-header">
+            <ul class="nav-menu">
+              <li>
+                <a href="./about.html" class="nav-menu-link">
+                  <span class="nav-menu-name">about</span>
+                </a>
+              </li>
+              <!-- Dropdown menu of products -->
+              <li class="dropdown-item">
+                <a class="nav-menu-link dropdown">
+                  <span class="nav-menu-name">Products</span>
+                  <svg class="icon arrow-header" width="14" height="8">
+                    <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </a>
+                <ul class="dropdown-content">
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link">
+                      Website
+                    </a>
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Mobile App</a
+                    >
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link">
+                      Social media feeds
+                    </a>
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Presentation</a
+                    >
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Product Mockups</a
+                    >
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Illustrations</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="./creator.html" class="nav-menu-link">
+                  <span class="nav-menu-name">Creators</span>
+                </a>
+                <sup class="label-header">NEW</sup>
+              </li>
+              <li>
+                <a href="./blog.html" class="nav-menu-link">
+                  <span class="nav-menu-name">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="./contact.html" class="nav-menu-link">
+                  <span class="nav-menu-name">Contact</span>
+                </a>
+              </li>
             </ul>
-          </li>
-          <li>
-            <a href="./creator.html">Creators</a>
-            <span class="label">NEW</span>
-          </li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Search bar -->
-      <div class="search-bar">
-        <form action="" method="get" role="search">
-          <label for="site-search" class="visually-hidden">
-            Search the site:
-          </label>
-          <input
-            type="search"
-            name="search"
-            id="site-search"
-            pattern="[^'\x22]+"
-            title="Invalid input"
-            aria-label="Search through site content"
-            placeholder="Search for Digital Assets"
-          />
-          <button type="submit" class="btn-search">
-            <img src="/" alt="Search icon" />
-            Search
-          </button>
-        </form>
+          </nav>
+          <!-- Search / Cart block -->
+          <div class="search-bar">
+            <form
+              action="/search"
+              method="get"
+              role="search"
+              class="search-form"
+            >
+              <label for="site-search" class="visually-hidden">
+                Search the site:
+              </label>
+              <input
+                type="search"
+                name="search"
+                id="site-search"
+                required
+                pattern="[^'\x22]+"
+                title="Invalid input"
+                aria-label="Search through site content"
+                placeholder="Search for Digital Assets"
+                class="search-input"
+              />
+              <button type="submit" class="btn-search">
+                <svg class="icon icon-search" width="20" height="20">
+                  <use xlink:href="./img/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+            <!-- cart button -->
+            <a
+              href="./cart.html"
+              class="btn-cart"
+              title="View Your Shopping Cart"
+            >
+              <svg class="icon cart-icon-header" width="24" height="24">
+                <use xlink:href="./img/sprite.svg#icon-bag"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-
-      <!-- Login and cart buttons -->
-
-      <a href="./cart.html" class="btn-cart">
-        <img src="/" alt="Shop button" />
-        Cart
-      </a>
     </header>
 
     <!-- Main -->
     <main>
       <!-- Title section -->
-      <h1 class="category-title">
-        Explore Top <span>UI Kits</span> Design Assets
-      </h1>
-
-      <form action="" method="get">
-        <!-- Categories -->
-        <fieldset class="filter-card">
-          <legend>Categories</legend>
-          <ul>
-            <li class="category-item">
-              <input
-                type="checkbox"
-                name="categories"
-                value="all"
-                id="categories-all"
-                checked
-              />
-              <label for="categories-all">All Categories</label>
-            </li>
-
-            <li>
-              <input
-                type="checkbox"
-                name="categories"
-                value="technology"
-                id="categories-technology"
-              />
-              <label for="categories-technology">Technology</label>
-            </li>
-
-            <li>
-              <input
-                type="checkbox"
-                name="categories"
-                value="travel"
-                id="categories-travel"
-              />
-              <label for="categories-travel">Travel & Tourism</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="categories"
-                value="health"
-                id="categories-health"
-              />
-              <label for="categories-health">Health & Fitness</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="categories"
-                value="e-commerce"
-                id="categories-e-commerce"
-              />
-              <label for="categories-e-commerce">E-Commerce</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="categories"
-                value="education"
-                id="categories-education"
-              />
-              <label for="categories-education">Education</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="categories"
-                value="entertainment"
-                id="categories-entertainment"
-              />
-              <label for="categories-entertainment">Entertainment</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="categories"
-                value="others"
-                id="categories-others"
-              />
-              <label for="categories-others">Others</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <!-- Format Type -->
-        <fieldset class="filter-card">
-          <legend>Format Type</legend>
-          <ul>
-            <li class="category-item">
-              <input
-                type="checkbox"
-                name="format"
-                value="all formats"
-                id="format-all"
-                checked
-              />
-              <label for="format-all">All Formats</label>
-            </li>
-
-            <li>
-              <input
-                type="checkbox"
-                name="format"
-                value="figma"
-                id="format-figma"
-              />
-              <label for="format-figma">Figma</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="format"
-                value="sketch"
-                id="format-sketch"
-              />
-              <label for="format-sketch">Sketch</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="format"
-                value="adobe xd"
-                id="format-adobexd"
-              />
-              <label for="format-adobexd">Adobe XD</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="format"
-                value="adobe photoshop"
-                id="format-adobe-photoshop"
-              />
-              <label for="format-adobe-photoshop"> Adobe Photoshop </label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                nname="format"
-                value="adobe illustration"
-                id="format-adobe-illustration"
-              />
-              <label for="format-adobe-illustration">
-                Adobe Illustration
-              </label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="format"
-                value="others"
-                id="format-others"
-              />
-              <label for="format-others">Others</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <!-- Style -->
-        <fieldset class="filter-card">
-          <legend>Style</legend>
-          <ul>
-            <li class="category-item">
-              <input
-                type="checkbox"
-                name="style"
-                value="all styles"
-                id="style-all"
-                checked
-              />
-              <label for="style-all">All Styles</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="style"
-                value="minimalist"
-                id="style-minimalist"
-              />
-              <label for="style-minimalist">Minimalist</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="style"
-                value="modern"
-                id="style-modern"
-              />
-              <label for="style-modern">Modern</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="style"
-                value="playful"
-                id="style-playful"
-              />
-              <label for="style-playful">Playful</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="style"
-                value="dark mode"
-                id="style-darkmode"
-              />
-              <label for="style-darkmode">Dark Mode</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="style"
-                value="photocentric"
-                id="style-photocentric"
-              />
-              <label for="style-photocentric">Photocentric</label>
-            </li>
-            <li>
-              <input
-                type="checkbox"
-                name="style"
-                value="others"
-                id="style-others"
-              />
-              <label for="style-others">Others</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="price-container">
-          <legend>Price</legend>
-          <div class="range">
-            <button class="range-button" is-min type="button"></button>
-            <button class="range-button" is-max type="button"></button>
-            <div class="range-line"></div>
-            <div class="range-line" is-selected”></div>
-            <div class="range-container">
-              <label class="range-min">
-                $
-                <input type="number" class="price-nmb" name="price" />
-              </label>
-              <label class="range-max">
-                $
-                <input type="number" class="price-nmb" name="price" />
-              </label>
-            </div>
-          </div>
-        </fieldset>
-
-        <button type="reset" class="btn-clearall">Clear all filters</button>
-      </form>
-
-      <!-- Catalog -->
-      <section class="catalog">
-        <!-- Filters Block -->
-        <div class="filters-block">
-          <ul>
-            <li class="asset-label">
-              UI Kit
-              <button type="button" class="close-btn">&times;</button>
-            </li>
-          </ul>
-
-          <form action="" method="get">
-            <label for="product">Sort by</label>
-            <select name="product" id="product">
-              <option value="best-seller">Best Seller</option>
-              <option value="price-min">Price Ascending</option>
-              <option value="price-max">Price Descending</option>
-              <option value="show-all">Show All</option>
-            </select>
-          </form>
-
-          <p class="result">Showing 12 out of 120 results.</p>
-          <button type="button" class="btn-menu active">
-            <img src="/" alt="View Mode button" />
-          </button>
-          <button type="button" class="btn-menu">
-            <img src="/" alt="Menu button" />
-          </button>
-        </div>
-
-        <ul>
-          <li>
-            <!-- Product Item 1 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">EzMart</h2>
-                <p class="product-description">Figma Template</p>
-              </a>
-              <p class="item-price">$11.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <li>
-            <!-- Product Item 2 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">SchoolHub</h2>
-                <p class="product-description">Figma Template</p>
-              </a>
-              <p class="item-price">$6.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <li>
-            <!-- Product Item 3 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">Kidztar</h2>
-                <p class="product-description">Figma Template</p>
-              </a>
-              <p class="item-price">$20.00</p>
-              <button type="button" class="btn-item-cart active">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <li>
-            <!-- Product Item 4 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">PlayCut</h2>
-                <p class="product-description">Figma Template</p>
-              </a>
-              <p class="item-price">$20.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <li>
-            <!-- Product Item 5 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">WithCash</h2>
-                <p class="product-description">Figma Template</p>
-              </a>
-              <p class="item-price">$12.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <li>
-            <!-- Product Item 6 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">Journeey</h2>
-                <p class="product-description">Figma Template</p>
-              </a>
-              <p class="item-price">$5.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <li>
-            <!-- Product Item 7 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">Foodish</h2>
-                <p class="product-description">Figma Template</p>
-              </a>
-              <p class="item-price">$6.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <li>
-            <!-- Product Item 8 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">MediCare</h2>
-                <p class="product-description">Figma Template</p>
-              </a>
-              <p class="item-price">$18.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <li>
-            <!-- Product Item 9 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">UpNews</h2>
-                <p class="product-description">Figma Template</p>
-              </a>
-              <p class="item-price">$12.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <li>
-            <!-- Product Item 10 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">James</h2>
-                <p class="product-description">Figma Template</p>
-              </a>
-              <p class="item-price">$12.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <li>
-            <!-- Product Item 11 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">JobBlitz</h2>
-                <p class="product-description">Figma Template</p>
-              </a>
-              <p class="item-price">$5.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-
-          <li>
-            <!-- Product Item 12 -->
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h2 class="product-title">SkyHomes</h2>
-                <p class="product-description">Landing Page</p>
-              </a>
-              <p class="item-price">$20.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
-              </button>
-            </article>
-          </li>
-        </ul>
-
-        <!-- Pagination -->
-        <ul class="pagination">
-          <li><a href="#" class="btn-arrow">&lt;</a></li>
-          <li><a href="#" class="active">01</a></li>
-          <li><a href="#">02</a></li>
-          <li><a href="#">03</a></li>
-          <li><a href="#">...</a></li>
-          <li><a href="#">10</a></li>
-          <li><a href="#" class="btn-arrow active">&gt;</a></li>
-        </ul>
+      <section class="category-header">
+        <h1 class="section-header container">
+          <span class="header-line">Explore Top</span>
+          <span class="accent-header">UI Kits</span> Design Assets
+        </h1>
       </section>
 
+      <div class="container category-page">
+        <form action="/" method="get" class="category-filter-form">
+          <!-- Categories -->
+          <fieldset class="filter-card">
+            <legend class="filter-card-legend">Categories</legend>
+            <ul class="category-filter-list">
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="categories"
+                  value="all"
+                  id="categories-all"
+                  checked
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="categories-all" class="category-filter-label">
+                  All Categories
+                </label>
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="categories"
+                  value="technology"
+                  id="categories-technology"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="categories-technology" class="category-filter-label"
+                  >Technology</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="categories"
+                  value="travel"
+                  id="categories-travel"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="categories-travel" class="category-filter-label"
+                  >Travel & Tourism</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="categories"
+                  value="health"
+                  id="categories-health"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="categories-health" class="category-filter-label"
+                  >Health & Fitness</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="categories"
+                  value="e-commerce"
+                  id="categories-e-commerce"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="categories-e-commerce" class="category-filter-label"
+                  >E-Commerce</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="categories"
+                  value="education"
+                  id="categories-education"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="categories-education" class="category-filter-label"
+                  >Education</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="categories"
+                  value="entertainment"
+                  id="categories-entertainment"
+                  class="category-filter-input visually-hidden"
+                />
+                <label
+                  for="categories-entertainment"
+                  class="category-filter-label"
+                  >Entertainment</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="categories"
+                  value="others"
+                  id="categories-others"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="categories-others" class="category-filter-label"
+                  >Others</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Format Type -->
+          <fieldset class="filter-card">
+            <legend class="filter-card-legend">Format Type</legend>
+            <ul class="category-filter-list">
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="format"
+                  value="all formats"
+                  id="format-all"
+                  checked
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="format-all" class="category-filter-label"
+                  >All Formats</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="format"
+                  value="figma"
+                  id="format-figma"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="format-figma" class="category-filter-label"
+                  >Figma</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="format"
+                  value="sketch"
+                  id="format-sketch"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="format-sketch" class="category-filter-label"
+                  >Sketch</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="format"
+                  value="adobe xd"
+                  id="format-adobexd"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="format-adobexd" class="category-filter-label"
+                  >Adobe XD</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="format"
+                  value="adobe photoshop"
+                  id="format-adobe-photoshop"
+                  class="category-filter-input visually-hidden"
+                />
+                <label
+                  for="format-adobe-photoshop"
+                  class="category-filter-label"
+                >
+                  Adobe Photoshop
+                </label>
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  nname="format"
+                  value="adobe illustration"
+                  id="format-adobe-illustration"
+                  class="category-filter-input visually-hidden"
+                />
+                <label
+                  for="format-adobe-illustration"
+                  class="category-filter-label"
+                >
+                  Adobe Illustration
+                </label>
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="format"
+                  value="others"
+                  id="format-others"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="format-others" class="category-filter-label"
+                  >Others</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Style -->
+          <fieldset class="filter-card">
+            <legend class="filter-card-legend">Style</legend>
+            <ul class="category-filter-list">
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="style"
+                  value="all styles"
+                  id="style-all"
+                  checked
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="style-all" class="category-filter-label"
+                  >All Styles</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="style"
+                  value="minimalist"
+                  id="style-minimalist"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="style-minimalist" class="category-filter-label"
+                  >Minimalist</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="style"
+                  value="modern"
+                  id="style-modern"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="style-modern" class="category-filter-label"
+                  >Modern</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="style"
+                  value="playful"
+                  id="style-playful"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="style-playful" class="category-filter-label"
+                  >Playful</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="style"
+                  value="dark mode"
+                  id="style-darkmode"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="style-darkmode" class="category-filter-label"
+                  >Dark Mode</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="style"
+                  value="photocentric"
+                  id="style-photocentric"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="style-photocentric" class="category-filter-label"
+                  >Photocentric</label
+                >
+              </li>
+              <li class="category-item">
+                <input
+                  type="checkbox"
+                  name="style"
+                  value="others"
+                  id="style-others"
+                  class="category-filter-input visually-hidden"
+                />
+                <label for="style-others" class="category-filter-label"
+                  >Others</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Price range -->
+          <fieldset class="price-container">
+            <legend class="filter-card-legend">Price</legend>
+            <div class="range-box">
+              <div class="price-slider">
+                <button
+                  class="range-button btn-range-min"
+                  is-min
+                  type="button"
+                ></button>
+                <button
+                  class="range-button btn-range-max"
+                  is-max
+                  type="button"
+                ></button>
+                <div class="range-line"></div>
+                <div class="range-line" is-selected></div>
+              </div>
+
+              <div class="range-container">
+                <div>
+                  <label for="price" class="range-label"> $ </label>
+                  <input
+                    type="number"
+                    class="price-nmb"
+                    name="price"
+                    value="5"
+                    inputmode="numeric"
+                    pattern="\d*"
+                    step="1"
+                    min="0"
+                    max="50"
+                  />
+                </div>
+                <div>
+                  <label for="price" class="range-label"> $ </label>
+                  <input
+                    type="number"
+                    class="price-nmb"
+                    name="price"
+                    value="50"
+                    inputmode="numeric"
+                    pattern="\d*"
+                    step="1"
+                    min="0"
+                    max="99"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="range-box">
+              <input
+                type="range"
+                min="5"
+                max="50"
+                value="22"
+                step="1"
+                class="min-range"
+              />
+              <input
+                type="range"
+                min="5"
+                max="50"
+                value="38"
+                step="1"
+                class="max-range"
+              />
+            </div>
+            <div class="price-field">
+              <p class="price-value">$5</p>
+              <p class="price-value">$50</p>
+            </div> -->
+          </fieldset>
+
+          <button type="reset" class="btn-clearall">Clear all filters</button>
+        </form>
+
+        <!-- Catalog -->
+        <section class="catalog">
+          <!-- Filters Block -->
+          <div class="filters-block">
+            <div class="catalog-display-filter">
+              <ul class="category-tag-list">
+                <li class="category-tag">
+                  UI Kit
+                  <button type="button" class="btn-close">
+                    <svg class="icon icon-close-btn" width="20" height="20">
+                      <use xlink:href="../img/sprite.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <form action="/" method="get" class="catalog-select-form">
+                <label for="product" class="catalog-select-label"
+                  >Sort by</label
+                >
+                <div class="catalog-select-wrapper">
+                  <select name="product" id="product" class="catalog-select">
+                    <option value="best-seller" class="catalog-select-option">
+                      Best Seller
+                    </option>
+                    <option value="price-min" class="catalog-select-option">
+                      Price Ascending
+                    </option>
+                    <option value="price-max" class="catalog-select-option">
+                      Price Descending
+                    </option>
+                    <option value="show-all" class="catalog-select-option">
+                      Show All
+                    </option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="catalog-display-layout">
+              <p class="catalog-display-result">
+                Showing 12 out of 120 results.
+              </p>
+              <div class="btn-menu-group">
+                <button type="button" class="btn-menu">
+                  <svg class="icon icon-layout" width="20" height="20">
+                    <use xlink:href="../img/sprite.svg#icon-grid-layout"></use>
+                  </svg>
+                </button>
+                <button type="button" class="btn-menu">
+                  <svg class="icon icon-layout" width="20" height="20">
+                    <use xlink:href="../img/sprite.svg#icon-sandwich"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <ul class="catalog-list">
+            <li class="catalog-list-item">
+              <!-- Product Item 1 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-1.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">EzMart</h2>
+                  <p class="product-description">Figma Template</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$11.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <!-- Product Item 2 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-2.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">SchoolHub</h2>
+                  <p class="product-description">Figma Template</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$6.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <!-- Product Item 3 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-3.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">Kidztar</h2>
+                  <p class="product-description">Figma Template</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$20.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <!-- Product Item 4 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-4.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">PlayCut</h2>
+                  <p class="product-description">Figma Template</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$20.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <!-- Product Item 5 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-5.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">WithCash</h2>
+                  <p class="product-description">Figma Template</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$12.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <!-- Product Item 6 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-6.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">Journeey</h2>
+                  <p class="product-description">Figma Template</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$5.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <!-- Product Item 7 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-7.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">Foodish</h2>
+                  <p class="product-description">Figma Template</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$6.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <!-- Product Item 8 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-8.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">MediCare</h2>
+                  <p class="product-description">Figma Template</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$18.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <!-- Product Item 9 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-9.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">UpNews</h2>
+                  <p class="product-description">Figma Template</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$12.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <!-- Product Item 10 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-10.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">James</h2>
+                  <p class="product-description">Figma Template</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$12.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <!-- Product Item 11 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-11.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">JobBlitz</h2>
+                  <p class="product-description">Figma Template</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$5.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <!-- Product Item 12 -->
+              <article class="product-item">
+                <a
+                  href="./product-details.html"
+                  class="product-item-link"
+                  title="View Product's details"
+                >
+                  <img
+                    src="./img/img-products/product-12.webp"
+                    alt="Product Asset"
+                    class="product-item-img"
+                    width="302"
+                    height="260"
+                  />
+                  <h2 class="product-title">SkyHomes</h2>
+                  <p class="product-description">Landing Page</p>
+                </a>
+                <div class="quick-buy-box">
+                  <p class="item-price">$20.00</p>
+                  <button type="button" class="btn-item-cart">
+                    <svg class="icon icon-addtocart" width="24" height="24">
+                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                    </svg>
+                  </button>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <!-- Pagination -->
+          <div class="pagination">
+            <button type="button" class="btn-arrow" title="Previous page">
+              <svg class="icon arrow-less" width="16" height="16">
+                <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+
+            <ul class="pagination-list">
+              <li><a href="#" class="pagination-page active">01</a></li>
+              <li><a href="#" class="pagination-page">02</a></li>
+              <li><a href="#" class="pagination-page">03</a></li>
+              <li><a href="#" class="pagination-page">...</a></li>
+              <li><a href="#" class="pagination-page">10</a></li>
+            </ul>
+
+            <button type="button" class="btn-arrow" title="Next page">
+              <svg class="icon arrow-greater" width="16" height="16">
+                <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+      </div>
+
       <!-- CTA call to action section -->
-      <section class="cta">
-        <h2 class="section-name">PRODUCT</h2>
-        <h3 class="section-title">
-          Elevate Your Project with Premium Digital Assets
-        </h3>
-        <a href="./category.html" class="btn-shop">Shop Now</a>
+      <section class="cta container">
+        <div class="cta-content-box">
+          <h2 class="section-name">PRODUCT</h2>
+          <h3 class="section-title">
+            <span class="header-line">Elevate Your Project</span> with Premium
+            Digital Assets
+          </h3>
+          <a href="./category.html" class="btn-shop" title="View Our Products">
+            Shop Now
+          </a>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <section class="footer-section">
+    <footer class="footer">
+      <div class="footer-section container">
         <div class="footer-logobox">
-          <a href="./index.html" class="logo"> Pixmart. </a>
+          <a href="./index.html" class="logo-footer"> Pixmart. </a>
           <p class="footer-description">
             Your premium digital assets solution with high quality and
             comprehensive range of products and services.
@@ -609,56 +993,131 @@
         </div>
 
         <!-- Sitemap section -->
-        <section class="footer-navigation">
+        <section class="footer-navigation footer-nav-company">
           <h2 class="footer-nav-title">Company</h2>
           <ul class="footer-nav-list">
-            <li><a href="./index.html">Homepage v1 </a></li>
-            <li><a href="./index.html">Homepage v2 </a></li>
-            <li><a href="./index.html">Homepage v3 </a></li>
-            <li><a href="./about.html">About Us </a></li>
-            <li><a href="./creator.html">Creators </a></li>
-            <li><a href="./blog.html">Blog Articles</a></li>
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-nav-link">Homepage v1 </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-nav-link">Homepage v2 </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-nav-link">Homepage v3 </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./about.html" class="footer-nav-link">About Us </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./creator.html" class="footer-nav-link">Creators </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./blog.html" class="footer-nav-link">Blog Articles</a>
+            </li>
           </ul>
         </section>
 
         <!-- Sitemap section -->
-        <section class="footer-navigation">
+        <section class="footer-navigation footer-nav-products">
           <h2 class="footer-nav-title">Products</h2>
           <ul class="footer-nav-list">
-            <li><a href="./category.html">Website</a></li>
-            <li><a href="./category.html">Mobile App</a></li>
-            <li><a href="./category.html">Social Media Feeds</a></li>
-            <li><a href="./category.html">Presentation</a></li>
-            <li><a href="./category.html">Product Mockups</a></li>
-            <li><a href="./category.html">Illustrations</a></li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link">Website</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link">Mobile App</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link"
+                >Social Media Feeds</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link">Presentation</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link"
+                >Product Mockups</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link"
+                >Illustrations</a
+              >
+            </li>
           </ul>
         </section>
 
         <!-- Sitemap section -->
-        <section class="footer-navigation">
+        <section class="footer-navigation footer-nav-account">
           <h2 class="footer-nav-title">Account</h2>
           <ul class="footer-nav-list">
-            <li><a href="./cart.html">Your Cart</a></li>
-            <li><a href="./checkout.html">Check Out</a></li>
-            <li><a href="#" target="_blank">Refund Policy</a></li>
-            <li><a href="#" target="_blank">Company Policy</a></li>
+            <li class="footer-nav-item">
+              <a href="./cart.html" class="footer-nav-link">Your Cart</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./checkout.html" class="footer-nav-link">Check Out</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" target="_blank" class="footer-nav-link"
+                >Refund Policy</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" target="_blank" class="footer-nav-link"
+                >Company Policy</a
+              >
+            </li>
             <!-- anchor link -->
-            <li><a href="#">Send A Message</a></li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Send A Message</a>
+            </li>
             <!-- mail link -->
-            <li><a href="#">Customer Support</a></li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Customer Support</a>
+            </li>
           </ul>
         </section>
 
         <!-- Social media icons -->
-        <ul class="footer-socialbtns">
-          <li><a href="#" target="_blank">TW</a></li>
-          <li><a href="#" target="_blank">IG</a></li>
-          <li><a href="#" target="_blank">FB</a></li>
+        <ul class="footer-mediabtns">
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              class="footer-media"
+              title="Follow Us on Twitter"
+            >
+              TW
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              class="footer-media"
+              title="Follow Us on Instagram"
+            >
+              IG
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              class="footer-media"
+              title="Follow Us on Facebook"
+            >
+              FB
+            </a>
+          </li>
         </ul>
 
-        <!-- <h3>Subscribe to Design Newsletter</h3> -->
-        <form action="" method="post" class="newsletter">
-          <label for="email">Subscribe to Design Newsletter</label>
+        <!-- Subscribe to Design Newsletter -->
+        <form action="/" method="post" class="newsletter-form">
+          <label for="email" class="newsletter-label">
+            Subscribe to Design Newsletter
+          </label>
           <input
             type="email"
             name="email"
@@ -667,19 +1126,42 @@
             autocomplete="email"
             required
             pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            class="newsletter-input field-validation"
           />
-          <button type="submit">Subscribe</button>
+          <button
+            type="submit"
+            class="btn-newsletter"
+            title="Subscribe to Design Newsletter"
+          >
+            Subscribe
+          </button>
         </form>
-      </section>
+      </div>
 
       <!-- Copyright and terms -->
-      <div class="footer-copyright-section">
-        <ul>
-          <li><a href="#" target="_blank">Privacy Policy</a></li>
-          <li><a href="#" target="_blank">Terms and Condition</a></li>
-          <li><a href="#" target="_blank">Site Map</a></li>
-        </ul>
-        <p>Copyright © 2024 Pixmart. All rights reserved.</p>
+      <div class="copyright-section">
+        <div class="container copyright-content">
+          <ul class="copyright-list">
+            <li class="copyright-item">
+              <a href="#" target="_blank" class="copyright-link">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="copyright-item copyright-line">|</li>
+            <li class="copyright-item">
+              <a href="#" target="_blank" class="copyright-link">
+                Terms and Condition
+              </a>
+            </li>
+            <li class="copyright-item copyright-line">|</li>
+            <li class="copyright-item">
+              <a href="#" target="_blank" class="copyright-link"> Site Map </a>
+            </li>
+          </ul>
+          <p class="copyright-text">
+            Copyright © 2024 Pixmart. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
