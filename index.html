@@ -5,206 +5,384 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources."
+      content="Discover premium digital design resources at PixMart, from illustrations to UI/UX kits, to elevate your creative projects."
+    />
+    <link
+      rel="icon"
+      href="./favicon_io/android-chrome-192x192.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://necolas.github.io/normalize.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>PixMart - Digital Products E-Commerce Website</title>
+    <title>PixMart - Premium Digital Design Resources & E-Commerce</title>
   </head>
   <!-- Homepage v2 -->
   <body>
     <!-- Header -->
-    <header>
-      <!-- Logo -->
-      <a href="./index.html" class="logo"> Pixmart.</a>
-
-      <!-- Navigation menu -->
-      <nav>
-        <ul class="nav-menu">
-          <li>
-            <a href="./about.html">About</a>
-          </li>
-          <!-- Dropdown menu of products -->
-          <li>
-            <a href="#" class="dropdown">Products</a>
-            <ul class="dropdown-content">
-              <li><a href="./category.html">Website</a></li>
-              <li><a href="./category.html">Mobile App</a></li>
-              <li><a href="./category.html">Social Media Feeds</a></li>
-              <li><a href="./category.html">Presentation</a></li>
-              <li><a href="./category.html">Product Mockups</a></li>
-              <li><a href="./category.html">Illustrations</a></li>
+    <header class="header">
+      <div class="container header-block">
+        <!-- Logo -->
+        <a class="logo-header"> Pixmart. </a>
+        <div class="navigation-block">
+          <!-- Navigation menu -->
+          <nav class="navigation-header">
+            <ul class="nav-menu">
+              <li>
+                <a href="./about.html" class="nav-menu-link">
+                  <span class="nav-menu-name">about</span>
+                </a>
+              </li>
+              <!-- Dropdown menu of products -->
+              <li class="dropdown-item">
+                <a class="nav-menu-link dropdown">
+                  <span class="nav-menu-name">Products</span>
+                  <svg class="icon arrow-header" width="14" height="8">
+                    <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </a>
+                <ul class="dropdown-content">
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link">
+                      Website
+                    </a>
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Mobile App</a
+                    >
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link">
+                      Social media feeds
+                    </a>
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Presentation</a
+                    >
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Product Mockups</a
+                    >
+                  </li>
+                  <li class="dropdown-content-item">
+                    <a href="./category.html" class="dropdown-content-link"
+                      >Illustrations</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="./creator.html" class="nav-menu-link">
+                  <span class="nav-menu-name">Creators</span>
+                </a>
+                <sup class="label-header">NEW</sup>
+              </li>
+              <li>
+                <a href="./blog.html" class="nav-menu-link">
+                  <span class="nav-menu-name">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="./contact.html" class="nav-menu-link">
+                  <span class="nav-menu-name">Contact</span>
+                </a>
+              </li>
             </ul>
-          </li>
-          <li>
-            <a href="./creator.html">Creators</a>
-            <span class="label">NEW</span>
-          </li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Search bar -->
-      <div class="search-bar">
-        <form action="" method="get" role="search">
-          <label for="site-search" class="visually-hidden">
-            Search the site:
-          </label>
-          <input
-            type="search"
-            name="search"
-            id="site-search"
-            pattern="[^'\x22]+"
-            title="Invalid input"
-            aria-label="Search through site content"
-            placeholder="Search for Digital Assets"
-          />
-          <button type="submit" class="btn-search">
-            <img src="/" alt="Search icon" />
-            Search
-          </button>
-        </form>
-      </div>
-
-      <!-- Login and cart buttons -->
-      <div class="buttons">
-        <a href="./cart.html" class="btn-cart">
-          <img src="/" alt="Shop button" />
-          Cart
-        </a>
+          </nav>
+          <!-- Search / Cart block -->
+          <div class="search-bar">
+            <form
+              action="/search"
+              method="get"
+              role="search"
+              class="search-form"
+            >
+              <label for="site-search" class="visually-hidden">
+                Search the site:
+              </label>
+              <input
+                type="search"
+                name="search"
+                id="site-search"
+                required
+                pattern="[^'\x22]+"
+                title="Invalid input"
+                aria-label="Search through site content"
+                placeholder="Search for Digital Assets"
+                class="search-input"
+              />
+              <button type="submit" class="btn-search">
+                <svg class="icon icon-search" width="20" height="20">
+                  <use xlink:href="./img/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+            <!-- cart button -->
+            <a
+              href="./cart.html"
+              class="btn-cart"
+              title="View Your Shopping Cart"
+            >
+              <svg class="icon cart-icon-header" width="24" height="24">
+                <use xlink:href="./img/sprite.svg#icon-bag"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="main">
       <!-- Hero section -->
       <section class="hero">
-        <div class="hero-content">
-          <h1>Craft Your Success with Our <span>Digital</span> Assets</h1>
-          <p>
-            From our inspiring illustrations to dynamic UI/UX kits, elevate your
-            projects with our premium digital design resources.
-          </p>
-
-          <a href="./category.html" class="btn-shop">Shop Now</a>
-          <div>
-            <a href="#" class="btn-explore">
-              <img src="/" alt="play button" />
-              Watch About Us
-            </a>
+        <div class="container hero-section">
+          <div class="hero-content">
+            <h1 class="section-header hero-header">
+              <span class="header-line">Craft Your</span>
+              <span class="header-line">Success with </span>
+              Our
+              <span class="accent-header"> Digital</span> Assets
+            </h1>
+            <p class="hero-text">
+              from our inspiring illustrations to dynamic UI/UX kits, elevate
+              your projects with our premium digital design resources.
+            </p>
+            <div class="btns-header">
+              <a
+                href="./category.html"
+                class="btn-shop"
+                title="View Our Products"
+              >
+                Shop Now
+              </a>
+              <a href="#" class="btn-explore">
+                <div class="icon-play">
+                  <svg class="icon icon-play-img" width="16" height="16">
+                    <use xlink:href="./img/sprite.svg#icon-play"></use>
+                  </svg>
+                </div>
+                Watch About Us
+              </a>
+            </div>
           </div>
-        </div>
 
-        <figure class="hero-images">
-          <img src="/" alt="UI/UX kits" />
-          <img src="/" alt="UI/UX kits" />
-          <img src="/" alt="UI/UX kits" />
-        </figure>
+          <figure class="hero-images">
+            <img
+              src="./img/img-hero/hero-photo1.webp"
+              alt="UI/UX kits - Smiling woman"
+              width="290"
+              height="164"
+              class="hero-img-woman"
+            />
+            <img
+              src="./img/img-hero/hero-photo3.webp"
+              alt="UI/UX kits - Website Template"
+              width="514"
+              height="300"
+              class="hero-img-website"
+            />
+            <img
+              src="./img/img-hero/hero-photo2.webp"
+              alt="UI/UX kits - Event Speaker on Laptop Screen"
+              width="280"
+              height="522"
+              class="hero-img-laptop"
+            />
+          </figure>
+        </div>
       </section>
 
       <!-- Categories section -->
-      <section class="categories">
+      <section class="categories container">
+        <!-- Category description block -->
+        <div class="categories-content">
+          <h2 class="section-name">CATEGORIES</h2>
+          <h3 class="section-title">Discover Assets for Every Projects</h3>
+          <p class="section-description">
+            From fonts and icons to mockups and templates, our comprehensive
+            categories ensure that you find exactly what you need to your
+            projects.
+          </p>
+          <a href="./category.html" class="btn-shop" title="View Our Products">
+            Shop Now
+          </a>
+        </div>
+
         <!-- Category cards -->
-        <ul>
-          <li>
-            <article class="category-card">
-              <img src="/" alt="UI Kits icon" />
-              <h2>UI Kits</h2>
-              <p>
+        <div class="category-card-list">
+          <div class="category-card-column category-column-left">
+            <article class="category-card card-uikits">
+              <svg class="icon icon-cat-uikits" width="48" height="48">
+                <use xlink:href="../img/sprite.svg#icon-cat-uikits"></use>
+              </svg>
+              <h4 class="category-card-title">UI Kits</h4>
+              <p class="category-card-text">
                 Sleek and modern interfaces to vibrant and interactive UI
                 designs.
               </p>
             </article>
-          </li>
 
-          <li>
-            <article class="category-card">
-              <img src="/" alt="Presentation icon" />
-              <h2>Presentation</h2>
-              <p>
+            <article class="category-card card-presentation">
+              <svg class="icon icon-cat-presentation" width="48" height="48">
+                <use xlink:href="../img/sprite.svg#icon-cat-presentation"></use>
+              </svg>
+              <h4 class="category-card-title">Presentation</h4>
+              <p class="category-card-text">
                 Sleek, professional, and creative slides for any event or
                 occasion.
               </p>
             </article>
-          </li>
+            <article class="category-card category-item-bottom">
+              <svg class="icon icon-cat-presentation" width="48" height="48">
+                <use xlink:href="../img/sprite.svg#icon-cat-presentation"></use>
+              </svg>
+              <h4 class="category-card-title">Presentation</h4>
+              <p class="category-card-text">
+                Sleek, professional, and creative slides for any event or
+                occasion.
+              </p>
+            </article>
+          </div>
 
-          <li>
-            <article class="category-card accent">
-              <img src="/" alt="Social Media icon" />
-              <h2>Social Media</h2>
-              <p>
+          <div class="category-card-column category-column-right">
+            <article class="category-card category-item-top">
+              <svg class="icon icon-cat-presentation" width="48" height="48">
+                <use xlink:href="../img/sprite.svg#icon-cat-presentation"></use>
+              </svg>
+              <h4 class="category-card-title">Presentation</h4>
+              <p class="category-card-text">
+                Sleek, professional, and creative slides for any event or
+                occasion.
+              </p>
+            </article>
+
+            <article class="category-card card-media">
+              <svg class="icon icon-cat-media" width="48" height="48">
+                <use xlink:href="../img/sprite.svg#icon-cat-media"></use>
+              </svg>
+              <h4 class="category-card-title">Social Media</h4>
+              <p class="category-card-text">
                 Eye-catching design & interactive posts to suit any campaigns.
               </p>
             </article>
-          </li>
 
-          <li>
-            <article class="category-card">
-              <img src="/" alt="Illustrations icon" />
-              <h2>Illustrations</h2>
-              <p>
+            <article class="category-card card-illustration">
+              <svg class="icon icon-cat-illustration" width="48" height="48">
+                <use xlink:href="../img/sprite.svg#icon-cat-illustration"></use>
+              </svg>
+              <h4 class="category-card-title">Illustrations</h4>
+              <p class="category-card-text">
                 Quality illustrations with a diverse range of styles and themes.
               </p>
             </article>
-          </li>
-        </ul>
-
-        <!-- Category description block -->
-
-        <h2 class="section-name">CATEGORIES</h2>
-        <h3 class="section-title">Discover Assets for Every Projects</h3>
-        <p class="section-description">
-          From fonts and icons to mockups and templates, our comprehensive
-          categories ensure that you find exactly what you need to your
-          projects.
-        </p>
-
-        <a href="./category.html" class="btn-shop">Shop Now</a>
+          </div>
+        </div>
       </section>
 
       <!-- Company's values section -->
-      <section class="corp-values">
-        <h2 class="section-name">VALUES</h2>
-        <h3 class="section-title">
-          Guiding Your Experience to Digital Excellence
-        </h3>
-        <p class="section-description">
-          Unlock unparalleled access to premium digital design assets at
-          unbeatable prices, maximizing your creative process.
-        </p>
+      <section class="values container">
+        <div class="values-section">
+          <h2 class="section-name">values</h2>
+          <h3 class="section-title">
+            guiding your experience to digital excellence
+          </h3>
+          <p class="section-description">
+            unlock unparalleled access to premium digital design assets at
+            unbeatable prices, maximizing your creative process.
+          </p>
+        </div>
 
-        <ul>
+        <ul class="values-card-list">
           <li>
             <article class="values-card">
-              <img src="/" alt="Quality sign" />
-              <h4>Quality First</h4>
-              <p>
-                Only publishing the highest quality digital products for you.
-              </p>
+              <div class="values-card-icon">
+                <svg class="icon icon-medal" width="32" height="32">
+                  <use xlink:href="../img/sprite.svg#icon-medal"></use>
+                </svg>
+              </div>
+              <div class="values-card-content">
+                <h4>Quality First</h4>
+                <p>
+                  Only publishing the highest quality digital products for you.
+                </p>
+              </div>
             </article>
           </li>
 
           <li>
             <article class="values-card">
-              <img src="/" alt="Headphones icon" />
-              <h4>Customer Support</h4>
-              <p>We have customer live 24/7 assistance for your needs.</p>
+              <div class="values-card-icon">
+                <svg class="icon icon-headset" width="32" height="32">
+                  <use xlink:href="../img/sprite.svg#icon-headset"></use>
+                </svg>
+              </div>
+              <div class="values-card-content">
+                <h4>Customer Support</h4>
+                <p>We have customer live 24/7 assistance for your needs.</p>
+              </div>
             </article>
           </li>
 
           <li>
             <article class="values-card">
-              <img src="/" alt="Rocket icon" />
-              <h4>Innovation Hub</h4>
-              <p>A platform for cutting-edge creative digital products.</p>
+              <div class="values-card-icon">
+                <svg class="icon icon-rocket" width="32" height="32">
+                  <use xlink:href="../img/sprite.svg#icon-rocket"></use>
+                </svg>
+              </div>
+              <div class="values-card-content">
+                <h4>Innovation Hub</h4>
+                <p>A platform for cutting-edge creative digital products.</p>
+              </div>
             </article>
           </li>
 
           <li>
             <article class="values-card">
-              <img src="/" alt="Secure sign" />
-              <h4>Secure Shopping</h4>
-              <p>We guarantee safety and privacy for every purchase process.</p>
+              <div class="values-card-icon">
+                <svg class="icon icon-shield" width="32" height="32">
+                  <use xlink:href="../img/sprite.svg#icon-shield"></use>
+                </svg>
+              </div>
+              <div class="values-card-content">
+                <h4>Secure Shopping</h4>
+                <p>
+                  We guarantee safety and privacy for every purchase process.
+                </p>
+              </div>
             </article>
           </li>
         </ul>
@@ -213,237 +391,443 @@
       <!-- Products -->
       <section class="products">
         <h2 class="section-name">PRODUCTS</h2>
-        <h3 class="section-title">Discover Your Next Favorite Assets</h3>
+        <h3 class="section-title">
+          <span class="header-line">Discover Your</span>
+          <span class="header-line">Next Favorite Assets</span>
+        </h3>
         <figure class="products-images">
-          <img src="/" alt="Product Assets" />
-          <img src="/" alt="Product Assets" />
-          <img src="/" alt="Product Assets" />
+          <img
+            src="./img/img-products/img-products-hp/products-photo1.webp"
+            alt="Product Assets"
+            width="536"
+            height="530"
+            class="products-images-item img-odd"
+          />
+          <img
+            src="./img/img-products/img-products-hp/products-photo2.webp"
+            alt="Product Assets"
+            width="536"
+            height="530"
+            class="products-images-item img-even"
+          />
+          <img
+            src="./img/img-products/img-products-hp/products-photo3.webp"
+            alt="Product Assets"
+            width="536"
+            height="530"
+            class="products-images-item img-odd"
+          />
+          <img
+            src="./img/img-products/img-products-hp/products-photo1.webp"
+            alt="Product Assets"
+            width="536"
+            height="530"
+            class="products-images-item img-odd"
+          />
+          <img
+            src="./img/img-products/img-products-hp/products-photo2.webp"
+            alt="Product Assets"
+            width="536"
+            height="530"
+            class="products-images-item img-even"
+          />
+          <img
+            src="./img/img-products/img-products-hp/products-photo3.webp"
+            alt="Product Assets"
+            width="536"
+            height="530"
+            class="products-images-item img-odd"
+          />
+          <img
+            src="./img/img-products/img-products-hp/products-photo1.webp"
+            alt="Product Assets"
+            width="536"
+            height="530"
+            class="products-images-item img-odd"
+          />
+          <img
+            src="./img/img-products/img-products-hp/products-photo2.webp"
+            alt="Product Assets"
+            width="536"
+            height="530"
+            class="products-images-item img-even"
+          />
+          <img
+            src="./img/img-products/img-products-hp/products-photo3.webp"
+            alt="Product Assets"
+            width="536"
+            height="530"
+            class="products-images-item img-odd"
+          />
         </figure>
       </section>
 
       <!-- Awards section -->
-      <section class="awards">
-        <h2 class="section-name">AWARDS</h2>
-        <h3 class="section-title">Celebrating Our Excellence</h3>
-        <p class="section-description">
-          Discover the recognition and accolades earned by our top-quality
-          design assets, validating our design excellence and reliability.
-        </p>
+      <section class="awards container">
+        <div class="awards-content">
+          <h2 class="section-name">AWARDS</h2>
+          <h3 class="section-title">Celebrating Our Excellence</h3>
+          <p class="section-description">
+            Discover the recognition and accolades earned by our top-quality
+            design assets, validating our design excellence and reliability.
+          </p>
+        </div>
 
-        <ul>
+        <ul class="awards-card-list">
           <li class="awards-card">
-            <!-- <img src="/" alt="Award sign" /> :marker -->
-            <time>2023</time>
-            <h3>E-Commerce Innovation Award</h3>
+            <div class="awards-card-content">
+              <time class="awards-date">2023</time>
+              <h4 class="awards-title">E-Commerce Innovation Award</h4>
+            </div>
           </li>
           <li class="awards-card">
-            <!-- <img src="/" alt="Award sign" /> :marker -->
-            <time>2022</time>
-            <h3>Best Customer Service Award</h3>
+            <div class="awards-card-content">
+              <time>2022</time>
+              <h4>Best Customer Service Award</h4>
+            </div>
           </li>
           <li class="awards-card">
-            <!-- <img src="/" alt="Award sign" /> :marker -->
-            <time>2021</time>
-            <h3>Digital Marketplace of the Year</h3>
+            <div class="awards-card-content">
+              <time>2021</time>
+              <h4>Digital Marketplace of the Year</h4>
+            </div>
           </li>
         </ul>
       </section>
 
       <!-- Testimonials section -->
       <section class="testimonials">
-        <h2 class="section-name">TESTIMONIALS</h2>
-        <h3 class="section-title">Hear from Our Customers</h3>
-
-        <article class="testimonials-card">
-          <p>
-            Discovering PixMart's digital design assets and resources
-            revolutionized my client projects. The quality and variety have
-            allowed me to create stunning visuals that captivate my audience
-            every time. Highly recommended for any creatives looking to elevate
-            their work.
-          </p>
-          <img src="/" alt="Samuel Treavor's profile photo" />
-          <h4>Samuel Treavor</h4>
-          <p class="rating">&starf; &starf; &starf; &starf; &starf;</p>
-          <button type="button">&lt;</button>
-          <button type="button">&gt;</button>
-        </article>
+        <div class="container testimonials-bg"></div>
+        <div class="testimonials-wrapper container">
+          <div class="testimonials-content">
+            <h2 class="section-name">TESTIMONIALS</h2>
+            <h3 class="section-title">
+              <span class="header-line">Hear from Our </span>
+              <span class="header-line">Customers</span>
+            </h3>
+          </div>
+          <article class="testimonials-card">
+            <p class="testimonials-card-text">
+              Discovering PixMart's digital design assets and resources
+              revolutionized my client projects. The quality and variety have
+              allowed me to create stunning visuals that captivate my audience
+              every time. Highly recommended for any creatives looking to
+              elevate their work.
+            </p>
+            <div class="testimonials-card-details">
+              <div class="testimonials-card-name">
+                <img
+                  src="./img/img-blog-homepage/user-photo.webp"
+                  alt="Samuel Treavor's profile photo"
+                  width="64"
+                  height="64"
+                />
+                <h4 class="testimonials-card-title">Samuel Treavor</h4>
+              </div>
+              <div class="testimonials-btn-group">
+                <button type="button" class="btn-arrow">
+                  <svg class="icon arrow-less" width="16" height="16">
+                    <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+                <button type="button" class="btn-arrow">
+                  <svg class="icon arrow-greater" width="16" height="16">
+                    <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <!-- Pricing section -->
-      <section class="pricing">
+      <section class="pricing container">
         <h2 class="section-name">PRICING PLAN</h2>
         <h3 class="section-title">
           Choose The Perfect Plan for Creative Potential
         </h3>
 
-        <ul>
+        <ul class="membership-plan-list">
           <li>
             <!-- Price Plan -->
             <article class="membership-plan">
-              <h4>Standard Membership</h4>
-              <p><span>$14.99</span> / Month</p>
-              <ul>
-                <li>Enhanced Resource Access</li>
-                <li>Monthly Credits</li>
-                <li>Priority Customer Support</li>
-                <li>Community Features Access</li>
+              <h4 class="membership-plan-title">Standard Membership</h4>
+              <p class="membership-plan-price">
+                <span class="section-title">$14.99</span> / Month
+              </p>
+              <ul class="plan-details-list">
+                <li class="plan-details-item">Enhanced Resource Access</li>
+                <li class="plan-details-item">Monthly Credits</li>
+                <li class="plan-details-item">Priority Customer Support</li>
+                <li class="plan-details-item">Community Features Access</li>
               </ul>
-              <button type="submit">Get This Plan</button>
+              <button type="submit" class="btn-member">Get This Plan</button>
             </article>
           </li>
 
           <li>
             <!-- Price Plan -->
-            <article class="membership-plan accent">
-              <span class="label">BEST SELLER</span>
-              <h4>Plus Membership</h4>
-              <p><span>$29.99</span> / Month</p>
-              <ul>
-                <li>All Standard Benefits</li>
-                <li>Increased Monthly Credits</li>
-                <li>Early Access to New Releases</li>
-                <li>Member-Only Offers</li>
+            <article class="membership-plan bestseller">
+              <span class="label-bestseller">BEST SELLER</span>
+              <h4 class="membership-plan-title">Plus Membership</h4>
+              <p class="membership-plan-price">
+                <span class="section-title">$29.99</span> / Month
+              </p>
+              <ul class="plan-details-list">
+                <li class="plan-details-item">All Standard Benefits</li>
+                <li class="plan-details-item">Increased Monthly Credits</li>
+                <li class="plan-details-item">Early Access to New Releases</li>
+                <li class="plan-details-item">Member-Only Offers</li>
               </ul>
-              <button type="submit">Get This Plan</button>
+              <button type="submit" class="btn-member">Get This Plan</button>
             </article>
           </li>
 
           <li>
             <!-- Price Plan -->
             <article class="membership-plan">
-              <h4>Pro Membership</h4>
-              <p><span>$49.99</span> / Month</p>
-              <ul>
-                <li>All Plus Benefits</li>
-                <li>Unlimited Downloads</li>
-                <li>Custom Licensing</li>
-                <li>Direct Creator Collaboration</li>
+              <h4 class="membership-plan-title">Pro Membership</h4>
+              <p class="membership-plan-price">
+                <span class="section-title">$49.99</span> / Month
+              </p>
+              <ul class="plan-details-list">
+                <li class="plan-details-item">All Plus Benefits</li>
+                <li class="plan-details-item">Unlimited Downloads</li>
+                <li class="plan-details-item">Custom Licensing</li>
+                <li class="plan-details-item">Direct Creator Collaboration</li>
               </ul>
-              <button type="submit">Get This Plan</button>
+              <button type="submit" class="btn-member">Get This Plan</button>
             </article>
           </li>
         </ul>
       </section>
 
       <!-- Brands section -->
-      <div class="brands">
-        <ul>
-          <li>
-            <img src="/" alt="Brand logo" />
-          </li>
-          <li>
-            <img src="/" alt="Brand logo" />
-          </li>
-          <li>
-            <img src="/" alt="Brand logo" />
-          </li>
-          <li>
-            <img src="/" alt="Brand logo" />
-          </li>
-          <li>
-            <img src="/" alt="Brand logo" />
-          </li>
-          <li>
-            <img src="/" alt="Brand logo" />
-          </li>
-        </ul>
-      </div>
+      <ul class="brands">
+        <li class="brands-item">
+          <img
+            src="./img/logo/logo-partner1.png"
+            alt="Brand logo"
+            width="165"
+            height="40"
+            class="brands-item-img"
+          />
+        </li>
+        <li class="brands-item">
+          <img
+            src="./img/logo/logo-partner2.png"
+            alt="Brand logo"
+            width="165"
+            height="40"
+            class="brands-item-img"
+          />
+        </li>
+        <li class="brands-item">
+          <img
+            src="./img/logo/logo-partner3.png"
+            alt="Brand logo"
+            width="165"
+            height="40"
+            class="brands-item-img"
+          />
+        </li>
+        <li class="brands-item">
+          <img
+            src="./img/logo/logo-partner4.png"
+            alt="Brand logo"
+            width="165"
+            height="40"
+            class="brands-item-img"
+          />
+        </li>
+        <li class="brands-item">
+          <img
+            src="./img/logo/logo-partner5.png"
+            alt="Brand logo"
+            width="165"
+            height="40"
+            class="brands-item-img"
+          />
+        </li>
+        <li class="brands-item">
+          <img
+            src="./img/logo/logo-partner6.png"
+            alt="Brand logo"
+            width="165"
+            height="40"
+            class="brands-item-img"
+          />
+        </li>
+      </ul>
 
       <!-- FAQs section -->
-      <section class="faqs">
-        <h2 class="section-name">F.A.Q</h2>
-        <h3 class="section-title">Answers to Your Questions</h3>
-        <button type="submit">Ask Us A Question</button>
+      <section class="faqs container">
+        <div class="faqs-wrapper">
+          <div class="faqs-content">
+            <h2 class="section-name">F.A.Q</h2>
+            <h3 class="section-title">Answers to Your Questions</h3>
+          </div>
+          <button type="submit" class="btn-faqs">Ask Us A Question</button>
+        </div>
 
-        <details>
-          <summary class="faqs-name">Can I request a refund?</summary>
-          <!-- answer text needed -->
-          <p></p>
-        </details>
-
-        <details open>
-          <summary>How do I access my purchased products?</summary>
-          <p>
-            Accessing your purchased products is seamless and hassle-free on our
-            digital design assets marketplace. Simply log in to your account,
-            navigate to the 'My Purchases' section, and you'll find all your
-            purchased products ready for download.
-          </p>
-        </details>
-
-        <details>
-          <summary>Are there any discounts for bulk purchases?</summary>
-          <!-- answer text needed -->
-          <p></p>
-        </details>
-
-        <details>
-          <summary>What payment methods do you accept here?</summary>
-          <!-- answer text needed -->
-          <p></p>
-        </details>
-
-        <details>
-          <summary>Can I sell my digital products on this marketplace?</summary>
-          <!-- answer text needed -->
-          <p></p>
-        </details>
+        <div class="faqs-list">
+          <details class="faqs-details">
+            <summary class="faqs-name">Can I request a refund?</summary>
+            <!-- answer text needed -->
+            <p class="fasq-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
+              minus iusto eveniet aperiam deserunt. Illo aliquam et
+              exercitationem nobis iusto repellendus modi a, unde tempora
+              laboriosam numquam quibusdam ex sit!
+            </p>
+          </details>
+          <details open class="faqs-details">
+            <summary class="faqs-name">
+              How do I access my purchased products?
+            </summary>
+            <p class="fasq-text">
+              Accessing your purchased products is seamless and hassle-free on
+              our digital design assets marketplace. Simply log in to your
+              account, navigate to the 'My Purchases' section, and you'll find
+              all your purchased products ready for download.
+            </p>
+          </details>
+          <details class="faqs-details">
+            <summary class="faqs-name">
+              Are there any discounts for bulk purchases?
+            </summary>
+            <!-- answer text needed -->
+            <p class="fasq-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+              harum omnis quas magni eos vel. Dolorum quo nemo libero eos
+              ratione praesentium tempore in delectus magni consectetur.
+              Debitis, voluptatibus dolorum!
+            </p>
+          </details>
+          <details class="faqs-details">
+            <summary class="faqs-name">
+              What payment methods do you accept here?
+            </summary>
+            <!-- answer text needed -->
+            <p class="fasq-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              omnis quia natus praesentium reiciendis cum qui tempore eius iusto
+              sint nihil, beatae nesciunt inventore. Iure, doloribus unde!
+              Voluptatibus, tempora impedit.
+            </p>
+          </details>
+          <details class="faqs-details">
+            <summary class="faqs-name">
+              Can I sell my digital products on this marketplace?
+            </summary>
+            <!-- answer text needed -->
+            <p class="fasq-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
+              nulla voluptatum consequuntur. Autem at omnis velit nihil
+              asperiores illo culpa nulla odit, nobis eveniet? Blanditiis natus
+              temporibus sit totam dolores.
+            </p>
+          </details>
+        </div>
       </section>
 
       <!-- Blog secion -->
-      <section class="blog">
-        <h2 class="section-title">Latest Expert Design Insights</h2>
-        <a href="./blog.html">Explore All Articles &gt;</a>
+      <section class="blog container">
+        <div class="blog-header-block">
+          <h2 class="section-title">Latest Expert Design Insights</h2>
+          <a href="./blog.html" class="blog-link">
+            Explore All Articles
+            <svg class="icon icon-blog-link" width="16" height="16">
+              <use xlink:href="../img/sprite.svg#icon-arrow-down"></use>
+            </svg>
+          </a>
+        </div>
 
         <!-- Blog articles -->
+        <!-- Add list of articles - grid layout -->
+        <ul class="blog-list">
+          <li class="blog-card-main">
+            <article class="blog-card">
+              <span class="label-asset">TYPOGRAPHY</span>
+              <img
+                src="./img/img-blog-homepage/blog-photo1.webp"
+                alt="Blog image"
+                width="764"
+                height="654"
+                class="blog-card-img"
+              />
+              <h3 class="blog-card-header">
+                Retro Design: Dive Into the Retro Graphic Design Styles of the
+                50s to the 80s
+              </h3>
+              <time datetime="2024-04-05" class="blog-card-date"
+                >5 APRIL 2024</time
+              >
+            </article>
+          </li>
 
-        <article class="blog-card">
-          <span class="label">TYPOGRAPHY</span>
-          <img src="/" alt="Blog image" />
-          <h3>
-            Mastering the Art of Typography: Tips for More Eye -Catching Designs
-            in Style for 2024
-          </h3>
-          <time datetime="2024-04-05">5 APRIL 2024</time>
-        </article>
+          <li class="blog-card-top">
+            <article class="blog-card">
+              <span class="label-asset">UI/UX DESIGN</span>
+              <img
+                src="./img/img-blog-homepage/blog-photo2.webp"
+                alt="Blog image"
+                width="488"
+                height="272"
+                class="blog-card-img"
+              />
+              <h3 class="blog-card-header">
+                Admin Dashboard – Learning What’s Behind
+              </h3>
+              <time datetime="2024-03-16" class="blog-card-date"
+                >16 MARCH 2024</time
+              >
+            </article>
+          </li>
 
-        <article class="blog-card">
-          <span class="label">UI/UX DESIGN</span>
-          <img src="/" alt="Blog image" />
-          <h3>
-            The Ultimate Guide to UI/UX: Enhancing App User Experience with
-            Design
-          </h3>
-          <time datetime="2024-03-16">16 MARCH 2024</time>
-        </article>
-
-        <article class="blog-card">
-          <span class="label">DESIGN TRENDS</span>
-          <img src="/" alt="Blog image" />
-          <h3>
-            2024’s Top Graphic Design Trends: What Would Be Shaping the Future
-            of Design?
-          </h3>
-          <time datetime="2024-02-27">27 FEBRUARY 2024</time>
-        </article>
+          <li class="blog-card-bottom">
+            <article class="blog-card">
+              <span class="label-asset">DESIGN TRENDS</span>
+              <img
+                src="./img/img-blog-homepage/blog-photo3.webp"
+                alt="Blog image"
+                width="488"
+                height="272"
+                class="blog-card-img"
+              />
+              <h3 class="blog-card-header">
+                Get Inspired with the 7 Scrapbook Design Ideas to Appeal to Your
+                Audience
+              </h3>
+              <time datetime="2024-02-27" class="blog-card-date"
+                >27 FEBRUARY 2024</time
+              >
+            </article>
+          </li>
+        </ul>
       </section>
 
       <!-- CTA call to action section -->
-      <section class="cta">
-        <h2 class="section-name">PRODUCT</h2>
-        <h3 class="section-title">
-          Elevate Your Project with Premium Digital Assets
-        </h3>
-        <a href="./category.html" class="btn-shop">Shop Now</a>
+      <section class="cta container">
+        <div class="cta-content-box">
+          <h2 class="section-name">PRODUCT</h2>
+          <h3 class="section-title">
+            <span class="header-line">Elevate Your Project</span> with Premium
+            Digital Assets
+          </h3>
+          <a href="./category.html" class="btn-shop" title="View Our Products">
+            Shop Now
+          </a>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <section class="footer-section">
+    <footer class="footer">
+      <div class="footer-section container">
         <div class="footer-logobox">
-          <a href="./index.html" class="logo"> Pixmart. </a>
+          <a href="./index.html" class="logo-footer"> Pixmart. </a>
           <p class="footer-description">
             Your premium digital assets solution with high quality and
             comprehensive range of products and services.
@@ -451,56 +835,131 @@
         </div>
 
         <!-- Sitemap section -->
-        <section class="footer-navigation">
+        <section class="footer-navigation footer-nav-company">
           <h2 class="footer-nav-title">Company</h2>
           <ul class="footer-nav-list">
-            <li><a href="./index.html">Homepage v1 </a></li>
-            <li><a href="./index.html">Homepage v2 </a></li>
-            <li><a href="./index.html">Homepage v3 </a></li>
-            <li><a href="./about.html">About Us </a></li>
-            <li><a href="./creator.html">Creators </a></li>
-            <li><a href="./blog.html">Blog Articles</a></li>
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-nav-link">Homepage v1 </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-nav-link">Homepage v2 </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-nav-link">Homepage v3 </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./about.html" class="footer-nav-link">About Us </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./creator.html" class="footer-nav-link">Creators </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./blog.html" class="footer-nav-link">Blog Articles</a>
+            </li>
           </ul>
         </section>
 
         <!-- Sitemap section -->
-        <section class="footer-navigation">
+        <section class="footer-navigation footer-nav-products">
           <h2 class="footer-nav-title">Products</h2>
           <ul class="footer-nav-list">
-            <li><a href="./category.html">Website</a></li>
-            <li><a href="./category.html">Mobile App</a></li>
-            <li><a href="./category.html">Social Media Feeds</a></li>
-            <li><a href="./category.html">Presentation</a></li>
-            <li><a href="./category.html">Product Mockups</a></li>
-            <li><a href="./category.html">Illustrations</a></li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link">Website</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link">Mobile App</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link"
+                >Social Media Feeds</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link">Presentation</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link"
+                >Product Mockups</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a href="./category.html" class="footer-nav-link"
+                >Illustrations</a
+              >
+            </li>
           </ul>
         </section>
 
         <!-- Sitemap section -->
-        <section class="footer-navigation">
+        <section class="footer-navigation footer-nav-account">
           <h2 class="footer-nav-title">Account</h2>
           <ul class="footer-nav-list">
-            <li><a href="./cart.html">Your Cart</a></li>
-            <li><a href="./checkout.html">Check Out</a></li>
-            <li><a href="#" target="_blank">Refund Policy</a></li>
-            <li><a href="#" target="_blank">Company Policy</a></li>
+            <li class="footer-nav-item">
+              <a href="./cart.html" class="footer-nav-link">Your Cart</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./checkout.html" class="footer-nav-link">Check Out</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" target="_blank" class="footer-nav-link"
+                >Refund Policy</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" target="_blank" class="footer-nav-link"
+                >Company Policy</a
+              >
+            </li>
             <!-- anchor link -->
-            <li><a href="#">Send A Message</a></li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Send A Message</a>
+            </li>
             <!-- mail link -->
-            <li><a href="#">Customer Support</a></li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Customer Support</a>
+            </li>
           </ul>
         </section>
 
         <!-- Social media icons -->
-        <ul class="footer-socialbtns">
-          <li><a href="#" target="_blank">TW</a></li>
-          <li><a href="#" target="_blank">IG</a></li>
-          <li><a href="#" target="_blank">FB</a></li>
+        <ul class="footer-mediabtns">
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              class="footer-media"
+              title="Follow Us on Twitter"
+            >
+              TW
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              class="footer-media"
+              title="Follow Us on Instagram"
+            >
+              IG
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              class="footer-media"
+              title="Follow Us on Facebook"
+            >
+              FB
+            </a>
+          </li>
         </ul>
 
-        <!-- <h3>Subscribe to Design Newsletter</h3> -->
-        <form action="" method="post" class="newsletter">
-          <label for="email">Subscribe to Design Newsletter</label>
+        <!-- Subscribe to Design Newsletter -->
+        <form action="/" method="post" class="newsletter-form">
+          <label for="email" class="newsletter-label">
+            Subscribe to Design Newsletter
+          </label>
           <input
             type="email"
             name="email"
@@ -509,19 +968,42 @@
             autocomplete="email"
             required
             pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            class="newsletter-input field-validation"
           />
-          <input type="submit" value="Subscribe" />
+          <button
+            type="submit"
+            class="btn-newsletter"
+            title="Subscribe to Design Newsletter"
+          >
+            Subscribe
+          </button>
         </form>
-      </section>
+      </div>
 
       <!-- Copyright and terms -->
-      <div class="footer-copyright-section">
-        <ul>
-          <li><a href="#" target="_blank">Privacy Policy</a></li>
-          <li><a href="#" target="_blank">Terms and Condition</a></li>
-          <li><a href="#" target="_blank">Site Map</a></li>
-        </ul>
-        <p>Copyright © 2024 Pixmart. All rights reserved.</p>
+      <div class="copyright-section">
+        <div class="container copyright-content">
+          <ul class="copyright-list">
+            <li class="copyright-item">
+              <a href="#" target="_blank" class="copyright-link">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="copyright-item copyright-line">|</li>
+            <li class="copyright-item">
+              <a href="#" target="_blank" class="copyright-link">
+                Terms and Condition
+              </a>
+            </li>
+            <li class="copyright-item copyright-line">|</li>
+            <li class="copyright-item">
+              <a href="#" target="_blank" class="copyright-link"> Site Map </a>
+            </li>
+          </ul>
+          <p class="copyright-text">
+            Copyright © 2024 Pixmart. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
