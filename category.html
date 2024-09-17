@@ -489,12 +489,13 @@
               </div>
 
               <div class="range-container">
-                <div>
-                  <label for="price" class="range-label"> $ </label>
+                <div class="range-price-wrapper">
+                  <label for="min-price" class="range-label"> $ </label>
                   <input
                     type="number"
                     class="price-nmb"
                     name="price"
+                    id="min-price"
                     value="5"
                     inputmode="numeric"
                     pattern="\d*"
@@ -503,12 +504,13 @@
                     max="50"
                   />
                 </div>
-                <div>
-                  <label for="price" class="range-label"> $ </label>
+                <div class="range-price-wrapper">
+                  <label for="max-price" class="range-label"> $ </label>
                   <input
                     type="number"
                     class="price-nmb"
                     name="price"
+                    id="max-price"
                     value="50"
                     inputmode="numeric"
                     pattern="\d*"
