@@ -9,8 +9,9 @@
     />
     <link
       rel="icon"
-      href="./favicon_io/android-chrome-192x192.png"
       type="image/png"
+      sizes="192x192"
+      href="./favicon_io/android-chrome-192x192.png"
     />
     <link
       rel="apple-touch-icon"
@@ -57,66 +58,72 @@
           <!-- Navigation menu -->
           <nav class="navigation-header">
             <ul class="nav-menu">
-              <li>
+              <li class="nav-menu-item">
                 <a href="./about.html" class="nav-menu-link">
-                  <span class="nav-menu-name">about</span>
+                  <span class="nav-menu-name" data-text="About">about</span>
                 </a>
               </li>
               <!-- Dropdown menu of products -->
-              <li class="dropdown-item">
+              <li class="dropdown-item nav-menu-item">
                 <a class="nav-menu-link dropdown">
-                  <span class="nav-menu-name">Products</span>
+                  <span class="nav-menu-name" data-text="Products"
+                    >Products</span
+                  >
                   <svg class="icon arrow-header" width="14" height="8">
                     <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </a>
-                <ul class="dropdown-content">
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link">
-                      Website
-                    </a>
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Mobile App</a
-                    >
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link">
-                      Social media feeds
-                    </a>
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Presentation</a
-                    >
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Product Mockups</a
-                    >
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Illustrations</a
-                    >
-                  </li>
-                </ul>
+                <div class="dropdown-block">
+                  <ul class="dropdown-content">
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link">
+                        Website
+                      </a>
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Mobile App</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link">
+                        Social media feeds
+                      </a>
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Presentation</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Product Mockups</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Illustrations</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li>
+              <li class="nav-menu-item">
                 <a href="./creator.html" class="nav-menu-link">
-                  <span class="nav-menu-name">Creators</span>
+                  <span class="nav-menu-name" data-text="Creators"
+                    >Creators</span
+                  >
                 </a>
                 <sup class="label-header">NEW</sup>
               </li>
-              <li>
+              <li class="nav-menu-item">
                 <a href="./blog.html" class="nav-menu-link">
-                  <span class="nav-menu-name">Blog</span>
+                  <span class="nav-menu-name" data-text="Blog">Blog</span>
                 </a>
               </li>
-              <li>
+              <li class="nav-menu-item">
                 <a href="./contact.html" class="nav-menu-link">
-                  <span class="nav-menu-name">Contact</span>
+                  <span class="nav-menu-name" data-text="Contact">Contact</span>
                 </a>
               </li>
             </ul>
@@ -132,6 +139,7 @@
               <label for="site-search" class="visually-hidden">
                 Search the site:
               </label>
+
               <input
                 type="search"
                 name="search"
@@ -188,13 +196,17 @@
               >
                 Shop Now
               </a>
-              <a href="#" class="btn-explore">
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                class="btn-explore"
+              >
                 <div class="icon-play">
                   <svg class="icon icon-play-img" width="16" height="16">
                     <use xlink:href="./img/sprite.svg#icon-play"></use>
                   </svg>
                 </div>
-                Watch About Us
+                <span class="btn-explore-text">Watch About Us</span>
               </a>
             </div>
           </div>
@@ -236,7 +248,11 @@
             categories ensure that you find exactly what you need to your
             projects.
           </p>
-          <a href="./category.html" class="btn-shop section-button" title="View Our Products">
+          <a
+            href="./category.html"
+            class="btn-shop section-button"
+            title="View Our Products"
+          >
             Shop Now
           </a>
         </div>
@@ -317,7 +333,7 @@
         <div class="values-section">
           <h2 class="section-name">values</h2>
           <h3 class="section-title">
-            guiding your experience to digital excellence
+            Guiding Your Experience to Digital Excellence
           </h3>
           <p class="section-description">
             unlock unparalleled access to premium digital design assets at
@@ -748,62 +764,68 @@
         <!-- Add list of articles - grid layout -->
         <ul class="blog-list">
           <li class="blog-card-main">
-            <article class="blog-card">
-              <span class="label-asset">TYPOGRAPHY</span>
-              <img
-                src="./img/img-blog-homepage/blog-photo1.webp"
-                alt="Blog image"
-                width="764"
-                height="654"
-                class="blog-card-img"
-              />
-              <h3 class="blog-card-header">
-                Retro Design: Dive Into the Retro Graphic Design Styles of the
-                50s to the 80s
-              </h3>
-              <time datetime="2024-04-05" class="blog-card-date"
-                >5 APRIL 2024</time
-              >
-            </article>
+            <a href="#" class="blog-card-link">
+              <article class="blog-card">
+                <span class="label-asset">TYPOGRAPHY</span>
+                <img
+                  src="./img/img-blog-homepage/blog-photo1.webp"
+                  alt="Blog image"
+                  width="764"
+                  height="654"
+                  class="blog-card-img"
+                />
+                <h3 class="blog-card-header">
+                  Retro Design: Dive Into the Retro Graphic Design Styles of the
+                  50s to the 80s
+                </h3>
+                <time datetime="2024-04-05" class="blog-card-date"
+                  >5 APRIL 2024</time
+                >
+              </article>
+            </a>
           </li>
 
           <li class="blog-card-top">
-            <article class="blog-card">
-              <span class="label-asset">UI/UX DESIGN</span>
-              <img
-                src="./img/img-blog-homepage/blog-photo2.webp"
-                alt="Blog image"
-                width="488"
-                height="272"
-                class="blog-card-img"
-              />
-              <h3 class="blog-card-header">
-                Admin Dashboard – Learning What’s Behind
-              </h3>
-              <time datetime="2024-03-16" class="blog-card-date"
-                >16 MARCH 2024</time
-              >
-            </article>
+            <a href="#" class="blog-card-link">
+              <article class="blog-card">
+                <span class="label-asset">UI/UX DESIGN</span>
+                <img
+                  src="./img/img-blog-homepage/blog-photo2.webp"
+                  alt="Blog image"
+                  width="488"
+                  height="272"
+                  class="blog-card-img"
+                />
+                <h3 class="blog-card-header">
+                  Admin Dashboard – Learning What’s Behind
+                </h3>
+                <time datetime="2024-03-16" class="blog-card-date"
+                  >16 MARCH 2024</time
+                >
+              </article>
+            </a>
           </li>
 
           <li class="blog-card-bottom">
-            <article class="blog-card">
-              <span class="label-asset">DESIGN TRENDS</span>
-              <img
-                src="./img/img-blog-homepage/blog-photo3.webp"
-                alt="Blog image"
-                width="488"
-                height="272"
-                class="blog-card-img"
-              />
-              <h3 class="blog-card-header">
-                Get Inspired with the 7 Scrapbook Design Ideas to Appeal to Your
-                Audience
-              </h3>
-              <time datetime="2024-02-27" class="blog-card-date"
-                >27 FEBRUARY 2024</time
-              >
-            </article>
+            <a href="#" class="blog-card-link">
+              <article class="blog-card">
+                <span class="label-asset">DESIGN TRENDS</span>
+                <img
+                  src="./img/img-blog-homepage/blog-photo3.webp"
+                  alt="Blog image"
+                  width="488"
+                  height="272"
+                  class="blog-card-img"
+                />
+                <h3 class="blog-card-header">
+                  Get Inspired with the 7 Scrapbook Design Ideas to Appeal to
+                  Your Audience
+                </h3>
+                <time datetime="2024-02-27" class="blog-card-date"
+                  >27 FEBRUARY 2024</time
+                >
+              </article>
+            </a>
           </li>
         </ul>
       </section>
@@ -827,7 +849,7 @@
     <footer class="footer">
       <div class="footer-section container">
         <div class="footer-logobox">
-          <a href="./index.html" class="logo-footer"> Pixmart. </a>
+          <a class="logo-footer"> Pixmart. </a>
           <p class="footer-description">
             Your premium digital assets solution with high quality and
             comprehensive range of products and services.
@@ -901,22 +923,22 @@
               <a href="./checkout.html" class="footer-nav-link">Check Out</a>
             </li>
             <li class="footer-nav-item">
-              <a href="#" target="_blank" class="footer-nav-link"
-                >Refund Policy</a
-              >
+              <a href="#" class="footer-nav-link">Refund Policy</a>
             </li>
             <li class="footer-nav-item">
-              <a href="#" target="_blank" class="footer-nav-link"
-                >Company Policy</a
-              >
+              <a href="#" class="footer-nav-link">Company Policy</a>
             </li>
             <!-- anchor link -->
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Send A Message</a>
+              <a href="./contact.html#send-message" class="footer-nav-link"
+                >Send A Message</a
+              >
             </li>
             <!-- mail link -->
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Customer Support</a>
+              <a href="mailto:support@pixmart.com" class="footer-nav-link">
+                Customer Support
+              </a>
             </li>
           </ul>
         </section>
@@ -925,7 +947,7 @@
         <ul class="footer-mediabtns">
           <li>
             <a
-              href="#"
+              href="https://x.com"
               target="_blank"
               class="footer-media"
               title="Follow Us on Twitter"
@@ -935,7 +957,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="https://www.instagram.com"
               target="_blank"
               class="footer-media"
               title="Follow Us on Instagram"
@@ -945,7 +967,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="https://www.facebook.com"
               target="_blank"
               class="footer-media"
               title="Follow Us on Facebook"
@@ -985,19 +1007,15 @@
         <div class="container copyright-content">
           <ul class="copyright-list">
             <li class="copyright-item">
-              <a href="#" target="_blank" class="copyright-link">
-                Privacy Policy
-              </a>
+              <a href="#" class="copyright-link"> Privacy Policy </a>
             </li>
             <li class="copyright-item copyright-line">|</li>
             <li class="copyright-item">
-              <a href="#" target="_blank" class="copyright-link">
-                Terms and Condition
-              </a>
+              <a href="#" class="copyright-link"> Terms and Condition </a>
             </li>
             <li class="copyright-item copyright-line">|</li>
             <li class="copyright-item">
-              <a href="#" target="_blank" class="copyright-link"> Site Map </a>
+              <a href="#" class="copyright-link"> Site Map </a>
             </li>
           </ul>
           <p class="copyright-text">

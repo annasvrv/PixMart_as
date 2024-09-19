@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Explore Top UI Kits Design Assets" />
+    <meta
+      name="description"
+      content="Explore top UI kits, fonts, icons, mockups, and templates. Discover design assets tailored for every project, all in one place at PixMart."
+    />
     <link
       rel="icon"
-      href="./favicon_io/android-chrome-192x192.png"
       type="image/png"
+      sizes="192x192"
+      href="./favicon_io/android-chrome-192x192.png"
     />
     <link
       rel="apple-touch-icon"
@@ -40,80 +44,84 @@
       href="http://necolas.github.io/normalize.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>UI Kits Design Assets</title>
+    <title>PixMart - UI Kits Design Assets</title>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="container header-block">
         <!-- Logo -->
-        <a href="./index.html" class="logo-header" title="Go to Homepage">
-          Pixmart.
-        </a>
+        <a href="./index.html" class="logo-header"> Pixmart. </a>
         <div class="navigation-block">
           <!-- Navigation menu -->
           <nav class="navigation-header">
             <ul class="nav-menu">
-              <li>
+              <li class="nav-menu-item">
                 <a href="./about.html" class="nav-menu-link">
-                  <span class="nav-menu-name">about</span>
+                  <span class="nav-menu-name" data-text="About">about</span>
                 </a>
               </li>
               <!-- Dropdown menu of products -->
-              <li class="dropdown-item">
+              <li class="dropdown-item nav-menu-item">
                 <a class="nav-menu-link dropdown">
-                  <span class="nav-menu-name">Products</span>
+                  <span class="nav-menu-name" data-text="Products"
+                    >Products</span
+                  >
                   <svg class="icon arrow-header" width="14" height="8">
                     <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </a>
-                <ul class="dropdown-content">
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link">
-                      Website
-                    </a>
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Mobile App</a
-                    >
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link">
-                      Social media feeds
-                    </a>
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Presentation</a
-                    >
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Product Mockups</a
-                    >
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Illustrations</a
-                    >
-                  </li>
-                </ul>
+                <div class="dropdown-block">
+                  <ul class="dropdown-content">
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link">
+                        Website
+                      </a>
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Mobile App</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link">
+                        Social media feeds
+                      </a>
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Presentation</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Product Mockups</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Illustrations</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li>
+              <li class="nav-menu-item">
                 <a href="./creator.html" class="nav-menu-link">
-                  <span class="nav-menu-name">Creators</span>
+                  <span class="nav-menu-name" data-text="Creators"
+                    >Creators</span
+                  >
                 </a>
                 <sup class="label-header">NEW</sup>
               </li>
-              <li>
+              <li class="nav-menu-item">
                 <a href="./blog.html" class="nav-menu-link">
-                  <span class="nav-menu-name">Blog</span>
+                  <span class="nav-menu-name" data-text="Blog">Blog</span>
                 </a>
               </li>
-              <li>
+              <li class="nav-menu-item">
                 <a href="./contact.html" class="nav-menu-link">
-                  <span class="nav-menu-name">Contact</span>
+                  <span class="nav-menu-name" data-text="Contact">Contact</span>
                 </a>
               </li>
             </ul>
@@ -129,6 +137,7 @@
               <label for="site-search" class="visually-hidden">
                 Search the site:
               </label>
+
               <input
                 type="search"
                 name="search"
@@ -350,7 +359,7 @@
               <li class="category-item">
                 <input
                   type="checkbox"
-                  nname="format"
+                  name="format"
                   value="adobe illustration"
                   id="format-adobe-illustration"
                   class="category-filter-input visually-hidden"
@@ -474,18 +483,19 @@
             <legend class="filter-card-legend">Price</legend>
             <div class="range-box">
               <div class="price-slider">
-                <button
-                  class="range-button btn-range-min"
-                  is-min
-                  type="button"
-                ></button>
-                <button
-                  class="range-button btn-range-max"
-                  is-max
-                  type="button"
-                ></button>
+                <div class="price-slider-selected">
+                  <button
+                    class="range-button btn-range-min"
+                    type="button"
+                  ></button>
+                  <div class="range-line selected"></div>
+                  <button
+                    class="range-button btn-range-max"
+                    type="button"
+                  ></button>
+                </div>
+
                 <div class="range-line"></div>
-                <div class="range-line" is-selected></div>
               </div>
 
               <div class="range-container">
@@ -497,8 +507,6 @@
                     name="price"
                     id="min-price"
                     value="5"
-                    inputmode="numeric"
-                    pattern="\d*"
                     step="1"
                     min="0"
                     max="50"
@@ -512,8 +520,6 @@
                     name="price"
                     id="max-price"
                     value="50"
-                    inputmode="numeric"
-                    pattern="\d*"
                     step="1"
                     min="0"
                     max="99"
@@ -550,7 +556,7 @@
         </form>
 
         <!-- Catalog -->
-        <section class="catalog">
+        <div class="catalog">
           <!-- Filters Block -->
           <div class="filters-block">
             <div class="catalog-display-filter">
@@ -583,7 +589,7 @@
                       Show All
                     </option>
                   </select>
-                  <span class="focus"></span>
+                  <span class="cat-select-focus"></span>
                 </div>
               </form>
             </div>
@@ -607,341 +613,352 @@
           </div>
 
           <ul class="catalog-list">
+            <!-- Product Item 1 -->
             <li class="catalog-list-item">
-              <!-- Product Item 1 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-1.webp"
-                    alt="Product Asset"
+                    alt="EzMart - Figma Template"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">EzMart</h2>
                   <p class="product-description">Figma Template</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$11.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$11.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
+
+            <!-- Product Item 2 -->
             <li>
-              <!-- Product Item 2 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-2.webp"
-                    alt="Product Asset"
+                    alt="SchoolHub - Figma Template"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">SchoolHub</h2>
                   <p class="product-description">Figma Template</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$6.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$6.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
+
+            <!-- Product Item 3 -->
             <li>
-              <!-- Product Item 3 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-3.webp"
-                    alt="Product Asset"
+                    alt="Kidztar - Figma Template"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">Kidztar</h2>
                   <p class="product-description">Figma Template</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$20.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$20.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
+
+            <!-- Product Item 4 -->
             <li>
-              <!-- Product Item 4 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-4.webp"
-                    alt="Product Asset"
+                    alt="PlayCut - Figma Template"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">PlayCut</h2>
                   <p class="product-description">Figma Template</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$20.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$20.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
+
+            <!-- Product Item 5 -->
             <li>
-              <!-- Product Item 5 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-5.webp"
-                    alt="Product Asset"
+                    alt="WithCash - Figma Template"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">WithCash</h2>
                   <p class="product-description">Figma Template</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$12.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$12.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
+
+            <!-- Product Item 6 -->
             <li>
-              <!-- Product Item 6 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-6.webp"
-                    alt="Product Asset"
+                    alt="Journeey - Figma Template"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">Journeey</h2>
                   <p class="product-description">Figma Template</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$5.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$5.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
+
+            <!-- Product Item 7 -->
             <li>
-              <!-- Product Item 7 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-7.webp"
-                    alt="Product Asset"
+                    alt="Foodish - Figma Template"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">Foodish</h2>
                   <p class="product-description">Figma Template</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$6.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$6.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
+
+            <!-- Product Item 8 -->
             <li>
-              <!-- Product Item 8 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-8.webp"
-                    alt="Product Asset"
+                    alt="MediCare - Figma Template"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">MediCare</h2>
                   <p class="product-description">Figma Template</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$18.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$18.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
+
+            <!-- Product Item 9 -->
             <li>
-              <!-- Product Item 9 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-9.webp"
-                    alt="Product Asset"
+                    alt="UpNews - Figma Template"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">UpNews</h2>
                   <p class="product-description">Figma Template</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$12.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$12.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
+
+            <!-- Product Item 10 -->
             <li>
-              <!-- Product Item 10 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-10.webp"
-                    alt="Product Asset"
+                    alt="James - Figma Template"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">James</h2>
                   <p class="product-description">Figma Template</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$12.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$12.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
+
+            <!-- Product Item 11 -->
             <li>
-              <!-- Product Item 11 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-11.webp"
-                    alt="Product Asset"
+                    alt="JobBlitz - Figma Template"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">JobBlitz</h2>
                   <p class="product-description">Figma Template</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$5.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$5.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
+
+            <!-- Product Item 12 -->
             <li>
-              <!-- Product Item 12 -->
-              <article class="product-item">
-                <a
-                  href="./product-details.html"
-                  class="product-item-link"
-                  title="View Product's details"
-                >
+              <a
+                href="./product-details.html"
+                class="product-item-link"
+                title="View Product's details"
+              >
+                <article class="product-item">
                   <img
                     src="./img/img-products/product-12.webp"
-                    alt="Product Asset"
+                    alt="SkyHomes - Landing Page"
                     class="product-item-img"
                     width="302"
                     height="260"
                   />
                   <h2 class="product-title">SkyHomes</h2>
                   <p class="product-description">Landing Page</p>
-                </a>
-                <div class="quick-buy-box">
-                  <p class="item-price">$20.00</p>
-                  <button type="button" class="btn-item-cart">
-                    <svg class="icon icon-addtocart" width="24" height="24">
-                      <use xlink:href="../img/sprite.svg#icon-bag"></use>
-                    </svg>
-                  </button>
-                </div>
-              </article>
+                  <div class="quick-buy-box">
+                    <p class="item-price">$20.00</p>
+                    <button type="button" class="btn-item-cart">
+                      <svg class="icon icon-addtocart" width="24" height="24">
+                        <use xlink:href="../img/sprite.svg#icon-bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </a>
             </li>
           </ul>
           <!-- Pagination -->
@@ -966,7 +983,7 @@
               </svg>
             </button>
           </div>
-        </section>
+        </div>
       </div>
 
       <!-- CTA call to action section -->
@@ -988,7 +1005,9 @@
     <footer class="footer">
       <div class="footer-section container">
         <div class="footer-logobox">
-          <a href="./index.html" class="logo-footer"> Pixmart. </a>
+          <a href="./index.html" class="logo-footer" title="Go to Homepage">
+            Pixmart.
+          </a>
           <p class="footer-description">
             Your premium digital assets solution with high quality and
             comprehensive range of products and services.
@@ -1062,22 +1081,22 @@
               <a href="./checkout.html" class="footer-nav-link">Check Out</a>
             </li>
             <li class="footer-nav-item">
-              <a href="#" target="_blank" class="footer-nav-link"
-                >Refund Policy</a
-              >
+              <a href="#" class="footer-nav-link">Refund Policy</a>
             </li>
             <li class="footer-nav-item">
-              <a href="#" target="_blank" class="footer-nav-link"
-                >Company Policy</a
-              >
+              <a href="#" class="footer-nav-link">Company Policy</a>
             </li>
             <!-- anchor link -->
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Send A Message</a>
+              <a href="./contact.html#send-message" class="footer-nav-link">
+                Send A Message
+              </a>
             </li>
             <!-- mail link -->
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">Customer Support</a>
+              <a href="mailto:support@pixmart.com" class="footer-nav-link">
+                Customer Support
+              </a>
             </li>
           </ul>
         </section>
@@ -1086,7 +1105,7 @@
         <ul class="footer-mediabtns">
           <li>
             <a
-              href="#"
+              href="https://x.com"
               target="_blank"
               class="footer-media"
               title="Follow Us on Twitter"
@@ -1096,7 +1115,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="https://www.instagram.com"
               target="_blank"
               class="footer-media"
               title="Follow Us on Instagram"
@@ -1106,7 +1125,7 @@
           </li>
           <li>
             <a
-              href="#"
+              href="https://www.facebook.com"
               target="_blank"
               class="footer-media"
               title="Follow Us on Facebook"
@@ -1146,19 +1165,15 @@
         <div class="container copyright-content">
           <ul class="copyright-list">
             <li class="copyright-item">
-              <a href="#" target="_blank" class="copyright-link">
-                Privacy Policy
-              </a>
+              <a href="#" class="copyright-link"> Privacy Policy </a>
             </li>
             <li class="copyright-item copyright-line">|</li>
             <li class="copyright-item">
-              <a href="#" target="_blank" class="copyright-link">
-                Terms and Condition
-              </a>
+              <a href="#" class="copyright-link"> Terms and Condition </a>
             </li>
             <li class="copyright-item copyright-line">|</li>
             <li class="copyright-item">
-              <a href="#" target="_blank" class="copyright-link"> Site Map </a>
+              <a href="#" class="copyright-link"> Site Map </a>
             </li>
           </ul>
           <p class="copyright-text">

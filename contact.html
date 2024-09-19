@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback."
+      content="Contact PixMart for support, questions, or feedback. We're here to assist you on your creative journey and ensure you have the best experience."
     />
     <link
       rel="icon"
-      href="./favicon_io/android-chrome-192x192.png"
       type="image/png"
+      sizes="192x192"
+      href="./favicon_io/android-chrome-192x192.png"
     />
     <link
       rel="apple-touch-icon"
@@ -50,73 +51,77 @@
     <header class="header">
       <div class="container header-block">
         <!-- Logo -->
-        <a href="./index.html" class="logo-header" title="Go to Homepage">
-          Pixmart.
-        </a>
+        <a href="./index.html" class="logo-header"> Pixmart. </a>
         <div class="navigation-block">
           <!-- Navigation menu -->
           <nav class="navigation-header">
             <ul class="nav-menu">
-              <li>
+              <li class="nav-menu-item">
                 <a href="./about.html" class="nav-menu-link">
-                  <span class="nav-menu-name">about</span>
+                  <span class="nav-menu-name" data-text="About">about</span>
                 </a>
               </li>
               <!-- Dropdown menu of products -->
-              <li class="dropdown-item">
+              <li class="dropdown-item nav-menu-item">
                 <a class="nav-menu-link dropdown">
-                  <span class="nav-menu-name">Products</span>
+                  <span class="nav-menu-name" data-text="Products"
+                    >Products</span
+                  >
                   <svg class="icon arrow-header" width="14" height="8">
                     <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
                   </svg>
                 </a>
-                <ul class="dropdown-content">
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link">
-                      Website
-                    </a>
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Mobile App</a
-                    >
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link">
-                      Social media feeds
-                    </a>
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Presentation</a
-                    >
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Product Mockups</a
-                    >
-                  </li>
-                  <li class="dropdown-content-item">
-                    <a href="./category.html" class="dropdown-content-link"
-                      >Illustrations</a
-                    >
-                  </li>
-                </ul>
+                <div class="dropdown-block">
+                  <ul class="dropdown-content">
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link">
+                        Website
+                      </a>
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Mobile App</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link">
+                        Social media feeds
+                      </a>
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Presentation</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Product Mockups</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Illustrations</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li>
+              <li class="nav-menu-item">
                 <a href="./creator.html" class="nav-menu-link">
-                  <span class="nav-menu-name">Creators</span>
+                  <span class="nav-menu-name" data-text="Creators"
+                    >Creators</span
+                  >
                 </a>
                 <sup class="label-header">NEW</sup>
               </li>
-              <li>
+              <li class="nav-menu-item">
                 <a href="./blog.html" class="nav-menu-link">
-                  <span class="nav-menu-name">Blog</span>
+                  <span class="nav-menu-name" data-text="Blog">Blog</span>
                 </a>
               </li>
-              <li>
-                <a href="./contact.html" class="nav-menu-link">
-                  <span class="nav-menu-name active">Contact</span>
+              <li class="nav-menu-item">
+                <a href="./contact.html" class="nav-menu-link active">
+                  <span class="nav-menu-name" data-text="Contact">Contact</span>
                 </a>
               </li>
             </ul>
@@ -132,6 +137,7 @@
               <label for="site-search" class="visually-hidden">
                 Search the site:
               </label>
+
               <input
                 type="search"
                 name="search"
@@ -210,23 +216,39 @@
               referrerpolicy="no-referrer-when-downgrade"
               class="map-location"
             ></iframe>
+
+            <!-- <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d288920.18939986516!2d-73.70372152933649!3d40.85749762123839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e827d7b48ab855%3A0x12e97a8d0ded81e0!2s60%20Wall%20St%2C%20Huntington%2C%20NY%2011743!5e0!3m2!1sen!2sus!4v1726729078019!5m2!1sen!2sus"
+              width="554"
+              height="314"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="map-location"
+            ></iframe> -->
             <div class="contact-address">
-              <div class="contact-address-content">
+              <a
+                href="https://maps.app.goo.gl/Sfb77377F39MY4RF8"
+                target="_blank"
+                class="contact-address-link"
+              >
                 <h3 class="contact-address-title">PixMart HQ</h3>
                 <p class="contact-address-text">
                   123 Creative Ave, Design City, 45678
                 </p>
-              </div>
+              </a>
             </div>
           </div>
         </div>
         <!-- Form -->
-        <form action="/" method="post" class="contact-form">
+        <form action="/" method="post" class="contact-form" id="send-message">
           <label for="name" class="contact-label">Full Name</label>
           <input
             type="text"
             name="name"
             id="name"
+            pattern="^[a-zA-Z]+( [a-zA-Z]+)+$"
             placeholder="Amelia Robert Johnson"
             required
             class="contact-input field-validation"
@@ -249,6 +271,7 @@
               <option value="subject-2">Subject 2</option>
               <option value="subject-3">Subject 3</option>
             </select>
+            <span class="cat-select-focus"></span>
           </div>
           <label for="message" class="contact-label">Message</label>
           <textarea
@@ -284,7 +307,9 @@
                 />
                 <label for="policy" class="contact-checkbox-label">
                   I have read the
-                  <a href="#" class="accent-header">User & Privacy Policy</a>
+                  <a href="#" class="accent-header contact-checkbox-link"
+                    >User & Privacy Policy</a
+                  >
                 </label>
               </li>
             </ul>
@@ -301,7 +326,13 @@
             Explore our new exclusive digital design assets and graphic
             collections today!
           </p>
-          <a href="./category.html" class="btn-shop section-button">Shop Now</a>
+          <a
+            href="./category.html"
+            title="View Our Products"
+            class="btn-shop section-button"
+          >
+            Shop Now
+          </a>
         </div>
       </section>
     </main>
@@ -386,22 +417,22 @@
               <a href="./checkout.html" class="footer-prod-link">Check Out</a>
             </li>
             <li class="footer-nav-item">
-              <a href="#" target="_blank" class="footer-prod-link"
-                >Refund Policy</a
-              >
+              <a href="#" class="footer-prod-link">Refund Policy</a>
             </li>
             <li class="footer-nav-item">
-              <a href="#" target="_blank" class="footer-prod-link"
-                >Company Policy</a
-              >
+              <a href="#" class="footer-prod-link">Company Policy</a>
             </li>
             <!-- anchor link -->
             <li class="footer-nav-item">
-              <a href="#" class="footer-prod-link">Send A Message</a>
+              <a href="#send-message" class="footer-prod-link">
+                Send A Message
+              </a>
             </li>
             <!-- mail link -->
             <li class="footer-nav-item">
-              <a href="#" class="footer-prod-link">Customer Support</a>
+              <a href="mailto:support@pixmart.com" class="footer-prod-link">
+                Customer Support
+              </a>
             </li>
           </ul>
         </section>
@@ -412,7 +443,7 @@
           <ul class="footer-media-list">
             <li>
               <a
-                href="#"
+                href="https://x.com"
                 target="_blank"
                 class="footer-media"
                 title="Follow Us on Twitter"
@@ -422,7 +453,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.instagram.com"
                 target="_blank"
                 class="footer-media"
                 title="Follow Us on Instagram"
@@ -432,7 +463,7 @@
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.facebook.com"
                 target="_blank"
                 class="footer-media"
                 title="Follow Us on Facebook"
@@ -475,19 +506,15 @@
         <div class="container copyright-content">
           <ul class="copyright-list">
             <li class="copyright-item">
-              <a href="#" target="_blank" class="copyright-link">
-                Privacy Policy
-              </a>
+              <a href="#" class="copyright-link"> Privacy Policy </a>
             </li>
             <li class="copyright-item copyright-line">|</li>
             <li class="copyright-item">
-              <a href="#" target="_blank" class="copyright-link">
-                Terms and Condition
-              </a>
+              <a href="#" class="copyright-link"> Terms and Condition </a>
             </li>
             <li class="copyright-item copyright-line">|</li>
             <li class="copyright-item">
-              <a href="#" target="_blank" class="copyright-link"> Site Map </a>
+              <a href="#" class="copyright-link"> Site Map </a>
             </li>
           </ul>
           <p class="copyright-text">
