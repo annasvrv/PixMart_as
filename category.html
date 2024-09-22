@@ -180,7 +180,9 @@
         <form action="/" method="get" class="category-filter-form">
           <!-- Categories -->
           <fieldset class="filter-card">
-            <legend class="filter-card-legend">Categories</legend>
+            <legend class="filter-card-legend card-title-overflow">
+              Categories
+            </legend>
             <ul class="category-filter-list">
               <li class="category-item franklin-normal-16">
                 <input
@@ -286,7 +288,9 @@
 
           <!-- Format Type -->
           <fieldset class="filter-card">
-            <legend class="filter-card-legend">Format Type</legend>
+            <legend class="filter-card-legend card-title-overflow">
+              Format Type
+            </legend>
             <ul class="category-filter-list">
               <li class="category-item franklin-normal-16">
                 <input
@@ -384,7 +388,9 @@
 
           <!-- Style -->
           <fieldset class="filter-card">
-            <legend class="filter-card-legend">Style</legend>
+            <legend class="filter-card-legend card-title-overflow">
+              Style
+            </legend>
             <ul class="category-filter-list">
               <li class="category-item franklin-normal-16">
                 <input
@@ -476,7 +482,9 @@
 
           <!-- Price range -->
           <fieldset class="price-container">
-            <legend class="filter-card-legend">Price</legend>
+            <legend class="filter-card-legend card-title-overflow">
+              Price
+            </legend>
             <div class="range-box">
               <div class="price-slider">
                 <div class="price-slider-selected">
@@ -495,10 +503,8 @@
               </div>
 
               <div class="range-container">
-                <div class="range-price-wrapper">
-                  <label for="min-price" class="range-label franklin-bold-16">
-                    $
-                  </label>
+                <label for="min-price" class="range-label franklin-bold-16">
+                  $
                   <input
                     type="number"
                     class="price-nmb franklin-bold-16"
@@ -507,13 +513,13 @@
                     value="5"
                     step="1"
                     min="0"
-                    max="50"
+                    max="99"
+                    placeholder="0"
                   />
-                </div>
-                <div class="range-price-wrapper">
-                  <label for="max-price" class="range-label franklin-bold-16">
-                    $
-                  </label>
+                </label>
+
+                <label for="max-price" class="range-label franklin-bold-16">
+                  $
                   <input
                     type="number"
                     class="price-nmb franklin-bold-16"
@@ -523,33 +529,11 @@
                     step="1"
                     min="0"
                     max="99"
+                    placeholder="99"
                   />
-                </div>
+                </label>
               </div>
             </div>
-
-            <!-- <div class="range-box">
-              <input
-                type="range"
-                min="5"
-                max="50"
-                value="22"
-                step="1"
-                class="min-range"
-              />
-              <input
-                type="range"
-                min="5"
-                max="50"
-                value="38"
-                step="1"
-                class="max-range"
-              />
-            </div>
-            <div class="price-field">
-              <p class="price-value">$5</p>
-              <p class="price-value">$50</p>
-            </div> -->
           </fieldset>
 
           <button type="reset" class="btn-clearall franklin-normal-16">
@@ -561,17 +545,17 @@
         <div class="catalog">
           <!-- Filters Block -->
           <div class="filters-block">
+            <ul class="category-tag-list">
+              <li class="category-tag jakarta-bold-20">
+                UI Kit
+                <button type="button" class="btn-close">
+                  <svg class="icon icon-close-btn" width="20" height="20">
+                    <use xlink:href="../img/sprite.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
             <div class="catalog-display-filter">
-              <ul class="category-tag-list">
-                <li class="category-tag jakarta-bold-20">
-                  UI Kit
-                  <button type="button" class="btn-close">
-                    <svg class="icon icon-close-btn" width="20" height="20">
-                      <use xlink:href="../img/sprite.svg#icon-close"></use>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
               <form action="/" method="get" class="catalog-select-form">
                 <label
                   for="product"
@@ -601,23 +585,21 @@
                   <span class="cat-select-focus"></span>
                 </div>
               </form>
-            </div>
-            <div class="catalog-display-layout">
               <p class="catalog-display-result franklin-normal-16">
                 Showing 12 out of 120 results.
               </p>
-              <div class="btn-menu-group">
-                <button type="button" class="btn-menu active">
-                  <svg class="icon icon-layout" width="20" height="20">
-                    <use xlink:href="../img/sprite.svg#icon-grid-layout"></use>
-                  </svg>
-                </button>
-                <button type="button" class="btn-menu">
-                  <svg class="icon icon-layout" width="20" height="20">
-                    <use xlink:href="../img/sprite.svg#icon-sandwich"></use>
-                  </svg>
-                </button>
-              </div>
+            </div>
+            <div class="btn-menu-group">
+              <button type="button" class="btn-menu active">
+                <svg class="icon icon-layout" width="20" height="20">
+                  <use xlink:href="../img/sprite.svg#icon-grid-layout"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn-menu">
+                <svg class="icon icon-layout" width="20" height="20">
+                  <use xlink:href="../img/sprite.svg#icon-sandwich"></use>
+                </svg>
+              </button>
             </div>
           </div>
 
@@ -637,7 +619,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">EzMart</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">EzMart</h2>
                   <p class="product-description franklin-normal-16">
                     Figma Template
                   </p>
@@ -672,7 +654,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">SchoolHub</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">SchoolHub</h2>
                   <p class="product-description franklin-normal-16">
                     Figma Template
                   </p>
@@ -707,7 +689,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">Kidztar</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">Kidztar</h2>
                   <p class="product-description franklin-normal-16">
                     Figma Template
                   </p>
@@ -742,7 +724,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">PlayCut</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">PlayCut</h2>
                   <p class="product-description franklin-normal-16">
                     Figma Template
                   </p>
@@ -777,7 +759,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">WithCash</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">WithCash</h2>
                   <p class="product-description franklin-normal-16">
                     Figma Template
                   </p>
@@ -812,7 +794,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">Journeey</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">Journeey</h2>
                   <p class="product-description franklin-normal-16">
                     Figma Template
                   </p>
@@ -847,7 +829,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">Foodish</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">Foodish</h2>
                   <p class="product-description franklin-normal-16">
                     Figma Template
                   </p>
@@ -882,7 +864,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">MediCare</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">MediCare</h2>
                   <p class="product-description franklin-normal-16">
                     Figma Template
                   </p>
@@ -917,7 +899,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">UpNews</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">UpNews</h2>
                   <p class="product-description franklin-normal-16">
                     Figma Template
                   </p>
@@ -952,7 +934,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">James</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">James</h2>
                   <p class="product-description franklin-normal-16">
                     Figma Template
                   </p>
@@ -987,7 +969,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">JobBlitz</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">JobBlitz</h2>
                   <p class="product-description franklin-normal-16">
                     Figma Template
                   </p>
@@ -1022,7 +1004,7 @@
                     width="302"
                     height="260"
                   />
-                  <h2 class="jakarta-bold-20">SkyHomes</h2>
+                  <h2 class="jakarta-bold-20 card-title-overflow">SkyHomes</h2>
                   <p class="product-description franklin-normal-16">
                     Landing Page
                   </p>
@@ -1080,7 +1062,7 @@
       </div>
 
       <!-- CTA call to action section -->
-      <section class="cta container">
+      <section class="cta">
         <div class="cta-content-box">
           <h2 class="section-name franklin-normal-16">PRODUCT</h2>
           <h3 class="section-title">
@@ -1101,204 +1083,209 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-section container">
-        <div class="footer-logobox">
-          <a href="./index.html" class="logo-footer" title="Go to Homepage">
-            Pixmart.
-          </a>
-          <p class="franklin-normal-16">
-            Your premium digital assets solution with high quality and
-            comprehensive range of products and services.
-          </p>
+        <div class="footer-left-block">
+          <div class="footer-logobox">
+            <a href="./index.html" class="logo-footer">Pixmart.</a>
+            <p class="franklin-normal-16">
+              Your premium digital assets solution with high quality and
+              comprehensive range of products and services.
+            </p>
+          </div>
+          <!-- Social media icons -->
+          <ul class="footer-mediabtns">
+            <li>
+              <a
+                href="https://x.com"
+                target="_blank"
+                class="footer-media"
+                title="Follow Us on Twitter"
+              >
+                TW
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="footer-media"
+                title="Follow Us on Instagram"
+              >
+                IG
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="footer-media"
+                title="Follow Us on Facebook"
+              >
+                FB
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <!-- Sitemap section -->
-        <section class="footer-navigation footer-nav-company">
-          <h2 class="jakarta-bold-20">Company</h2>
-          <ul class="footer-nav-list">
-            <li class="footer-nav-item">
-              <a href="./index.html" class="footer-nav-link franklin-normal-16"
-                >Homepage v1
-              </a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="./index.html" class="footer-nav-link franklin-normal-16"
-                >Homepage v2
-              </a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="./index.html" class="footer-nav-link franklin-normal-16"
-                >Homepage v3
-              </a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link franklin-normal-16"
-                >About Us
-              </a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link franklin-normal-16"
-                >Creators
-              </a>
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link franklin-normal-16"
-                >Blog Articles</a
-              >
-            </li>
-          </ul>
-        </section>
-
-        <!-- Sitemap section -->
-        <section class="footer-navigation footer-nav-products">
-          <h2 class="jakarta-bold-20">Products</h2>
-          <ul class="footer-nav-list">
-            <li class="footer-nav-item">
-              <a
-                href="./category.html"
-                class="footer-nav-link franklin-normal-16"
-                >Website</a
-              >
-            </li>
-            <li class="footer-nav-item">
-              <a
-                href="./category.html"
-                class="footer-nav-link franklin-normal-16"
-                >Mobile App</a
-              >
-            </li>
-            <li class="footer-nav-item">
-              <a
-                href="./category.html"
-                class="footer-nav-link franklin-normal-16"
-                >Social Media Feeds</a
-              >
-            </li>
-            <li class="footer-nav-item">
-              <a
-                href="./category.html"
-                class="footer-nav-link franklin-normal-16"
-                >Presentation</a
-              >
-            </li>
-            <li class="footer-nav-item">
-              <a
-                href="./category.html"
-                class="footer-nav-link franklin-normal-16"
-                >Product Mockups</a
-              >
-            </li>
-            <li class="footer-nav-item">
-              <a
-                href="./category.html"
-                class="footer-nav-link franklin-normal-16"
-                >Illustrations</a
-              >
-            </li>
-          </ul>
-        </section>
-
-        <!-- Sitemap section -->
-        <section class="footer-navigation footer-nav-account">
-          <h2 class="jakarta-bold-20">Account</h2>
-          <ul class="footer-nav-list">
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link franklin-normal-16"
-                >Your Cart</a
-              >
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link franklin-normal-16"
-                >Check Out</a
-              >
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link franklin-normal-16"
-                >Refund Policy</a
-              >
-            </li>
-            <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link franklin-normal-16"
-                >Company Policy</a
-              >
-            </li>
-            <!-- anchor link -->
-            <li class="footer-nav-item">
-              <a
-                href="./contact.html#send-message"
-                class="footer-nav-link franklin-normal-16"
-              >
-                Send A Message
-              </a>
-            </li>
-            <!-- mail link -->
-            <li class="footer-nav-item">
-              <a
-                href="mailto:support@pixmart.com"
-                class="footer-nav-link franklin-normal-16"
-              >
-                Customer Support
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Social media icons -->
-        <ul class="footer-mediabtns">
-          <li>
-            <a
-              href="https://x.com"
-              target="_blank"
-              class="footer-media"
-              title="Follow Us on Twitter"
+        <div class="footer-right-block">
+          <div class="sitemap-section">
+            <!-- Sitemap section -->
+            <section class="footer-navigation footer-nav-company">
+              <h2 class="jakarta-bold-20 card-title-overflow">Company</h2>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a
+                    href="./index.html"
+                    class="footer-nav-link franklin-normal-16"
+                    >Homepage v1
+                  </a>
+                </li>
+                <li class="footer-nav-item">
+                  <a
+                    href="./index.html"
+                    class="footer-nav-link franklin-normal-16"
+                    >Homepage v2
+                  </a>
+                </li>
+                <li class="footer-nav-item">
+                  <a
+                    href="./index.html"
+                    class="footer-nav-link franklin-normal-16"
+                    >Homepage v3
+                  </a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link franklin-normal-16"
+                    >About Us
+                  </a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link franklin-normal-16"
+                    >Creators
+                  </a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link franklin-normal-16"
+                    >Blog Articles</a
+                  >
+                </li>
+              </ul>
+            </section>
+            <!-- Sitemap section -->
+            <section class="footer-navigation footer-nav-products">
+              <h2 class="jakarta-bold-20 card-title-overflow">Products</h2>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a
+                    href="./category.html"
+                    class="footer-nav-link franklin-normal-16"
+                    >Website</a
+                  >
+                </li>
+                <li class="footer-nav-item">
+                  <a
+                    href="./category.html"
+                    class="footer-nav-link franklin-normal-16"
+                    >Mobile App</a
+                  >
+                </li>
+                <li class="footer-nav-item">
+                  <a
+                    href="./category.html"
+                    class="footer-nav-link franklin-normal-16"
+                    >Social Media Feeds</a
+                  >
+                </li>
+                <li class="footer-nav-item">
+                  <a
+                    href="./category.html"
+                    class="footer-nav-link franklin-normal-16"
+                    >Presentation</a
+                  >
+                </li>
+                <li class="footer-nav-item">
+                  <a
+                    href="./category.html"
+                    class="footer-nav-link franklin-normal-16"
+                    >Product Mockups</a
+                  >
+                </li>
+                <li class="footer-nav-item">
+                  <a
+                    href="./category.html"
+                    class="footer-nav-link franklin-normal-16"
+                    >Illustrations</a
+                  >
+                </li>
+              </ul>
+            </section>
+            <!-- Sitemap section -->
+            <section class="footer-navigation footer-nav-account">
+              <h2 class="jakarta-bold-20 card-title-overflow">Account</h2>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link franklin-normal-16"
+                    >Your Cart</a
+                  >
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link franklin-normal-16"
+                    >Check Out</a
+                  >
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link franklin-normal-16"
+                    >Refund Policy</a
+                  >
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link franklin-normal-16"
+                    >Company Policy</a
+                  >
+                </li>
+                <!-- anchor link -->
+                <li class="footer-nav-item">
+                  <a
+                    href="./contact.html#send-message"
+                    class="footer-nav-link franklin-normal-16"
+                    >Send A Message</a
+                  >
+                </li>
+                <!-- mail link -->
+                <li class="footer-nav-item">
+                  <a
+                    href="mailto:support@pixmart.com"
+                    class="footer-nav-link franklin-normal-16"
+                  >
+                    Customer Support
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <!-- Subscribe to Design Newsletter -->
+          <form action="/" method="post" class="newsletter-form">
+            <label for="email" class="newsletter-label">
+              Subscribe to Design Newsletter
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email address ..."
+              autocomplete="email"
+              required
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              class="newsletter-input field-validation franklin-bold-16"
+            />
+            <button
+              type="submit"
+              class="btn-newsletter franklin-bold-16"
+              title="Subscribe to Design Newsletter"
             >
-              TW
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              class="footer-media"
-              title="Follow Us on Instagram"
-            >
-              IG
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              class="footer-media"
-              title="Follow Us on Facebook"
-            >
-              FB
-            </a>
-          </li>
-        </ul>
-
-        <!-- Subscribe to Design Newsletter -->
-        <form action="/" method="post" class="newsletter-form">
-          <label for="email" class="newsletter-label">
-            Subscribe to Design Newsletter
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter email address ..."
-            autocomplete="email"
-            required
-            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-            class="newsletter-input field-validation franklin-bold-16"
-          />
-          <button
-            type="submit"
-            class="btn-newsletter franklin-bold-16"
-            title="Subscribe to Design Newsletter"
-          >
-            Subscribe
-          </button>
-        </form>
+              Subscribe
+            </button>
+          </form>
+        </div>
       </div>
 
       <!-- Copyright and terms -->
