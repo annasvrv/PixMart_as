@@ -999,9 +999,12 @@ a {
   column-gap: 40px;
 }
 
-.membership-plan {
+.membership-plan-item {
   max-width: 400px;
   width: 100%;
+}
+
+.membership-plan {
   padding: 32px;
   border-radius: var(--border-radius-m);
   box-shadow: var(--box-shadow-m);
@@ -1826,6 +1829,13 @@ a {
   fill: var(--accent-color);
   stroke-width: 1;
   vertical-align: middle;
+  transition: fill var(--trasition-effect);
+}
+
+.btn-close:hover .icon-close-btn,
+.btn-close:active .icon-close-btn,
+.btn-close:focus .icon-close-btn {
+  fill: var(--state-change-color);
 }
 
 .catalog-select-form {
@@ -1872,8 +1882,9 @@ a {
   transition: transform var(--trasition-effect);
 }
 
-/* Doesn't work active state */
-.catalog-select:active + .cat-select-focus {
+/* Doesn't work on active state */
+.catalog-select:active + .cat-select-focus,
+.catalog-select:focus + .cat-select-focus {
   transform: rotateX(180deg);
 }
 
@@ -2890,6 +2901,8 @@ a {
   transition: transform var(--trasition-effect);
 }
 
+/* Doesn't work on active state */
+.contact-select:active + .contact-select-focus,
 .contact-select:focus + .contact-select-focus {
   transform: rotateX(180deg);
 }
