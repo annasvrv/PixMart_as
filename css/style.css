@@ -197,6 +197,7 @@ a {
 .nav-menu-link {
   color: inherit;
   border-bottom: 1px solid transparent;
+  white-space: nowrap;
   -webkit-transition: var(--trasition-effect);
   -o-transition: var(--trasition-effect);
   transition: var(--trasition-effect);
