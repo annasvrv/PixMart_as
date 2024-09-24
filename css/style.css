@@ -194,6 +194,10 @@ a {
   column-gap: 32px;
 }
 
+.nav-menu-item {
+  position: relative;
+}
+
 .nav-menu-link {
   color: inherit;
   border-bottom: 1px solid transparent;
@@ -220,7 +224,6 @@ a {
   -ms-flex-align: center;
   align-items: center;
   text-transform: capitalize;
-  position: relative;
 }
 
 .nav-menu-name::after {
