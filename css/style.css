@@ -3252,7 +3252,7 @@ a {
     url("../img/img-backgounds/img-cta/cta2-bg1.webp");
   background-size: 355px, 670px;
   background-repeat: no-repeat;
-  background-position:  48% 100%, top -10px right 8px;
+  background-position: 48% 100%, top -10px right 8px;
   background-color: var(--bg-color);
   position: relative;
   -webkit-transform: translateY(50%);
@@ -3729,7 +3729,7 @@ a {
 
 .contact-label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .contact-input,
@@ -3744,19 +3744,25 @@ a {
   color: var(--primary-color);
 }
 
-.contact-input::-webkit-input-placeholder,
+.contact-input::-webkit-input-placeholder {
+  font-family: var(--font-paragraph);
+  font-weight: var(--font-normal);
+  font-size: var(--primary-font-size);
+  line-height: var(--primary-line-height);
+  color: var(--opacity-50);
+}
+
+.contact-input::-moz-placeholder {
+  font-family: var(--font-paragraph);
+  font-weight: var(--font-normal);
+  font-size: var(--primary-font-size);
+  line-height: var(--primary-line-height);
+  color: var(--opacity-50);
+}
+
 .contact-textarea::-webkit-input-placeholder,
-.contact-textarea::-webkit-input-placeholder {
-  font-family: var(--font-paragraph);
-  font-weight: var(--font-normal);
-  font-size: var(--primary-font-size);
-  line-height: var(--primary-line-height);
-  color: var(--opacity-50);
-}
-
-.contact-input::-moz-placeholder,
 .contact-textarea::-moz-placeholder,
-.contact-textarea::-moz-placeholder {
+.contact-input::-ms-input-placeholder {
   font-family: var(--font-paragraph);
   font-weight: var(--font-normal);
   font-size: var(--primary-font-size);
@@ -3764,32 +3770,26 @@ a {
   color: var(--opacity-50);
 }
 
-.contact-input:-ms-input-placeholder,
-.contact-textarea:-ms-input-placeholder,
-.contact-textarea:-ms-input-placeholder {
-  font-family: var(--font-paragraph);
-  font-weight: var(--font-normal);
-  font-size: var(--primary-font-size);
-  line-height: var(--primary-line-height);
-  color: var(--opacity-50);
-}
-
-.contact-input::-ms-input-placeholder,
-.contact-textarea::-ms-input-placeholder,
 .contact-textarea::-ms-input-placeholder {
   font-family: var(--font-paragraph);
   font-weight: var(--font-normal);
+  font-size: var(--secondary-font-size);
+  line-height: var(--primary-line-height);
+  color: var(--opacity-50);
+}
+
+.contact-input::placeholder {
+  font-family: var(--font-paragraph);
+  font-weight: var(--font-normal);
   font-size: var(--primary-font-size);
   line-height: var(--primary-line-height);
   color: var(--opacity-50);
 }
 
-.contact-input::placeholder,
-.contact-textarea::placeholder,
 .contact-textarea::placeholder {
   font-family: var(--font-paragraph);
   font-weight: var(--font-normal);
-  font-size: var(--primary-font-size);
+  font-size: var(--secondary-font-size);
   line-height: var(--primary-line-height);
   color: var(--opacity-50);
 }
@@ -3871,6 +3871,10 @@ a {
   cursor: pointer;
   margin-bottom: 24px;
   resize: none;
+  font-family: var(--font-paragraph);
+  font-weight: var(--font-bold);
+  font-size: var(--secondary-font-size);
+  line-height: var(--primary-line-height);
   -webkit-transition: border var(--trasition-effect);
   -o-transition: border var(--trasition-effect);
   transition: border var(--trasition-effect);
@@ -3891,7 +3895,7 @@ a {
 }
 
 .contact-check-item:first-child {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .contact-checkbox-label {
@@ -3926,7 +3930,7 @@ a {
 }
 
 .btn-contact {
-  padding: 20px 46px;
+  padding: 20px 44px;
   background-color: var(--accent-color);
   border-radius: var(--border-radius-s);
   border: none;
