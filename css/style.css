@@ -3860,7 +3860,7 @@ a {
     -webkit-transform var(--trasition-effect);
 }
 
-/* Doesn't work on active state */
+
 .contact-select:active + .contact-select-focus,
 .contact-select:focus + .contact-select-focus {
   -webkit-transform: rotateX(180deg);
