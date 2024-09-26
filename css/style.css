@@ -2485,9 +2485,12 @@ a {
 }
 
 .btn-menu {
+  max-width: 44px;
+  width: 100%;
   border: none;
   background-color: var(--bg-color);
-  padding: 12px 14px;
+  padding: 12px;
+  flex-shrink: 0;
   border-radius: var(--border-radius-s);
   -webkit-transition: background var(--trasition-effect);
   -o-transition: background var(--trasition-effect);
@@ -2495,6 +2498,7 @@ a {
 }
 
 .icon-layout {
+  vertical-align: middle;
   fill: var(--accent-color);
   -webkit-transition: fill var(--trasition-effect);
   -o-transition: fill var(--trasition-effect);
@@ -3859,7 +3863,6 @@ a {
   transition: transform var(--trasition-effect),
     -webkit-transform var(--trasition-effect);
 }
-
 
 .contact-select:active + .contact-select-focus,
 .contact-select:focus + .contact-select-focus {
