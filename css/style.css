@@ -1259,7 +1259,7 @@ a {
   max-width: 566px;
 }
 
-.membership-plan-list {
+.membership-plan-wrapper {
   margin-top: 46px;
   padding-top: 30px;
   display: -webkit-box;
@@ -1273,12 +1273,9 @@ a {
   column-gap: 40px;
 }
 
-.membership-plan-item {
+.membership-plan {
   max-width: 400px;
   width: 100%;
-}
-
-.membership-plan {
   padding: 32px;
   border-radius: var(--border-radius-m);
   -webkit-box-shadow: var(--box-shadow-m);
