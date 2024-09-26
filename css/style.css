@@ -474,7 +474,6 @@ a {
   fill: var(--secondary-color);
 }
 
-
 /************** Hero section *********************/
 
 .hero {
@@ -2119,7 +2118,7 @@ a {
 /************* Header Section **************************/
 
 .category-header {
-  padding-block: 64px 100px;
+  padding-block: 60px 100px;
   background: -o-linear-gradient(89.75deg, #ffffff 0.2%, #f0f6fd 100%);
   background: linear-gradient(0.25deg, #ffffff 0.2%, #f0f6fd 100%);
 }
@@ -2132,8 +2131,7 @@ a {
   -ms-grid-rows: auto 48px auto;
   grid-template-rows: auto auto;
   gap: 48px;
-  /* pixel */
-  margin-bottom: 140px;
+  margin-bottom: 118px;
 }
 
 /************* Category filter form *******************/
@@ -2216,7 +2214,7 @@ a {
 }
 
 .range-box {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .price-slider {
@@ -2277,16 +2275,15 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 .price-nmb {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 24px;
+  width: 100%;
   border: 1px solid transparent;
   border-radius: 4px;
   outline: none;
@@ -2356,7 +2353,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 24px;
+  column-gap: 24px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -2376,7 +2373,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 24px;
+  column-gap: 24px;
 }
 
 .category-tag {
@@ -2387,10 +2384,10 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-column-gap: 80px;
-  -moz-column-gap: 80px;
-  column-gap: 80px;
-  padding: 9px 20px 9px 24px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  padding: 8px 24px;
   border: 1px solid var(--accent-color);
   border-radius: 50px;
   color: var(--accent-color);
@@ -2404,7 +2401,6 @@ a {
 .icon-close-btn {
   fill: var(--accent-color);
   stroke-width: 1;
-  vertical-align: middle;
   -webkit-transition: fill var(--trasition-effect);
   -o-transition: fill var(--trasition-effect);
   transition: fill var(--trasition-effect);
@@ -2419,8 +2415,6 @@ a {
 .catalog-select-form {
   display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: start;
-  align-content: start;
 }
 
 .catalog-select-label {
@@ -2473,7 +2467,6 @@ a {
     -webkit-transform var(--trasition-effect);
 }
 
-/* Doesn't work on active state */
 .catalog-select:active + .cat-select-focus,
 .catalog-select:focus + .cat-select-focus {
   -webkit-transform: rotateX(180deg);
@@ -2488,13 +2481,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 
 .btn-menu {
   border: none;
   background-color: var(--bg-color);
-  padding: 10px;
+  padding: 12px 14px;
   border-radius: var(--border-radius-s);
   -webkit-transition: background var(--trasition-effect);
   -o-transition: background var(--trasition-effect);
@@ -2503,7 +2496,6 @@ a {
 
 .icon-layout {
   fill: var(--accent-color);
-  vertical-align: middle;
   -webkit-transition: fill var(--trasition-effect);
   -o-transition: fill var(--trasition-effect);
   transition: fill var(--trasition-effect);
@@ -2564,7 +2556,6 @@ a {
 }
 
 .product-item-img {
-  /* pixel */
   margin-bottom: 12px;
   border-radius: var(--border-radius-m);
 }
@@ -2633,8 +2624,7 @@ a {
 }
 
 .pagination {
-  /*  pixel */
-  margin-top: 18px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
