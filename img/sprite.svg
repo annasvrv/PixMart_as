@@ -76,9 +76,9 @@
   </symbol>
 
 
-  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="icon-cat-uikits">
+  <symbol fill="inherit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="icon-cat-uikits">
     <mask id="mask0_4_6557" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
-      <path d="M0 3.8147e-06H48V48H0V3.8147e-06Z" fill="white"/>
+      <path d="M0 3.8147e-06H48V48H0V3.8147e-06Z" fill="inherit"/>
     </mask>
     <g mask="url(#mask0_4_6557)">
       <path d="M13.5283 45.7721H32.0377C32.2928 45.7721 32.5054 45.5622 32.5054 45.3044V44.2068C32.5054 43.3431 31.7985 42.6388 30.9375 42.6388H14.6258C13.7648 42.6388 13.0605 43.3431 13.0605 44.2068V45.3044C13.0605 45.5622 13.2705 45.7721 13.5283 45.7721Z" stroke="inherit" stroke-width="1.12" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
