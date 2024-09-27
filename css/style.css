@@ -994,6 +994,7 @@ a {
   display: flex;
   gap: 20px;
   overflow-x: auto;
+  overflow-y: clip;
   white-space: nowrap;
   scrollbar-width: none;
 }
