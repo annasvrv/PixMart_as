@@ -61,7 +61,7 @@
   </symbol>
 
 
-  <symbol fill="inherit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 46" id="icon-cat-presentation">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 46" id="icon-cat-presentation">
     <path d="M23.1585 18.858H16.0723V11.7537" stroke="inherit" stroke-width="1.12" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M46.9688 1.02722H1.03125V6.06713H46.9688V1.02722Z" stroke="inherit" stroke-width="1.12" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M3.44727 30.9538V6.76306" stroke="inherit" stroke-width="1.12" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -76,9 +76,9 @@
   </symbol>
 
 
-  <symbol fill="inherit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="icon-cat-uikits">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="icon-cat-uikits">
     <mask id="mask0_4_6557" maskUnits="userSpaceOnUse" x="0" y="0" width="48" height="48">
-      <path d="M0 3.8147e-06H48V48H0V3.8147e-06Z" fill="inherit"/>
+      <path d="M0 3.8147e-06H48V48H0V3.8147e-06Z" fill="white"/>
     </mask>
     <g mask="url(#mask0_4_6557)">
       <path d="M13.5283 45.7721H32.0377C32.2928 45.7721 32.5054 45.5622 32.5054 45.3044V44.2068C32.5054 43.3431 31.7985 42.6388 30.9375 42.6388H14.6258C13.7648 42.6388 13.0605 43.3431 13.0605 44.2068V45.3044C13.0605 45.5622 13.2705 45.7721 13.5283 45.7721Z" stroke="inherit" stroke-width="1.12" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
