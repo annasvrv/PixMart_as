@@ -5,180 +5,343 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Explore our new exclusive digital design assets and graphic collections today!"
+      content="Discover over 100+ sleek components in this UI kit, perfect for building intuitive, user-friendly real estate websites or apps. Tailored for tech projects."
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Product Details</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./favicon_io/android-chrome-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://necolas.github.io/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/style-minified.css" />
+    <title>PixMart - Product Details</title>
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <!-- Logo -->
-      <a href="./index.html" class="logo"> Pixmart.</a>
-
-      <!-- Navigation menu -->
-      <nav>
-        <ul class="nav-menu">
-          <li>
-            <a href="./about.html">About</a>
-          </li>
-          <!-- Dropdown menu of products -->
-          <li>
-            <a href="#" class="dropdown">Products</a>
-            <ul class="dropdown-content" hidden>
-              <li><a href="./category.html">Website</a></li>
-              <li><a href="./category.html">Mobile App</a></li>
-              <li><a href="./category.html">Social Media Feeds</a></li>
-              <li><a href="./category.html">Presentation</a></li>
-              <li><a href="./category.html">Product Mockups</a></li>
-              <li><a href="./category.html">Illustrations</a></li>
+    <header class="header">
+      <div class="container header-inner">
+        <!-- Logo -->
+        <a href="./index.html" class="logo-header"> Pixmart. </a>
+        <div class="navigation">
+          <!-- Navigation menu -->
+          <nav class="navigation-header">
+            <ul class="nav-menu franklin-normal-16">
+              <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link">
+                  <span class="nav-menu-name" data-text="About">about</span>
+                </a>
+              </li>
+              <!-- Dropdown menu of products -->
+              <li class="dropdown-item nav-menu-item">
+                <a class="nav-menu-link dropdown">
+                  <span class="nav-menu-name" data-text="Products"
+                    >Products</span
+                  >
+                  <svg class="icon arrow-header" width="14" height="8">
+                    <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </a>
+                <div class="main-dropdown">
+                  <ul class="dropdown-content">
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link">
+                        Website
+                      </a>
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Mobile App</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link">
+                        Social media feeds
+                      </a>
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Presentation</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Product Mockups</a
+                      >
+                    </li>
+                    <li class="dropdown-content-item">
+                      <a href="./category.html" class="dropdown-content-link"
+                        >Illustrations</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link">
+                  <span class="nav-menu-name" data-text="Creators"
+                    >Creators</span
+                  >
+                  <sup class="label-header">NEW</sup>
+                </a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="#" class="nav-menu-link">
+                  <span class="nav-menu-name" data-text="Blog">Blog</span>
+                </a>
+              </li>
+              <li class="nav-menu-item">
+                <a href="./contact.html" class="nav-menu-link">
+                  <span class="nav-menu-name" data-text="Contact">Contact</span>
+                </a>
+              </li>
             </ul>
-          </li>
-          <li>
-            <a href="./creator.html">Creators</a>
-            <span class="label">NEW</span>
-          </li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
+          </nav>
+          <!-- Search / Cart block -->
+          <div class="search-bar">
+            <form
+              action="/search"
+              method="get"
+              role="search"
+              class="search-form"
+            >
+              <label for="site-search" class="visually-hidden">
+                Search the site:
+              </label>
 
-      <!-- Search bar -->
-      <div class="search-bar">
-        <form action="" method="get" role="search">
-          <label for="site-search" class="visually-hidden">
-            Search the site:
-          </label>
-          <input
-            type="search"
-            name="search"
-            id="site-search"
-            pattern="[^'\x22]+"
-            title="Invalid input"
-            aria-label="Search through site content"
-            placeholder="Search for Digital Assets"
-          />
-          <button type="submit" class="btn-search">
-            <img src="/" alt="Search icon" />
-            Search
-          </button>
-        </form>
-      </div>
-
-      <!-- Login and cart buttons -->
-      <div class="buttons">
-        <a href="./cart.html" class="btn-cart">
-          <img src="/" alt="Shop button" />
-          Cart
-        </a>
+              <input
+                type="search"
+                name="search"
+                id="site-search"
+                required
+                pattern="[^'\x22]+"
+                title="Invalid input"
+                aria-label="Search through site content"
+                placeholder="Search for Digital Assets"
+                class="search-input franklin-bold-16"
+              />
+              <button type="submit" class="btn-search">
+                <svg class="icon icon-search" width="20" height="20">
+                  <use xlink:href="./img/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+            <!-- cart button -->
+            <a href="#" class="btn-cart" title="View Your Shopping Cart">
+              <svg class="icon cart-icon-header" width="24" height="24">
+                <use xlink:href="./img/sprite.svg#icon-bag"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="product-main container">
       <!-- Product info section -->
       <section class="product-info">
-        <div class="image-box">
-          <!-- Open image in new page -->
-          <a href="#" target="_blank" class="full-size">
-            <img src="/" alt="Expand button" />
-          </a>
-
-          <figure>
-            <!-- Expanded image -->
-            <img
-              src="/"
-              alt="Product Assets"
-              id="expandedImg"
-              style="width: 100%"
-            />
-
-            <!-- Image Galery -->
-            <button type="button">&lt;</button>
-            <img src="/" alt="Product Assets" />
-            <img src="/" alt="Product Assets" />
-            <img src="/" alt="Product Assets" />
-            <img src="/" alt="Product Assets" />
-            <button type="button">&gt;</button>
-          </figure>
-        </div>
-
         <div class="product-info-box">
-          <p class="rating">&starf; &starf; &starf; &starf; &starf; (50)</p>
-          <h1>Griya – Real Estate Dashboard UI</h1>
-          <img src="/" alt="Profile photo" />
-          <h2>Tech Pioneers</h2>
-          <p>
-            The "Griya Real Estate Dashboard UI" is meticulously designed for
-            real estate entrepreneurs and startups looking to make a significant
+          <p class="product-rating franklin-normal-16">( 50 )</p>
+          <h1 class="section-title">Vonix – Blue Yellow Modern</h1>
+          <div class="product-user-info">
+            <img
+              src="./img/img-product-details/user2-photo.webp"
+              alt="Tech Pioneers' Photo"
+              width="36"
+              height="36"
+              class="product-user"
+            />
+            <h2 class="franklin-bold-16">Tech Pioneers</h2>
+          </div>
+          <p class="product-info-text">
+            The "Vonix – Blue Yellow Modern" is meticulously designed for real
+            estate entrepreneurs and startups looking to make a significant
             impact online.
           </p>
 
-          <!-- border line -->
-          <hr />
-
-          <form action="" method="post">
-            <fieldset>
-              <input
-                type="checkbox"
-                name="license"
-                value="standard license"
-                id="standard-license"
-              />
-              <label for="standard-license">
-                Standard License <span>$16.00</span>
-              </label>
-              <input
-                type="checkbox"
-                name="license"
-                value="extended licenses"
-                id="extended-licenses"
-              />
-              <label for="extended-licenses">
-                Extended Licenses<span>$49.00</span>
-              </label>
+          <form action="/" method="post" class="product-info-form">
+            <fieldset class="product-info-fieldset">
+              <div class="prod-info-checkbox">
+                <input
+                  type="checkbox"
+                  name="license"
+                  value="standard license"
+                  id="standard-license"
+                  checked
+                  class="product-info-input visually-hidden"
+                />
+                <label
+                  for="standard-license"
+                  class="product-info-label franklin-normal-16"
+                >
+                  Standard License
+                  <span class="product-info-price">$16.00</span>
+                </label>
+              </div>
+              <div class="prod-info-checkbox">
+                <input
+                  type="checkbox"
+                  name="license"
+                  value="extended licenses"
+                  id="extended-licenses"
+                  class="product-info-input visually-hidden"
+                />
+                <label
+                  for="extended-licenses"
+                  class="product-info-label franklin-normal-16"
+                >
+                  Extended Licenses<span class="product-info-price"
+                    >$49.00</span
+                  >
+                </label>
+              </div>
             </fieldset>
 
-            <fieldset>
-              <div class="qty-input">
-                <button
-                  type="button"
-                  class="qty-count qty-count--minus"
-                  data-action="minus"
-                >
-                  -
+            <fieldset class="product-info-fieldset">
+              <div class="product-qty">
+                <button type="button" class="btn-count" data-action="minus">
+                  <svg class="icon icon-btn-count" width="16" height="2">
+                    <use xlink:href="./img/sprite.svg#icon-minus"></use>
+                  </svg>
                 </button>
-                <input
-                  class="product-qty"
-                  type="number"
-                  name="product-qty"
-                  min="0"
-                  max="2"
-                  value="1"
-                />
-                <button
-                  type="button"
-                  class="qty-count qty-count--add"
-                  data-action="add"
-                >
-                  +
+                <label>
+                  <input
+                    type="number"
+                    name="product-qty"
+                    min="1"
+                    max="99"
+                    value="1"
+                    required
+                    class="qty-input"
+                    placeholder="0"
+                  />
+                </label>
+                <button type="button" class="btn-count" data-action="add">
+                  <svg class="icon icon-btn-count" width="16" height="16">
+                    <use xlink:href="./img/sprite.svg#icon-plus"></use>
+                  </svg>
                 </button>
               </div>
-              <p class="sum-price">$16.00</p>
+              <p class="prod-sum-price">$16.00</p>
             </fieldset>
-            <div>
-              <a href="./cart.html">Preview</a>
-              <a href="./cart.html">Purchase Now</a>
+            <div class="shop-btn-group">
+              <a href="#" class="btn-preview btn-prod-buy franklin-bold-16">
+                Preview
+              </a>
+              <a href="#" class="btn-purchase btn-prod-buy franklin-bold-16">
+                Purchase Now
+              </a>
             </div>
           </form>
         </div>
+
+        <figure class="product-details-galery">
+          <!-- Expanded image -->
+          <div class="expanded-img-box">
+            <!-- Open image in new page -->
+            <a href="#" class="full-size">
+              <svg class="icon icon-expand-arrows" width="32" height="32">
+                <use xlink:href="./img/sprite.svg#icon-expand-arrows"></use>
+              </svg>
+            </a>
+            <img
+              src="./img/img-product-details/prod-gallery1.webp"
+              alt="Vonix - Product Asset"
+              width="710"
+              height="510"
+              class="expanded-img"
+            />
+          </div>
+
+          <!-- Image Galery -->
+          <div class="prod-image-galery">
+            <button type="button" class="btn-arrow" title="Previous image">
+              <svg class="icon arrow-less" width="16" height="16">
+                <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+            <ul class="image-galery-list">
+              <li class="image-galery-item selected">
+                <img
+                  src="./img/img-product-details/prod-gallery1.webp"
+                  alt="Vonix - Product Asset"
+                  class="galery-img"
+                  width="142"
+                  height="116"
+                />
+              </li>
+              <li class="image-galery-item">
+                <img
+                  src="./img/img-product-details/prod-gallery2.webp"
+                  alt="Vonix - Product Asset"
+                  class="galery-img"
+                  width="142"
+                  height="116"
+                />
+              </li>
+              <li class="image-galery-item">
+                <img
+                  src="./img/img-product-details/prod-gallery3.webp"
+                  alt="Vonix - Product Asset"
+                  class="galery-img"
+                  width="142"
+                  height="116"
+                />
+              </li>
+              <li class="image-galery-item">
+                <img
+                  src="./img/img-product-details/prod-gallery4.webp"
+                  alt="Vonix - Product Asset"
+                  class="galery-img"
+                  width="142"
+                  height="116"
+                />
+              </li>
+            </ul>
+            <button type="button" class="btn-arrow" title="Next image">
+              <svg class="icon arrow-greater" width="16" height="16">
+                <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+        </figure>
       </section>
 
       <!-- Product Content section -->
       <section class="product-content">
-        <div class="column">
-          <h2>Overview</h2>
-          <p>
+        <div class="product-content-left">
+          <h2 class="product-content-title">Overview</h2>
+          <p class="product-content-text">
             With over 100+ meticulously designed components, this dashboard UI
             kit is your go-to resource for building intuitive, sleek, and user -
             friendly real estate - related websites or applications. Tailored to
@@ -187,233 +350,486 @@
             your project with confidence and style.
           </p>
 
-          <h3>Pages Included:</h3>
-          <ul>
-            <li>Dashboard Page</li>
-            <li>Order Page</li>
-            <li>Property Details</li>
-            <li>Customers List</li>
-            <li>Analytics Page</li>
-            <li>Review Page</li>
+          <h3 class="product-header-list jakarta-bold-20">Pages Included:</h3>
+          <ul class="product-content-list">
+            <li class="product-content-item">Dashboard Page</li>
+            <li class="product-content-item">Order Page</li>
+            <li class="product-content-item">Property Details</li>
+            <li class="product-content-item">Customers List</li>
+            <li class="product-content-item">Analytics Page</li>
+            <li class="product-content-item">Review Page</li>
           </ul>
 
-          <h3>Product Features:</h3>
-          <ul>
-            <li>Responsive Design</li>
-            <li>Customizable Components</li>
-            <li>E-commerce Pages Included</li>
-            <li>Interactive Elements</li>
-            <li>Dark Mode Option</li>
-            <li>Comprehensive Documentation</li>
+          <h3 class="product-header-list jakarta-bold-20">Product Features:</h3>
+          <ul class="product-content-list">
+            <li class="product-content-item">Responsive Design</li>
+            <li class="product-content-item">Customizable Components</li>
+            <li class="product-content-item">E-commerce Pages Included</li>
+            <li class="product-content-item">Interactive Elements</li>
+            <li class="product-content-item">Dark Mode Option</li>
+            <li class="product-content-item">Comprehensive Documentation</li>
           </ul>
         </div>
 
-        <div class="column">
-          <h2>Product Details</h2>
-          <dl>
-            <dt>
-              <img src="/" alt="Calendar icon" />
+        <div class="product-content-right">
+          <h2 class="product-content-title">Product Details</h2>
+          <dl class="product-details-list franklin-normal-16">
+            <dt class="product-details-title">
+              <svg class="icon product-details-icon" width="24" height="24">
+                <use xlink:href="./img/sprite.svg#icon-calendar"></use>
+              </svg>
               Created
             </dt>
-            <dd><time datetime="2024-09-01">September 1, 2024</time></dd>
+            <dd class="product-details-description">
+              <time datetime="2024-09-01">September 1, 2024 </time>
+            </dd>
 
-            <dt>
-              <img src="/" alt="Folder icon" />
+            <dt class="product-details-title">
+              <svg class="icon product-details-icon" width="24" height="24">
+                <use xlink:href="./img/sprite.svg#icon-folder"></use>
+              </svg>
               File Size
             </dt>
-            <dd>120 MB</dd>
+            <dd class="product-details-description">120 MB</dd>
 
-            <dt>
-              <img src="/" alt="Expand image icon" />
+            <dt class="product-details-title">
+              <svg class="icon product-details-icon" width="24" height="24">
+                <use xlink:href="./img/sprite.svg#icon-expand"></use>
+              </svg>
               File Dimensions
             </dt>
-            <dd>1920x1080 px</dd>
+            <dd class="product-details-description">1920x1080 px</dd>
 
-            <dt>
-              <img src="/" alt="Globe icon" />
+            <dt class="product-details-title">
+              <svg class="icon product-details-icon" width="24" height="24">
+                <use xlink:href="./img/sprite.svg#icon-globe-union"></use>
+              </svg>
               Compatible App
             </dt>
-            <dd>Figma, Sketch, Adobe XD</dd>
+            <dd class="product-details-description">Figma, Sketch, Adobe XD</dd>
           </dl>
 
-          <h2>Product Tags</h2>
+          <h2 class="product-content-title">Product Tags</h2>
 
-          <ul>
-            <li>Real Estate</li>
-            <li>Startup</li>
-            <li>UI Kit</li>
-            <li>Modern</li>
-            <li>Figma</li>
-            <li>Sketch</li>
-            <li>Adobe XD</li>
-            <li>Responsive</li>
+          <ul class="product-tag-list">
+            <li>
+              <a href="#" class="product-tag-link franklin-normal-16">
+                Real Estate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="product-tag-link franklin-normal-16"
+                >Startup</a
+              >
+            </li>
+            <li>
+              <a href="#" class="product-tag-link franklin-normal-16">UI Kit</a>
+            </li>
+            <li>
+              <a href="#" class="product-tag-link franklin-normal-16">Modern</a>
+            </li>
+            <li>
+              <a href="#" class="product-tag-link franklin-normal-16">Figma</a>
+            </li>
+            <li>
+              <a href="#" class="product-tag-link franklin-normal-16">Sketch</a>
+            </li>
+            <li>
+              <a href="#" class="product-tag-link franklin-normal-16"
+                >Adobe XD</a
+              >
+            </li>
+            <li>
+              <a href="#" class="product-tag-link franklin-normal-16">
+                Responsive
+              </a>
+            </li>
           </ul>
         </div>
       </section>
 
       <!-- Related Products section -->
       <section class="product-related">
-        <h2>Related Products</h2>
-        <a href="./category.html"> Explore All Works &gt; </a>
+        <div class="product-related-header">
+          <h2 class="section-title">Related Products</h2>
+          <a href="./category.html" class="blog-link franklin-bold-16">
+            Explore All Works
+            <svg class="icon icon-blog-link" width="16" height="16">
+              <use xlink:href="./img/sprite.svg#icon-arrow-down"></use>
+            </svg>
+          </a>
+        </div>
 
-        <ul>
-          <!-- Product Item -->
-          <li>
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h3 class="product-title">SkyHomes</h3>
-                <p class="product-description">Real Estate Landing Page</p>
-              </a>
-              <p class="item-price">$11.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
+        <div class="product-related-list">
+          <!-- Product Item 1 -->
+          <article class="product-item">
+            <a
+              href="./product-details.html"
+              class="product-item-link"
+              title="View Product's details"
+            >
+              <img
+                src="./img/img-products/product-13.webp"
+                alt="MyEstate - Figma Template"
+                class="product-item-img"
+                width="302"
+                height="260"
+              />
+              <h3 class="jakarta-bold-20 card-title-overflow">MyEstate</h3>
+              <p class="product-description franklin-normal-16">
+                Figma Template
+              </p>
+            </a>
+            <div class="quick-buy-box">
+              <p class="jakarta-bold-20">$6.00</p>
+              <button type="button" class="btn-item-cart" title="Add to cart">
+                <svg class="icon icon-addtocart" width="24" height="24">
+                  <use xlink:href="./img/sprite.svg#icon-bag"></use>
+                </svg>
               </button>
-            </article>
-          </li>
+            </div>
+          </article>
 
-          <!-- Product Item -->
-          <li>
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h3 class="product-title">Gaya</h3>
-                <p class="product-description">Fashion Store Mobile App</p>
-              </a>
-              <p class="item-price">$20.00</p>
-              <button type="button" class="btn-item-cart active">
-                <img src="/" alt="Shop icon" />
+          <!-- Product Item 2 -->
+          <article class="product-item">
+            <a
+              href="./product-details.html"
+              class="product-item-link"
+              title="View Product's details"
+            >
+              <img
+                src="./img/img-products/product-14.webp"
+                alt="Avery - Presentation"
+                class="product-item-img"
+                width="302"
+                height="260"
+              />
+              <h3 class="jakarta-bold-20 card-title-overflow">Avery</h3>
+              <p class="product-description franklin-normal-16">Presentation</p>
+            </a>
+            <div class="quick-buy-box">
+              <p class="jakarta-bold-20">$10.00</p>
+              <button type="button" class="btn-item-cart" title="Add to cart">
+                <svg class="icon icon-addtocart" width="24" height="24">
+                  <use xlink:href="./img/sprite.svg#icon-bag"></use>
+                </svg>
               </button>
-            </article>
-          </li>
+            </div>
+          </article>
 
-          <!-- Product Item -->
-          <li>
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h3 class="product-title">MyEstate</h3>
-                <p class="product-description">Real Estate Hero Section</p>
-              </a>
-              <p class="item-price">$5.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
+          <!-- Product Item 3 -->
+          <article class="product-item">
+            <a
+              href="./product-details.html"
+              class="product-item-link"
+              title="View Product's details"
+            >
+              <img
+                src="./img/img-products/product-15.webp"
+                alt="Jaxon - Presentation"
+                class="product-item-img"
+                width="302"
+                height="260"
+              />
+              <h3 class="jakarta-bold-20 card-title-overflow">Jaxon</h3>
+              <p class="product-description franklin-normal-16">Presentation</p>
+            </a>
+            <div class="quick-buy-box">
+              <p class="jakarta-bold-20">$20.00</p>
+              <button type="button" class="btn-item-cart" title="Add to cart">
+                <svg class="icon icon-addtocart" width="24" height="24">
+                  <use xlink:href="./img/sprite.svg#icon-bag"></use>
+                </svg>
               </button>
-            </article>
-          </li>
+            </div>
+          </article>
 
-          <!-- Product Item -->
-          <li>
-            <article class="product-item">
-              <a href="./product-details.html">
-                <img src="/" alt="Product Asset" />
-                <h3 class="product-title">Thinky</h3>
-                <p class="product-description">Blog News Mobile App</p>
-              </a>
-              <p class="item-price">$18.00</p>
-              <button type="button" class="btn-item-cart">
-                <img src="/" alt="Shop icon" />
+          <!-- Product Item 4 -->
+          <article class="product-item">
+            <a
+              href="./product-details.html"
+              class="product-item-link"
+              title="View Product's details"
+            >
+              <img
+                src="./img/img-products/product-16.webp"
+                alt="Onyx - Presentation"
+                class="product-item-img"
+                width="302"
+                height="260"
+              />
+              <h3 class="jakarta-bold-20 card-title-overflow">Onyx</h3>
+              <p class="product-description franklin-normal-16">Presentation</p>
+            </a>
+            <div class="quick-buy-box">
+              <p class="jakarta-bold-20">$8.00</p>
+              <button type="button" class="btn-item-cart" title="Add to cart">
+                <svg class="icon icon-addtocart" width="24" height="24">
+                  <use xlink:href="./img/sprite.svg#icon-bag"></use>
+                </svg>
               </button>
-            </article>
-          </li>
-        </ul>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <!-- CTA call to action section -->
-      <section class="cta">
-        <h2 class="section-name">Bring Your Creativity Alive</h2>
-        <h3 class="section-title">
-          Explore our new exclusive digital design assets and graphic
-          collections today!
-        </h3>
-        <a href="./category.html" class="btn-shop">Shop Now</a>
-        <img src="/" alt="Product Assets" />
+      <!-- CTA call to action section  -->
+      <section class="cta-product-version">
+        <div class="cta-product-content">
+          <h2 class="section-title">Bring Your Creativity Alive</h2>
+          <p class="section-description">
+            Explore our new exclusive digital design assets and graphic
+            collections today!
+          </p>
+          <a
+            href="./category.html"
+            class="btn-shop section-button franklin-bold-16"
+            title="View Our Products"
+          >
+            Shop Now
+          </a>
+        </div>
       </section>
     </main>
 
-    <!-- Footer  added same footer for consistent design -->
-    <footer>
-      <section class="footer-section">
-        <div class="footer-logobox">
-          <a href="./index.html" class="logo"> Pixmart. </a>
-          <p class="footer-description">
+    <!-- Footer  version 2 -->
+    <footer class="prod-footer">
+      <div class="prod-footer-section container">
+        <div class="prod-footer-logobox">
+          <a
+            href="./index.html"
+            class="prod-logo-footer"
+            title="Go to Homepage"
+          >
+            Pixmart.
+          </a>
+          <p class="prod-footer-description franklin-normal-16">
             Your premium digital assets solution with high quality and
             comprehensive range of products and services.
           </p>
         </div>
 
         <!-- Sitemap section -->
-        <section class="footer-navigation">
-          <h2 class="footer-nav-title">Company</h2>
+        <section class="footer-prod-company">
+          <h2 class="footer-prod-title jakarta-bold-20">Company</h2>
           <ul class="footer-nav-list">
-            <li><a href="./index.html">Homepage v1 </a></li>
-            <li><a href="./index.html">Homepage v2 </a></li>
-            <li><a href="./index.html">Homepage v3 </a></li>
-            <li><a href="./about.html">About Us </a></li>
-            <li><a href="./creator.html">Creators </a></li>
-            <li><a href="./blog.html">Blog Articles</a></li>
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-prod-link franklin-normal-16"
+                >Homepage v1
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-prod-link franklin-normal-16"
+                >Homepage v2
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="./index.html" class="footer-prod-link franklin-normal-16"
+                >Homepage v3
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-prod-link franklin-normal-16"
+                >About Us
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-prod-link franklin-normal-16"
+                >Creators
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-prod-link franklin-normal-16"
+                >Blog Articles</a
+              >
+            </li>
           </ul>
         </section>
 
         <!-- Sitemap section -->
-        <section class="footer-navigation">
-          <h2 class="footer-nav-title">Products</h2>
+        <section class="footer-prod-products">
+          <h2 class="footer-prod-title jakarta-bold-20">Products</h2>
           <ul class="footer-nav-list">
-            <li><a href="./category.html">Website</a></li>
-            <li><a href="./category.html">Mobile App</a></li>
-            <li><a href="./category.html">Social Media Feeds</a></li>
-            <li><a href="./category.html">Presentation</a></li>
-            <li><a href="./category.html">Product Mockups</a></li>
-            <li><a href="./category.html">Illustrations</a></li>
+            <li class="footer-nav-item">
+              <a
+                href="./category.html"
+                class="footer-prod-link franklin-normal-16"
+                >Website</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a
+                href="./category.html"
+                class="footer-prod-link franklin-normal-16"
+                >Mobile App</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a
+                href="./category.html"
+                class="footer-prod-link franklin-normal-16"
+                >Social Media Feeds</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a
+                href="./category.html"
+                class="footer-prod-link franklin-normal-16"
+                >Presentation</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a
+                href="./category.html"
+                class="footer-prod-link franklin-normal-16"
+                >Product Mockups</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a
+                href="./category.html"
+                class="footer-prod-link franklin-normal-16"
+                >Illustrations</a
+              >
+            </li>
           </ul>
         </section>
 
         <!-- Sitemap section -->
-        <section class="footer-navigation">
-          <h2 class="footer-nav-title">Account</h2>
+        <section class="footer-prod-account">
+          <h2 class="footer-prod-title jakarta-bold-20">Account</h2>
           <ul class="footer-nav-list">
-            <li><a href="./cart.html">Your Cart</a></li>
-            <li><a href="./checkout.html">Check Out</a></li>
-            <li><a href="#" target="_blank">Refund Policy</a></li>
-            <li><a href="#" target="_blank">Company Policy</a></li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-prod-link franklin-normal-16"
+                >Your Cart</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-prod-link franklin-normal-16"
+                >Check Out</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-prod-link franklin-normal-16"
+                >Refund Policy</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-prod-link franklin-normal-16"
+                >Company Policy</a
+              >
+            </li>
             <!-- anchor link -->
-            <li><a href="#">Send A Message</a></li>
+            <li class="footer-nav-item">
+              <a
+                href="./contact.html#send-message"
+                class="footer-prod-link franklin-normal-16"
+              >
+                Send A Message
+              </a>
+            </li>
             <!-- mail link -->
-            <li><a href="#">Customer Support</a></li>
+            <li class="footer-nav-item">
+              <a
+                href="mailto:support@pixmart.com"
+                class="footer-prod-link franklin-normal-16"
+              >
+                Customer Support
+              </a>
+            </li>
           </ul>
         </section>
 
         <!-- Social media icons -->
-        <ul class="footer-socialbtns">
-          <li><a href="#" target="_blank">TW</a></li>
-          <li><a href="#" target="_blank">IG</a></li>
-          <li><a href="#" target="_blank">FB</a></li>
-        </ul>
+        <div class="footer-prod-mediabtns">
+          <h2 class="footer-media-title">Follow Us</h2>
+          <ul class="footer-media-list">
+            <li>
+              <a
+                href="https://x.com"
+                target="_blank"
+                class="footer-media"
+                title="Follow Us on Twitter"
+              >
+                TW
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="footer-media"
+                title="Follow Us on Instagram"
+              >
+                IG
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="footer-media"
+                title="Follow Us on Facebook"
+              >
+                FB
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        <!-- <h3>Subscribe to Design Newsletter</h3> -->
-        <form action="" method="post" class="newsletter">
-          <label for="email">Subscribe to Design Newsletter</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter email address ..."
-            autocomplete="email"
-            required
-            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-          />
-          <input type="submit" value="Subscribe" />
+        <!-- Subscribe to Design Newsletter -->
+        <form action="/" method="post" class="prod-newsletter-form">
+          <label for="email" class="prod-newsletter-label">
+            Subscribe to Newsletter
+          </label>
+          <div class="prod-newsletter-wrapper">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address ..."
+              autocomplete="email"
+              required
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              class="field-validation prod-newsletter-input franklin-bold-16"
+            />
+            <button
+              type="submit"
+              class="btn-newsletter franklin-bold-16"
+              title="Subscribe to Design Newsletter"
+            >
+              Subscribe
+            </button>
+          </div>
         </form>
-      </section>
+      </div>
 
       <!-- Copyright and terms -->
-      <div class="footer-copyright-section">
-        <ul>
-          <li><a href="#" target="_blank">Privacy Policy</a></li>
-          <li><a href="#" target="_blank">Terms and Condition</a></li>
-          <li><a href="#" target="_blank">Site Map</a></li>
-        </ul>
-        <p>Copyright © 2024 Pixmart. All rights reserved.</p>
+      <div class="copyright-section">
+        <div class="container copyright-content">
+          <ul class="copyright-list">
+            <li class="copyright-item">
+              <a href="#" class="copyright-link franklin-normal-16">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="copyright-item copyright-line franklin-normal-16">|</li>
+            <li class="copyright-item">
+              <a href="#" class="copyright-link franklin-normal-16">
+                Terms and Condition
+              </a>
+            </li>
+            <li class="copyright-item copyright-line franklin-normal-16">|</li>
+            <li class="copyright-item">
+              <a href="#" class="copyright-link franklin-normal-16">
+                Site Map
+              </a>
+            </li>
+          </ul>
+          <p class="copyright-text franklin-normal-16">
+            Copyright © 2024 Pixmart. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
